@@ -195,13 +195,25 @@ function makeFigure(item) {
 
   const caption = document.createElement("figcaption");
   caption.textContent = item.caption[lang];
-  const credit = document.createElement("small");
-  credit.className = "credit";
-  credit.textContent = item.credit[lang];
-  caption.appendChild(credit);
+  caption.appendChild(makeCredit(item, "credit"));
   figure.appendChild(caption);
 
   return figure;
+}
+
+// The credit line. If the picture has a "link" (e.g. its Wikimedia Commons page),
+// the credit becomes a link to it, as free licences ask.
+function makeCredit(item, className) {
+  const lang = currentLanguage;
+  const credit = document.createElement(item.link ? "a" : "small");
+  credit.className = className;
+  credit.textContent = item.credit[lang];
+  if (item.link) {
+    credit.href = item.link;
+    credit.target = "_blank";   // opens in a new tab
+    credit.rel = "noopener";
+  }
+  return credit;
 }
 
 // ---- The large-picture pop-up ----
@@ -218,7 +230,9 @@ function openLightbox(item) {
     captionText = "[" + pageText.aiLabel[lang] + "] " + captionText;
   }
   document.getElementById("lightbox-caption").textContent = captionText;
-  document.getElementById("lightbox-credit").textContent = item.credit[lang];
+  const lightboxCredit = document.getElementById("lightbox-credit");
+  lightboxCredit.innerHTML = "";
+  lightboxCredit.appendChild(makeCredit(item, ""));
 
   const closeButton = document.getElementById("lightbox-close");
   closeButton.setAttribute("aria-label", pageText.close[lang]);

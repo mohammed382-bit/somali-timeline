@@ -588,3 +588,9 @@ footer p {
   object-fit: contain;
   background-color: var(--white);
 }
+
+/* Credits that link to the original picture */
+a.credit,
+.lightbox-credit a {
+  color: var(--muted-text);
+}
