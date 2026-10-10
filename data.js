@@ -28,87 +28,229 @@ const events = [
       en: "The Somali descend from Kush, son of Ham, son of Noah. Over thousands of years the Cushitic peoples migrated from the Nile valley; one branch, the Eastern Cushites, went on to include the Oromo, Sidamo, Saho, Afar and Somali. Driven partly by climate change, the ancestors of the Somali reached the northern coasts of the Horn of Africa around 3000 BCE, where the land of Punt would later arise.",
       so: "Soomaalidu waxay kasoo farcantay Kuush ina Xaam ina Nabi Nuux. Kumannaan sano, Kowshiintu waxay kasoo hayaameen yaacdada Niilka; qayb ka mid ah, Kushitikada Bari, waxaa kasoo jeeda Oromo, Sidamo, Saho, Cafar iyo Soomaali. Isbeddel cimilo ayaa dabada ka riixayay hayaankaas, waxaana ab-awalladii Soomaalidu xeebaha waqooyi ee Geeska Afrika soo gaareen qiyaastii 3,000 sano Nabi Ciise dhalashadiisii kahor, halkaas oo markii danbe ay ka dhalatay Punt."
     },
-    // The full written version of the episode, shown on the episode page (from the script "Xalqada 1aad")
+    // The FULL script of the episode ("Xalqada 1aad"), shown on the episode page.
+    // Somali: the script word for word. English: a full translation, paragraph by paragraph.
     article: [
       {
-        heading: { en: "The three sons of Noah", so: "Saddexdii wiil ee Nabi Nuux" },
-        en: [
-          "When we speak of a nation's history and want to trace its origins, we must go a long way back. No eyewitness record survives from so long ago, but different sciences help to light up what happened in those distant ages. A journey of 10,000 years awaits us.",
-          "Islam teaches, and the followers of the revealed religions agree, that all humanity descends from Adam, and that the peoples of the world today descend from the three sons of Noah: Shem (Saam), Japheth (Yaafith) and Ham (Xaam). As the Qur'an says in Surat as-Saffat: \u2067«وَجَعَلْنَا ذُرِّيَّتَهُ هُمُ الْبَاقِينَ»\u2069, \"And We made his descendants the ones who remained.\"",
-          "From Shem came peoples including Iram, Arfakhshad and Lawid, from whom today's Arabs and the Children of Israel descend. From Japheth came peoples including the Turks, the Romans, and Gog and Magog. Ham, as the genealogists write, had sons including Kush, Misr and Fut, and some Arab genealogists also trace the Berbers to Ham. Our story follows three of these peoples: Misr, the Berbers and Kush."
+        "heading": {
+          "en": "The three sons of Noah",
+          "so": "Saddexdii wiil ee Nabi Nuux"
+        },
+        "en": [
+          "When we speak about history, especially a nation's history, and aim to trace its origins, its past and the sequence of its ages, it becomes essential to go back a long way.",
+          "If we stop to speak about and examine history that distant, we have no eyewitness record of it and none can be found; but the knowledge God has granted humankind is vast, and that distant history can be glimpsed through various sciences which, however small their light, shine a torch on what happened in those far-off ages.",
+          "The kinds of those sciences, and how they provide evidence, we will examine in another session.",
+          "But a journey of 10,000 years awaits us, so let us set foot on the path.",
+          "Since the details of the eras we are discussing are limited, the account of this stage will not be long.",
+          "As the religion of Islam has made clear to us, as all followers of the revealed religions believe, and as experts with deep knowledge of human races and the generations of humankind have described, it is agreed that all of humanity traces its lineage to the Prophet Adam (peace be upon him), and that after him the peoples living across the world today all descend from the three sons of the Prophet Noah:",
+          "• Shem son of Noah (Saam Nuux)",
+          "• Japheth son of Noah (Yaafith Nuux)",
+          "• Ham son of Noah (Xaam Nuux)",
+          "After the flood that struck the people of Noah and covered the whole world, the only descendants left whose story is known are those of these three sons.",
+          "As God mentions in His book, the Qur'an, in Surat as-Saffat:",
+          "⁧«وَجَعَلْنَا ذُرِّيَّتَهُ هُمُ الْبَاقِينَ»⁩",
+          "Meaning: \"We left the descendants of the Prophet Noah on the earth.\"",
+          "From Shem came peoples including Iram, Arfakhshad and Lawid, from whom today's Arabs and the Children of Israel come.",
+          "From Japheth came peoples including the Turks, the Romans, and Gog and Magog.",
+          "Ham, as the genealogists write, fathered sons including Kush, Misr and Fut, and some Arab genealogists also trace the Berbers to Ham.",
+          "But our story revolves around three groups: Misr, Berber and Kush.",
+          "And this is where we pick up the distant history of the forefathers and ancestors of the Somali."
         ],
-        so: [
-          "Marka taariikh ummadeed laga hadlayo, oo la damacsan yahay in la tixraaco asalkeeda, waxaa lagama maarmaan ah in muddo dheer dib loo noqdo. Taariikhdaas sidaas u fog marag iyo maqaal looma hayo, balse waxaa laga bidhaansadaa culuum kala duwan oo tooshka inoogu ifinaysa wixii dhacay waayadaas fog. Safar 10,000 oo sano ah ayaa ina sugaya.",
-          "Sida diinta Islaamku noo caddaysay, ayna wada aamminsan yihiin dadka haysta diimaha samaawiga ah, aadanaha oo dhammi wuxuu ku abtirsadaa Nabi Aadam CS, shucuubta maanta ku nool daafaha dunidana waxay kasoo farcameen saddexdii wiil ee Nabi Nuux: Saam, Yaafith iyo Xaam. Sida Rabbi ku xusay suuratu-Saafaat: \u2067«وَجَعَلْنَا ذُرِّيَّتَهُ هُمُ الْبَاقِينَ»\u2069, oo macneheedu yahay: \"Durriyaddii Nabi Nuux ayaan dhulka u reebnay\".",
-          "Saam waxaa ka farcamay qolooyin ay kamid ahaayeen Iram, Arfakhshad iyo Laawid, oo hadda Carabta iyo reer Banii Israa'iil ay ka joogaan. Yaafith waxaa ka farcamay Turkida, Roomanka iyo Yaajuuj iyo Maajuuj. Xaam, sida ay qoraan culimada nasabka, wuxuu dhalay wiilal ay ka mid ahaayeen Kuush, Misr iyo Fuut, qaar ka mid ah culimada nasabka Carbeedna waxay Barbarka ku abtiriyaan Xaam. Sheekadeennu waxay ku wareegaysaa saddexda qolo: Misr, Berber iyo Kuush."
+        "so": [
+          "Marka Taariikh laga hadlayo, weliba taariikh ummadeed, oo la damacsan yahay in la tixraaco asalkeeda, sooyaalkeeda iyo is raac-raaca waayeheeda, waxaa lagama maarmaan ah in muddo dheer dib loo noqdo.",
+          "Haddii aan isu-taagno ka hadalka iyo faaqididda taariikhda sidaas u fogna, uma hayno, loomana heli karo marag iyo maqaal toonna, balse aqoonta Eebbe aadanaha ku galladaystay waa mid baaxad weyn, oo taariikhdaas sidaas u fogna waxaa laga bidhaansadaa culuum kala duwan oo, haba iska yaraatee, tooshka inoogu ifinaysaa wixii dhacay waayadaas fog.",
+          "Culuumtaas noocyadooda iyo sida ay wax u daliiliyaan, fadhi kale ayaan ku lafa guri doonnaa..",
+          "Haddase safar 10,000 oo sano ah ayaa ina sugayee, aan dhabbada cagta saarno.",
+          "Maadaama tafaasiisha samannadan aan ka hadlayno iska urursan tahayna, marxaladan warkeedu dheeraan mahayo.",
+          "Sida diinta Islaamku noo caddaysay, ayna wada aamminsan yihiin dhammaan dadka haysta diimaha samaawiga ah, sidoo kalena ay qeexeen xeeldheerayaahsa aqoonta durugsan u leh sinjiga dadka iyo tadawurka aadamiga jiilba jiil ka dhaxlay, waxaa la isku waafaqsan yahay in aadanaha oo dhammi ku abtirsado Nabi Aadam CS, gadaashiisna shucuubta maanta ku nool daafaha dunida ay dhammaan kasoo farcameen saddexdii wiil ee Nabi Nuux, waa:",
+          "• Saam Nuux",
+          "• Yaafith Nuux",
+          "• Xaam Nuux",
+          "Oo duufaantii reer Nuux lagu dhuftay, ee adduunka oo idil maanshaysay, waxaa taran uga haray oo warkeeda la hayo waa saddexdaas wiil wixii ka tarmay.",
+          "Sida uu Rabbi ku xusay kitaabkiisa Qur’aanka, aayadda suuratu-Saafaat:",
+          "⁧«وَجَعَلْنَا ذُرِّيَّتَهُ هُمُ الْبَاقِينَ»⁩",
+          "Oo macneheedy yahay: “Durriyaddii Nabi Nuux ayaan dhulka u reebnay”.",
+          "Saam waxaa ka farcamay qolooyin ay kamid ahaayeen Iram, Arfakhshad iyo Laawid, oo hadda carabta iyo reer banii Israa'iil ay ka joogaan.",
+          "Yaafith asagana waxaa ka farcamay dadka ay ka mid yihiin: Turkida, Roomanka iyo Yaajuuj iyo Maajuuj.",
+          "Xaam ayaa isaguna, sida ay qoraan culimada nasabka, dhalay wiilal ay ka mid ahaayeen: Kuush, Misr iyo Fuut, qaar kamid ah culimada nasabka carbeedna waxa ay Barbarka ku abtiriyaan Xaam.",
+          "Sheekadeennuse waxa ay ku wareegaysaa saddexda qolo oo kala ah: Misr, Berber iyo Kuush.",
+          "Waana halkaan Meesha aan ka daba-qabanayno Taariikhda fog ee ab-awalladii iyo absaxankii Soomaalida."
         ]
       },
       {
-        heading: { en: "Where did the children of Ham first live?", so: "Halkee ayay reer Xaam markii hore degganaayeen?" },
-        en: [
-          "Ten thousand years ago, the home of the children of Ham, the \"Hamites\", is the main point on which scholars disagree. Some, such as Grottanelli and Oliver & Fage, hold that it was in the Caucasus mountains north-west of Persia (today's Iran), or in Mesopotamia between the Tigris and Euphrates. In this view the three branches of Ham migrated west through Sinai and settled along the Nile, in today's Egypt.",
-          "Others, such as Joseph Greenberg and Christopher Ehret, hold that the family began in Africa itself, in north-east Africa including today's Sudan and Ethiopia, and that the only branch to cross into Asia was the ancestors of the Semites, such as the Arabs and Hebrews. Both views agree that the children of Ham spread along the Nile valley and its surroundings."
+        "heading": {
+          "en": "Where did the children of Ham first live?",
+          "so": "Halkee ayay reer Xaam markii hore degganaayeen?"
+        },
+        "en": [
+          "Ten thousand years ago: where the children of Ham, known as the \"Hamites\", lived is the main point on which scholars disagree.",
+          "Some ethnologists, such as Grottanelli and Oliver & Fage, have stressed that the original home of the people of Ham was the Caucasus mountains to the north-west of Persia, the country now called Iran, or the land called \"Mesopotamia\" or \"Bilad al-Rafidayn\", the land between the two rivers, the Tigris and the Euphrates, in Iraq.",
+          "That view holds that the children of Ham, all three of them, migrated and headed west with their livestock, passing through Sinai, the narrow strip that connects Asia and Africa, through which the Suez Canal was cut a century and a half ago. They settled in the Nile valley and the land now called Egypt.",
+          "But some researchers, such as Joseph Greenberg and Christopher Ehret, hold that the origin of this family was Africa itself, particularly north-east Africa, including the lands now called Sudan and Ethiopia; that there was no migration of the people of Ham from Asia; and that the only group that crossed into Asia was the ancestors of the Semites, such as the Arabs and the Hebrews.",
+          "Whatever the case, both views agree that the children of Ham spread out across the Nile valley and its surroundings."
         ],
-        so: [
-          "Toban kun oo sano waa laga joogo, ilma Xaam oo loo yaqaan \"Xamiitig\", meesha ay degganaayeen ayaa ah qodobka ugu weyn ee aqoonyahannadu isku khilaafeen. Qaar, sida Grottanelli iyo Oliver & Fage, waxay qabaan in degelkoodii hore uu ahaa buuraleyda Kawkaasiya ee waqooyi-galbeed ka xigta Peershiya (Iiraan), amase Bilaadu-raafideyn oo u dhaxaysa webiyada Dajla iyo Furaat. Aragtidaas ayaa sheegaysa in ilma Xaam ay usoo hayaameen dhanka galbeed, soona mareen Siinaay, kuna degeen yaacdada webiga Niilka iyo dhulka hadda Masar loo yaqaan.",
-          "Cilmi-baarayaasha qaar, sida Joseph Greenberg iyo Christopher Ehret, ayaa qaba in asalka bahdaas uu ahaa Afrika lafteeda, gaar ahaan waqooyi-bari Afrika oo ay ka mid yihiin Suudaan iyo Itoobiya, qolada keliya ee Aasiya u tallaabtayna ay ahayd ab-awalladii Saamiyiinta, sida Carabta iyo Cibraaniyiinta. Labada aragtiba waxay isku waafaqsan yihiin in ilma Xaam ay yaacdada Niilka iyo hareeraheeda ku kala firdheen."
+        "so": [
+          "Toban kun oo sano waa laga joogo, ilma Xaam oo loo yaqaan “Xamiitig”, meesha ay degganaayeen ayaa ah qodobka ugu weyn ee ay aqoonyahannadu isku khilaafeen.",
+          "Isir-yaqaannada qaar, sida Grottanelli, Oliver & Fage, waxa ay hoosta ka xarriiqeen in reer xaam degelkoodii hore uu ahaa buuraleyda Kawkaasiya ee dhacda dhanka waqooyi-galbeed ee Peershiya, dalka hadda loo yaqaan Iiraan, amase dhulka loo yaqaan “Mesopotamia” ama “Bilaadu-raafideyn” oo ah dhulka dhaca inta u dhaxaysa labada webi ee “Dajla” iyo “Furaat” ee Ciraaq.",
+          "Aragtidaas ayaa sheegaysa in ilma Xaam, saddexdoodiiba, ay usoo hayaameen afkana soo saareen dhanka galbeed, ayagoo wata duunyadooda, soona maray deegaanka Siinaay, oo ah dhabbada yar ee isku xirta Aasiya iyo Afrika, ee qarni iyo badh kahor laga jeexay marinka Suweys. Waxa ayna degeen yaacdada webiga Niilka iyo dhulka hadda Masar loo yaqaan.",
+          "Balse cilmi-baarayaasha qaar, sida Joseph Greenberg iyo Christopher Ehret, ayaa qaba in asalka bahdaas uu ahaa Afrika lafteeda, gaar ahaan waqooyi-bari Afrika, oo ay ka mid yihiin dhulalka hadda loo yaqaan Suudaan iyo Itoobiya, oo uusan jirin hayaan ay reer Xaam uga soo kicitameen Aasiya, qolada keliya ee Aasiya u tallaabtayna ay ahayd ab-awalladii Saamiyiinta, sida Carabta iyo Cibraaniyiinta.",
+          "Si kastaba ha ahaatee, labada aragtiba waxa ay isku waafaqsan yihiin in ilma Xaam ay yaacdada Niilka iyo hareeraheeda ku kala firdheen."
         ]
       },
       {
-        heading: { en: "The great migration of Kush", so: "Hayaankii weynaa ee reer Kuush" },
-        en: [
-          "In time the children of Ham moved again. Misr stayed in Egypt; from them came the Copts, the people who built the civilization of the Pharaohs and the pyramids. The Berbers crossed into North-West Africa, west of Libya, where they still live today as the Berbers or Amazigh.",
-          "Kush, also called the Cushites, set out south along the Nile, crossed the Nubian highlands and settled by the Red Sea in the land named Kush. The Egyptians gave the name \"Kush\" to the land south of them, and there, about 2,500 years before Christ, the Kingdom of Kush was founded, with Kerma, Napata and Meroe as its capitals; at one point it even ruled Egypt.",
-          "But the Cushites kept moving, and groups stayed behind along the way. The Beja remained on the border of Sudan and Eritrea (the Northern Cushites). In the Ethiopian highlands the Agaw stayed (the Central Cushites). At lakes Abaya and Turkana the rest divided: one group went south as far as northern Tanzania (the Southern Cushites), and the other turned east and north-east into the Horn of Africa: the Eastern Cushites, ancestors of the Oromo, Sidamo, Saho, Afar and Somali.",
-          "The Saho and Afar moved north to today's northern Ethiopia, Djibouti and Eritrea. The Oromo and Sidamo stayed near the lakes. The Cushites who became the Somali spread from the Gulf of Tajura to the north-east coast of the Indian Ocean, pushing the people who lived there before them, the Wanyika or Zanj, towards the south."
+        "heading": {
+          "en": "The great migration of Kush",
+          "so": "Hayaankii weynaa ee reer Kuush"
+        },
+        "en": [
+          "After some time, the people of Ham set out on migration again, but this time not all of them: Misr and his descendants stayed where they were, while the other two groups continued the journey from there.",
+          "From Misr, who stayed in the land now called Egypt, descend the \"Copts\", the nation that built the civilization of the Pharaohs and the Pyramids.",
+          "Berber and his descendants crossed on to western Africa and the great land west of Libya, where they live to this day, and are known as Berbers or Amazigh.",
+          "The migration and settlement of these two groups does not concern us much, compared with the path taken by Kush and his descendants.",
+          "Kush, whether called Kowshiin or Cushitic, set out for the south of the Nile, then found a way across the Nubian highlands, and settled along the Red Sea and the lands facing it, which were named the land of Kush.",
+          "The name \"Kush\" was given by the ancient Egyptians to the land lying south of them, and there in later ages, about 2,500 years before the birth of the Prophet Jesus, a wide-reaching kingdom was founded, known as the \"Kingdom of Kush\", whose capitals were Kerma, Napata and Meroe, and which at one time even ruled Egypt itself.",
+          "But the migration of the people of Kush did not end there: the Kush community dispersed again, and during the migration, now and then a group stayed behind somewhere, and each group kept growing until it became a society of many clans.",
+          "In the land where the people of Kush had lived, the group known as the \"Beja\" remained, and it is still found in the old land on the border of Sudan and Eritrea; they are called the \"Northern Cushites\".",
+          "When the migration reached the Ethiopian highlands, the \"Agaw/Aqaw\" group stayed there; they live today among Ethiopian society and are called the \"Central Cushites\".",
+          "The remaining Cushites continued their migration until they reached the area of lakes Abaya and Turkana, where they split into two parts:",
+          "One group went on south until it reached northern Tanzania, and was named the \"Southern Cushites\".",
+          "The second group headed east and north-east into the Horn of Africa, and was named the \"Eastern Cushites\"; from them come the groups: Oromo, Sidamo, Saho, Afar and Somali.",
+          "The Saho-Afar moved further north, to the areas they live in today: northern Ethiopia, Djibouti and Eritrea.",
+          "The Oromo, Sidamo and those related to them did not go far from their old home at the lakes.",
+          "The Somali Cushites who migrated east spread out from the coast of the Gulf of Tajura to the north-east of the Indian Ocean, where they displaced the people who had lived in that land before them, known as the Wanyika or Zanj, whom they pushed southward."
         ],
-        so: [
-          "Muddo keddib, reer Xaam mar kale ayay hayaan galeen. Misr wuxuu ku haray dalka Masar, waxaana ka farcamay Qibdiyiinta, oo ah ummaddii dhistay xadaaradda Fircooniyiinta iyo Haramyada. Berber iyo faraciisii waxay usii tallaabeen galbeedka Afrika iyo dhulka Liibiya galbeedka ka xiga, halkaas oo ay illaa maanta ku dhaqan yihiin, loona yaqaan Barbar ama Amaaziigh.",
-          "Kuush, Kowshiin ama Kushitig, waxay afka soo saareen koonfurta webiga Niilka, dabadeedna mareen buuraleyda Nuubiya, waxayna degeen deexda Badda Cas iyo dalkii Kush. Magaca \"Kush\" ayay Masaaridii hore u bixiyeen dhulka koonfurta kaga beeggan, halkaasna qiyaastii 2,500 sano Nabi Ciise dhalashadiisii kahor, waxaa laga aasaasay \"Boqortooyadii Kuush\", oo caasimadaheedu ahaayeen Karma, Nabata iyo Meroe, oo mar xataa ka talisay Masar laftigeeda.",
-          "Geeddigii reer Kuush halkaas kuma ekaan, oo hadba koox ayaa meel uga haraysay. Beja waxay ku hartay xuduudda Suudaan iyo Eretereeya (Kushitikada Waqooyi). Dhul-koraadka Xabashida waxaa ku hartay Agaw (Kushitikada Dhexe). Markii ay gaareen harooyinka Abaayo iyo Turkaana, laba qayb ayay u kala baxeen: koox usii gudubtay koonfurta illaa waqooyiga Tanzania (Kushitikada Koonfureed), iyo koox afka saartay Bari iyo Waqooyi Bari ee Geeska Afrika (Kushitikada Bari), oo ay kasoo jeedaan Oromo, Sidamo, Saho, Cafar iyo Soomaali.",
-          "Saho-Cafar waxay usii guureen waqooyiga Itoobiya, Jabuuti iyo Eretereeya. Oromo iyo Sidamo kama fogaanin degelkoodii hore ee harooyinka. Kushitikadii Soomaalida ee dhanka bari usoo hayaantay waxay isku fidiyeen xeebta Khooriga Tajura illaa Waqooyi Bari Badweynta Hindiya, halkaas oo ay ka barakiciyeen dadkii horey u degganaa, Wanyiika ama Sanji, oo ay u riixeen dhanka koonfureed."
+        "so": [
+          "Muddo keddib, reer Xaam mar kale ayay hayaan galeen, markaanse looma dhammayne, waxaa meeshooda ku nagaaday Misr iyo faraciisii, halka labadii qolo oo kalese ay halkaas kasii ambaqaadeen geeddigii.",
+          "Misr oo ku haray dalka Masar hadda loo yaqaan, waxaa ka farcamay ama kasoo jeeda “Qibdiyiinta”, oo ah ummaddii dhistay xadaaradda Fircooniyiinta iyo Haramyada.",
+          "Berber iyo faraciisii waxa ay usii tallaabeen galbeedka Afrika iyo dhulweynaha Liibiya galbeedka ka xiga, halkaas oo ay illaa maanta ku dhaqan yihiin, waxaana loo yaqaan Barbar ama Amaaziigh.",
+          "Labadaas qolo geeddigooda iyo nagaanshahooda wax badan innagama xirna, marka loo eego Kuush iyo faraciisa dhabbada ay qaadeen.",
+          "Kuush, Kowshiin ama Kushitig midkii lagu magacaababa, waxa ay afka soo saareen koonfurta webiga Niilka, dabadeedna dhabbe ka heleen oogada buuraleyda Nuubiya, waxa ayna degeen deexda badda cas iyo oogada ka-jeedka ah ee loo baxshay dalkii Kush.",
+          "Magaca “Kush” ayay masaaridii horey u bixiyeen dhulka koonfurta kaga beeggan, halkaasna waxaa waayadii danbe, qiyaastii 2,500 sano Nabi Ciise dhalashadiisii kahor, laga aasaasay boqortooyo sal-ballaaratay oo loo yaqaannay “Boqortooyadii Kuush”, oo caasimadaheedu ay kala ahaayeen Karma, Nabata iyo Meroe, oo mar xataa ka talisay Masar laftigeeda.",
+          "Geeddigii reer Kuushse halkaas kuma ekaan, oo beesha reer Kuush dib ayay u kala hayaantay, intii ay geeddigaas ku jirtayna hadba koox ayaa meel uga haraysay, koox walbana waa ay sii tarmaysay illaa ay ka noqotay bulsho beelo badan ka kooban.",
+          "Dhulkii ay reer Kuush degganaayeen waxaa ku haray qolada loo yaqaan “Beja”, welina ay ku sugan tahay dhulkii hore ee xuduudda Suudaan iyo Eretereeya, waxaana lagu magacaabaa “Kushitikada Waqooyi”.",
+          "Markii hayaanku soo gaaray dhul-koraadka Xabashida, kooxda “Agaw/Aqaw” ayaa halkaas ku hartay, oo maanta ku dhex nool bulshada Xabashida, waxaana lagu magacaabaa “Kushitikada Dhexe”.",
+          "Kowshiintii soo hartay geeddigoodii ayay iska sii wateen, illaa ay kasoo gaareen goobta harooyinka Abaayo iyo Turkaana, markaasoo ay laba qayb u kala bexeen:",
+          "Koox usii gudubtay dhanka koonfurta illaa ay ka gaareen waqooyiga Tanzania, waxaana loo bixiyay “Kushitikada Koonfureed”.",
+          "Kooxda labaad ayaa ayaduna afka saartay dhanka Bari iyo Waqooyi Bari ee geeska Afrika, waxaana lagu magacaabay “Kushitikada Bari”, waxaana kasoo jeeda qolooyinka kala ah: Oromo, Sidamo, Saho, Cafar, iyo Soomaali.",
+          "Saho-Cafar xagga waqooyiga ayay usii guureen iyo deegannada ay maanta deggan yihiin ee Waqooyiha Itoobiya, Jabuuti iyo Eretereeya.",
+          "Oromo, Sidamo iyo kuwa la haybta ahina kama fogaanin degelkoodii hore ee harooyinka.",
+          "Kushitikadii Soomaalida ee dhanka bari usoo hayaantay waxa ay isku fidiyeen: Xeebta Khooriga Tajura illaa Waqooyi Bari Badweynta Hindiya, halkaas oo ay ka barakiciyeen dadkii horey u degganaa dhulkaas ee loo yaqaan: Wanyiika ama Sanji oo ay u riixeen dhanka koonfureed."
         ]
       },
       {
-        heading: { en: "Why did they move?", so: "Maxaa hayaankaas keenay?" },
-        en: [
-          "This long migration took many centuries, thousands of years before Christ. Climate scientists link it to great changes in north-east Africa between 10,000 and 5,000 years before Christ. In that age the Sahara was grassland and lakes, the rivers and streams of the Horn did not run dry, and pools were full of fish and water creatures. That easy food drew people south. The Eastern Cushites reached the northern and southern coasts of the Horn around 3,000 years before Christ."
+        "heading": {
+          "en": "Why did they move?",
+          "so": "Maxaa hayaankaas keenay?"
+        },
+        "en": [
+          "This long migration, which took many centuries, took place, as experts on peoples, cultures and geography estimate, thousands of years before the birth of the Prophet Jesus.",
+          "Climate scholars attribute this migration to a powerful climate change that took place in north-east Africa between 10,000 and 5,000 years before the birth of the Prophet Jesus.",
+          "They say that at that time the great Sahara was pasture and lakes, while the land of the Horn of Africa was a place whose rivers and streams never ran dry and whose pools held water, full of fish and many kinds of water creatures.",
+          "That easily caught fish and those watering places drew people, causing the Kowshiin or Cushites to head south.",
+          "The arrival of the Eastern Cushites on the northern and southern coasts of the Horn of Africa took place about 3,000 years before the birth of the Prophet Jesus."
         ],
-        so: [
-          "Geeddigaan dheer oo qarniyo badan qaatay wuxuu ku beegnaa kumannaan sano ka hor dhalashadii Nabi Ciise. Culimada cimilada ayaa u sababeeyay isbeddel cimilo oo xoog badan oo ka dhacay waqooyi-bari Afrika intii u dhaxaysay 10,000 illaa 5,000 oo sano Nabi Ciise dhalashadiisii kahor. Waagaas Saxaraha weyn wuxuu ahaa daaq iyo haro, Geeska Afrikana webiyadiisa iyo togaggiisu biyaha kama go'in, balliyadana waxaa ka buuxay kalluun. Taasi ayaa dadkii soo jiitay. Kushitikada Bari waxay xeebaha Geeska Afrika soo gaareen qiyaastii 3,000 sano Nabi Ciise dhalashadiisii kahor."
+        "so": [
+          "Geeddigaan dheer oo qarniyo badan qaatay, waxa uu ku beegnaa, sida ay qiyaasaan aqoonyahannada isirka, dhaqammada iyo dhulbaarayaashuba, kumannaan sano ka hor dhalashadii Nabi Ciise.",
+          "Culimada diraasaysa cimilada ayaa waxa ay u sababeeyeen in hayaankan uu dabada ka riixayay isbeddel cimilo oo xoog badan oo ka dhacay waqooyi-bari Afrika intii u dhaxaysay 10,000 oo sano illaa 5,000 oo sano Nabi Ciise dhalashadiisii kahor.",
+          "Waxa ay sheegaan in waagaas Saxaraha weyn uu ahaa daaq iyo haro, isla markaasna dhulka ku yaal geeska Afrika uu ahaa meel webiyadiisa iyo togaggiisu aysan biyaha ka go'in, balliyadana biyuhu ceegaagaan, waxaana ka buuxay kalluun iyo barri-biyoodyo kala jaad ah.",
+          "Kalluunkaas sida sahlan lagu helayay iyo biya-galeennadaas ayaa dadkii soo jiitay, sababayna in Kowshiintu ama Kushitikadu koonfur soo aaddo.",
+          "Soo caga-dhigashadii Kushitikada Bari ee xeebaha waqooyi iyo koonfureed ee Geeska Afrika ayaa ku beegneed 3,000 oo sano Dhalashadii Nabi Ciise kahor."
         ]
       },
       {
-        heading: { en: "Meanwhile in the world", so: "Waxa adduunka kale ka socday" },
-        en: [
-          "Around 3,100 years before Christ, the first dynasty of the Pharaohs took power in Egypt. At about the same time the Sumerians of Mesopotamia invented cuneiform, the world's first writing.",
-          "History also records that Persian sailors reached the coasts of the Horn, especially the south, and called the Horn of Africa \"Magan and Meluhha\". Some scholars see these names, close to the Somali words \"Magan\" and \"Maylaha\", as evidence that people speaking Somali, or a dialect of it, lived on the Somali coast 3,000 years before Christ."
+        "heading": {
+          "en": "Meanwhile in the world",
+          "so": "Waxa adduunka kale ka socday"
+        },
+        "en": [
+          "To understand that era, let us look at what was happening in the rest of the world.",
+          "About 3,100 years before the Prophet Jesus, power in Egypt was taken by the first dynasty of the great kingdom of the Pharaohs.",
+          "In the same period, the Sumerians who lived in Bilad al-Rafidayn or \"Mesopotamia\" invented the first cuneiform writing, the world's first script that could be read.",
+          "History records that at the same time these people met Persian sailors who came exploring the coasts of the Horn of Africa, especially the southern ones.",
+          "It is written in Persian history that they named this Horn of Africa with two words that go together: \"Magan & Meluhha\".",
+          "These two words, close in Somali to \"Magan\" and \"Maylaha\", are taken by some scholars as evidence that 3,000 years before the birth of the Prophet Jesus, people speaking Somali or a dialect of Somali lived on the Somali coasts."
         ],
-        so: [
-          "Qiyaastii 3,100 sano Nabi Ciise kahor, awoodda Masar waxaa la wareegay qoyskii ugu horreeyay ee boqortooyadii Faraacinada. Isla muddadaas, reer Sumer oo degganaa Bilaadu-raafideyn ayaa curiyay qoraalkii ugu horreeyay ee farguri ah, far wax lagu akhriyana adduunka ugu horreysay.",
-          "Taariikhdu waxay qoraysaa in waagaas ay badmaaxiin Faarisiyiin ahi sahan ku yimaadeen xeebaha Geeska Afrika, gaar ahaan kuwa koonfureed, una bixiyeen magaca \"Magan & Meluhha\". Labadaan erey oo Afsoomaali ahaan usoo dhow \"Magan\" iyo \"Maylaha\", ayaa aqoonyahannada qaar marag uga dhigaan in 3,000 sano Nabi Ciise dhalashadiisii kahor ay xeebaha Soomaaliyeed ku noolaayeen dad ku hadla Af-soomaali ama lahjad ka mid ah."
+        "so": [
+          "Si aan u fahanno waagaas, aan eegno waxa adduunka kale ka socday.",
+          "Qiyaastii 3,100 sano Nabi Ciise kahor, ayaa awoodda Masar waxaa la wareegay qoyskii ugu horreeyay boqortooyadii filka weyneed ee Faraacinada.",
+          "Isla muddadaas, reer Sumer oo degganaa dhulka Bilaadu-raafideyn ama “Mesapotomia” ayaa curiyay qoraalkii ugu horreeyay ee farguri ah, far wax lagu akhriyana adduunka ugu horreysay.",
+          "Taariikhdu waxa ay qoraysaa in isla-waagaas ay dadkaasi la kulmeen badmaaxiin Faarisiyiin ah oo sahan ku yimid xeebaha geeska Afrika, gaar ahaan kuwa koonfureed.",
+          "Waxaa taariikhda Faaris ku qoran in geeska Afrikadan ay tageen magac uga dhigeen laba erey oo wada socdo oo ah: “Magan&Meluhha”.",
+          "Labadaan erey oo Afsoomaali ahaan usoo dhaw “Magan” iyo “Maylaha”, ayaa aqoonyahannada qaar marag uga dhigtaan in 3,000 sano Dhalashadii Nabi Ciise kahor ay xeebaha Soomaaliyeed ku noolaayeen dad ku hadla Af-soomaali ama lahjad kamid ah lahjadaha Afsoomaaliga."
         ]
       },
       {
-        heading: { en: "What the children of Ham still share", so: "Waxa ay weli wadaagaan reer Xaam" },
-        en: [
-          "Greek historians of the 2nd and 1st centuries BCE described herders on the coasts of Eritrea and northern Somalia, whom they called \"Troglodytes\": nomads who fought over pasture, carried bow, arrow and spear, wore skins, lived on meat and milk, drank blood mixed with milk, and buried their dead with knees and arms bound together. A Chinese sailor who reached the Horn in the 9th century CE gave the same description. The custom of drinking milk mixed with blood survives among some Cushitic peoples and their neighbours, such as the Oromo and Maasai.",
-          "Professor Cabdalla Cumar Mansuur compared the customs of the Somali and the Berbers of Morocco: herding, elders deciding law and justice, collective blood-money, and the word for young camels, \"arig\". He concluded that the Somali and the Berbers are distant cousins. The Maasai of Kenya and Tanzania tell of two siblings long ago: a girl called \"Soomaali\" and a boy who became the ancestor of the Maasai.",
-          "The strongest evidence is language. Somali belongs to the great Afro-Asiatic family, with Arabic, Hebrew, Amharic, Berber, Hausa and ancient Egyptian, and to the Cushitic languages spoken from north-east Sudan to northern Tanzania. Finally, the name \"Kush\" is said to mean great heat that darkens the skin; Somali has similar-sounding words, such as the name \"Kooshin\", often given to dark children, and \"kushad\" for heat or anger. It is not certain these are truly related, but the likeness is worth noting."
+        "heading": {
+          "en": "What the children of Ham still share",
+          "so": "Waxa ay weli wadaagaan reer Xaam"
+        },
+        "en": [
+          "Although the great community of the people of Ham dispersed over that long period, there are still features, customs and languages through which the common origin of these societies can be traced.",
+          "Summing up what the people of Ham still share, as studies of language and culture emphasise, these include:",
+          "Greek historians who lived in the second and first centuries before the birth of the Prophet Jesus wrote about the livestock-herding people who lived on the coasts of Eritrea and northern Somalia, whom they called \"Troglodytes\".",
+          "They described them as nomadic herders who fought over pasture, whose weapons were bow, arrow and spear, who wore skins, and whose food was meat and milk.",
+          "They also said that they drank blood mixed with milk, and that when burying their dead they tied the knees and arms together.",
+          "The same description was given by a Chinese sailor who reached the coasts of the Horn of Africa in the ninth century after the birth of the Prophet Jesus, who described the local people as eating no grain food, but eating meat, drinking blood mixed with milk, and wearing skins and hides.",
+          "The custom of drinking milk mixed with blood survives among some of the Cushitic peoples and their neighbours, such as the Oromo and the Maasai, and it is said that in southern Somalia some people still drink cattle blood as a medicine.",
+          "• Professor Cabdalla Cumar Mansuur compared the customs of the Somali and the Berbers of Morocco, who, although hundreds of kilometres apart, share: livestock herding, elders deciding customary law and justice, collective payment of blood-money, sheegad (client adoption), and the young camels, which the Berbers call \"arig\".",
+          "Mansuur concluded that these customs, most of which predate Islam, show that the Somali and the Berbers are distant cousins.",
+          "• This connection is not limited to the people of Ham. The Maasai people of Kenya and Tanzania have a legend their elders tell, that long ago there were two children who were siblings: a girl called \"Soomaali\" and a boy who became the grandfather of the Maasai.",
+          "That story, and some numbers in the Nilotic languages that are very close to Somali numbers, such as \"boqol\" (hundred) and \"konton\" (fifty), show an ancient connection between the forefathers of the Somali and their neighbours.",
+          "• When we look at the heritage of traditional dances, we find that the dances of the people of Ham are based on rhythm, clapping and chanting (jaan, sacab and jiib), while for some other peoples leaping is part of their traditional dance.",
+          "• The most important evidence for the deep connection between these societies is language.",
+          "Somali belongs to the great \"Afro-Asiatic\" language family, which includes Arabic, Hebrew, Amharic, Berber, Hausa, and the language of the ancient Egyptians.",
+          "Linguists also group together the Cushitic languages spoken in: Sudan (its north-east), Eritrea (part of it), Ethiopia (most of it), Djibouti, Somalia, Kenya (north-east) and Tanzania (north).",
+          "This shows that just as these societies share a language, their origin too goes back to one root from which they descend.",
+          "• Another interesting point is that the name \"Kush\", the son of Ham from whom the Cushitic societies, including the Somali, descend, means the excessive heat that darkens people, and Somali has words that sound close to it.",
+          "Somalis use the name \"Kooshin\", usually given to very dark children or to lively, hot-tempered children.",
+          "There is also the word \"Kushad\", used for heat and anger or rage.",
+          "Although it is not certain that these words are truly related to the ancient name, it is still a resemblance worth mentioning."
         ],
-        so: [
-          "Taariikhyahannadii Giriigga ee noolaa qarniyadii labaad iyo kowaad Nabi Ciise dhalashadiisii kahor, ayaa wax ka qoray xoolo-dhaqatada xeebaha Eretereeya iyo waqooyiga Soomaaliya, oo ay ugu yeeri jireen \"Trogodytes\": reer-guuraa daaqsinta isku dagaala, hubkooduna ahaa qaanso, fallaar iyo waran, xirta maqaar, cuntadooduna ahayd hilib iyo caano, cabbana dhiig caano lagu barxay, maydkana jilbaha iyo gacmaha isku xira marka ay aasayaan. Isla tilmaamtaas waxaa bixiyay badmaax Shiinays ah oo xeebaha Geeska Afrika soo gaaray qarnigii sagaalaad kaddib dhalashadii Nabi Ciise. Dhaqanka dhiigga caanaha lagu barxo waxa uu ku danbeeyaa qaybo ka mid ah Kushitikada iyo deriskooda sida Oromada iyo Masaayda.",
-          "Barafasoor Cabdalla Cumar Mansuur waxa uu isbarbar dhigay dhaqammada Soomaalida iyo Barbarka Morooko: xoolo-dhaqashada, odayaasha xeerka iyo garta gooya, mag-bixinta wadareedka ah, iyo yaradka oo Barbarku ugu yeeraan \"arig\", wuxuuna ku gabagabeeyay in Soomaalida iyo Barbarku yihiin ilma-adeer fog. Masaayda Kenya iyo Tanzania waxay leeyihiin sheeko-xariir sheegaysa in waagii hore ay jireen laba caruur ah oo walaalo ah: gabar la oran jiray \"Soomaali\" iyo wiil noqday awowgii Masaayda.",
-          "Arrinka ugu muhiimsan ee loo daliilsado xiriirka qotada dheer ayaa ah afka. Af-Soomaaligu wuxuu ka mid yahay bahda weyn ee afafka \"Afro-Aasiyaatigga\", oo ay ku jiraan Carabiga, Cibriga, Amxaariga, Barbarka, Hawsada iyo afkii Masaaridii hore, iyo afafka Kushitigga ah ee laga hadlo waqooyi-bari Suudaan illaa waqooyiga Tanzania. Ugu danbayn, magaca \"Kuush\" waxaa la sheegaa in macnihiisu yahay kuleylka saa'idka ah ee dadka madoobeeya; Af-Soomaaliga waxaa ku jira ereyo u dhow, sida magaca \"Kooshin\" oo loo baxsho caruurta madawga badan, iyo \"Kushad\" oo loo adeegsado kul iyo caro. Lama hubo in ereyadaasi xiriir dhab ah la leeyihiin magaca qadiimiga ah, haddana waa isu-ekaansho xusid mudan."
+        "so": [
+          "Bulsha-weynta reer Xaam ayadoo muddadaas dheer kala hayaantay haddana waxaa jira astaamo, dhaqammo iyo afaf loo tixraaci karo asal-wadaagga bulshooyinkaas.",
+          "Annaga oo soo xoorinayna waxyaabaha ay weli wadaagaan reer Xaam, sida ay hoosta ka xarriiqayaan daraasadaha afafka iyo dhaqanka, waxaa kamid ah:",
+          "Taariikhyahannadii Giriigga ee noolaa qarniyadii labaad iyo kowaad Nabi Ciise dhalashadiisii kahor, ayaa qoraallo a sameeyay dadka xoolo-dhaqatada ah ee ku noolaa xeebaha Eretereeya iyo waqooyiga Soomaaliya, oo ay ugu yeeri jireen “Trogodytes”.",
+          "Waxa ay ku tilmaameen in ay ahaayeen reer-guuraa xoolo-dhaqato ah, daaqsinta isku dagaala, hubkooduna ahaa qaanso, fallaar iyo waran, ay xirtaan maqaar, cuntadooduna ahayd hilib iyo caano.",
+          "Waxa kale oo ay sheegeen in ay cabbaan dhiig caano lagu barxay, maydkana ay jilbaha iyo gacmaha isku xirana marka ay aasayaan.",
+          "Waxaa isla tilmaamtaas oo kale bixiyay badmaax shiinays ah oo soo gaaray xeebaha geeska Afrika qarnigii sagaalaad kaddib dhalashadii Nabi Ciise, asagoo ku tilmaamay dadka deegaanka in aysan cunin wax raashin ah, balse ay cunaan hilib, cabbaanna dhiig caano lagu barxay, xirtaanna maqaarka iyo haragga.",
+          "Dhaqanka dhiigga caanaha lagu barxo waxa uu ku danbeeyaa qaybo kamid ah qawmiyadaha Kushitikada iyo deriskooda sida Oromada iyo Masaayda, waxaana la sheegaa in koonfurta Soomaaliya ay weli dad daawo ahaan u cabbaan dhiigga lo'da.",
+          "• Barafasoor Cabdalla Cumar Mansuur waxa uu isbarbar dhigay dhaqammada Soomaalida iyo Barbarka dalka Morooko, oo inkastoo masaafo boqollaal kilomitir ah u dhaxayso, haddana ay ka siman yihiin: xoolo-dhaqashada, in odayaashu ay xeerka iyo garta gooyaan, mag-bixinta wadareedka ah, sheegadka, iyo yaradka oo Barbarku ugu yeeraan “arig”.",
+          "Mansuur waxa uu ku gabagabeeyay in dhaqammadaas, oo intooda badani ka horreeyeen Islaamka, ay muujinayaan in Soomaalida iyo Barbarku ay yihiin ilma-adeer fog.",
+          "• Xiriirkaasi kuma koobna reer Xaam oo keliya. Qawmiyadda Masaayda ee Kenya iyo Tanzania waxa ay leedahay sheeko-xariir odayaashoodu ka sheekeeyaan, oo sheegaysa in waagii hore ay jireen laba caruur ah oo walaalo ah: gabar la oran jiray “Soomaali” iyo wiil noqday awowgii Masaayda.",
+          "Sheekadaas, iyo tirooyinka qaar ee afafka Niilootigga ah oo aad ugu dhow tirada Af-Soomaaliga, sida “boqol” iyo “konton”, ayaa muujinaya xiriir qadiimi ah oo ka dhexeeyay ab-awalladii Soomaalida iyo deriskooda.",
+          "• Marka aan eegno hiddaha ciyaara-dhaqameedka, waxaa inoo soo baxaysa in reer Xaam ciyaarahoodu ay iska saaran tahay: Jaan, Sacab iyo Jiib, halka qawmiyadaha qaar ay ciyaaro-dhaqameedkoodu niikada qayb ka tahay.",
+          "• Arrinka ugu muhiimsan ee loo daliilsado xiriirka qotada dheer ee bulshooyinkaan ayaa ah afka.",
+          "Af-Soomaaligu waxa uu ka mid yahay bahda weyn ee afafka “Afro-Aasiyaatigga”, oo ay ku jiraan Carabiga, Cibriga, Amxaariga, Barbarka, Hawsada, iyo afkii Masaaridii hore.",
+          "Af-yaqaannaduna waxa ay isku bah ka dhigaan afafka Kushitigga ah ee lagaga hadlo waddamada: Suudaan (dhankeeda waqooyi bari), Eretereeya (qayb kamid ah), Itoobiya (badankeed), Jabuuti, Soomaaliya, Kenya (Waqooyi-bari), iyo Tanzania (Waqooyiga).",
+          "Tani waxa ay daliilinaysaa in bulshooyinkaas sida ay af-wadaagga u yihiin, uu isirkooda shishana hal tagoog ay kasoo farcamay.",
+          "• Arrinka kale ee xiisaha leh ayaa ah in magaca “Kuush” oo ah wiilkii Xaam ee ay kasoo farcameen bulshooyinka Kushitikada, Soomaaliduna kamid tahay, uu macnihiisu yahay kuleylka saa’idka ah ee dadka madoobeeya, uu Af-Soomaaliga ku leeyahay ereyo dhawaaq ahaan u dhow.",
+          "Soomaaliduna waxa ay la baxdaa magaca “Kooshin” oo aalaaba loo baxsho caruurta madawga badan ama caruurta kul-kulul.",
+          "Waxaa kaloo jira ereyga “Kushad” oo asna loo adeegsado kul iyo caro ama xanaaqid.",
+          "Inkasta oo aan la hubin in ereyadaasi ay xiriir dhab ah la leeyihiin magaca qadiimiga ah, haddana waa isu-ekaansho xusid mudan."
         ]
       },
       {
-        heading: { en: "Next: the land of Punt", so: "Fadhiga xiga: dalkii Punt" },
-        en: [
-          "When the migration reached the northern and north-eastern coasts of the Horn of Africa, the people who settled there built a form of government of their own. The ancient Egyptians called that land \"the Land of the Gods\" (Ta-Netjer), and history gave it many pages. It was the land of Punt, the subject of the next episode."
+        "heading": {
+          "en": "Next: the land of Punt",
+          "so": "Fadhiga xiga: dalkii Punt"
+        },
+        "en": [
+          "So, without going further into the debates on origin and languages, and keeping to the historical series of the nation that lived in the Horn of Africa and was later named Somali, we have reached the point where a group of the Eastern Cushites came to the Horn of Africa, especially its northern and north-eastern coasts.",
+          "When the migration reached that place and the journey ended there, history tells us that the nation that came there went on to build a form of government that grew out of those lands.",
+          "That government and that land, which the ancient Egyptians called \"the Land of the Gods\" (Ta-Netjer), became one that history mentions in many pages, leaving a detailed account.",
+          "It is the government and the land of Punt.",
+          "In our next session we will discuss that government: its period, the places it ruled, the traces it left, and what the civilizations of the world at that time said about it.",
+          "If you are interested in this series, join the channel by pressing \"Subscribe\", and click the bell icon to get every session when it comes out. Sessions of this series are released every Sunday at 7:00 in the evening. The list of references for this session can be found in the description below.",
+          "Goodbye, until the next session."
         ],
-        so: [
-          "Markuu hayaanku soo gaaray xeebaha waqooyi iyo waqooyi bari ee Geeska Afrika, ummaddii halkaas timid waxay yagleeshay hab-maamul ka curtay deegaannadaas. Dalkaas, oo Masaaridii hore u bixiyeen \"Dhulkii Ilaahyada\" (Ta-Netjer), ayaa taariikhda bogag badan looga xusay. Waa dalkii Punt, oo fadhigeenna xiga aan ka hadli doonno."
+        "so": [
+          "Haddaba annaga oo aannaan gudaha usii galayn doodaha isirka iyo afafka, kuna gaabsanayna taxanaha taariikheed ee ummaddii geeska afrika ku nooleed ee mar danbe loo baxshay Soomaalida, waxa aan soo gaarnay ayada oo geeska afrika gaar ahaan xeebaha waqooyi iyo waqooyi bari ay yimaadeen qolo kamid ah kushitikadii bari.",
+          "Haddaba, markuu hayaanku degelkaas soo gaaray, geeddigiina halkaas lagu furay, Waxa ay taariikhdu inoo sheegaysaa in ummaddii halkaas timid ay u dhaqaaqday in ay yagleelaan hab-maamul ka curtay deegaannadaas.",
+          "Maamulkaas iyo dalkaas, oo Masaaridii hore ay u bixiyeen “Dhulkii Ilaahyada” (Ta-Netjer), ayaa waxa uu noqday mid taariikhda bogag badan looga xusay, warbixin faah-faahsanna laga reebay.",
+          "Waa maamulkii iyo dalkii Punt.",
+          "Fadhigeenna xiga ayaana ku qaada-dhigaynaa maamulkaas, muddadiisii, meelihii uu ka talinayay, wixii raad ah oo uu ka tegay iyo waxay ka dheheen xadaaradihii adduunka ee waagaas jirey.",
+          "Haddii aad xiisaynayso taxanahan, ku biir kanaalka adigoo riixaya “Subscribe”, dhagsiina astaanta dawanka si aad u hesho fadhi walba marka uu soo baxo. Fadhiyada taxanahan waxa ay soo baxaan Axad walba, saacaddu marka ay tahay 7:00 fiidnimo. Liiska tixraacyada fadhigan waxa aad ka helaysaa sharraxaadda hoose.",
+          "Nabadgelyo, ilaa fadhiga xiga."
         ]
       }
     ],
