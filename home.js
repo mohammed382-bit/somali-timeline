@@ -42,6 +42,8 @@ function drawPage() {
   // Title, byline and buttons
   document.getElementById("page-title").textContent = pageText.seriesTitle[lang];
   document.getElementById("home-byline").textContent = pageText.byline[lang];
+  document.getElementById("home-motto").textContent = pageText.motto[lang];
+  document.getElementById("home-motto-source").textContent = "— " + pageText.mottoSource[lang];
   document.getElementById("start-button").textContent = pageText.startButton[lang] + " →";
   document.getElementById("timeline-button").textContent = pageText.timelineButton[lang];
   document.title = pageText.seriesTitle[lang];

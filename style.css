@@ -771,3 +771,113 @@ h1,
     padding: 20px 18px;
   }
 }
+
+/* ===========================================
+   13. FULL EPISODE ARTICLE (from the script)
+   =========================================== */
+.article-heading {
+  margin: 28px 0 8px;
+  color: var(--navy);
+  font-family: var(--heading-font);
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* An empty short-text paragraph takes no space */
+#episode-details:empty {
+  display: none;
+}
+
+/* ===========================================
+   14. THE MOTTO ON THE WELCOME PAGE
+   =========================================== */
+.home-motto {
+  margin: 22px 0 2px;
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+  color: var(--peach);
+}
+
+.home-motto-source {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* ===========================================
+   15. THE ABOUT PAGE (about.html)
+   =========================================== */
+.about-box {
+  margin-bottom: 28px;
+  padding: 28px 32px;
+  background-color: var(--white);
+  border-radius: 10px;
+  border-top: 5px solid var(--peach);
+  box-shadow: 0 2px 8px rgba(20, 48, 79, 0.08);
+}
+
+.about-intro {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+/* Numbered points for Method and Disclaimer */
+.about-points {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.about-points li {
+  margin-bottom: 14px;
+}
+
+.about-points li::marker {
+  color: var(--peach);
+  font-weight: 700;
+}
+
+/* The list of scholars, in two columns on wide screens */
+.thanks-names {
+  columns: 2 260px;
+  column-gap: 32px;
+  padding-left: 20px;
+}
+
+.thanks-names li {
+  margin-bottom: 4px;
+  break-inside: avoid;
+}
+
+/* The poem: centred, in the heading font */
+.poem-box {
+  text-align: center;
+}
+
+.poem p {
+  margin: 4px 0;
+  font-family: var(--heading-font);
+  font-size: 1.1rem;
+  color: var(--navy);
+}
+
+.about-motto {
+  margin: 28px 0 2px;
+  font-family: var(--heading-font);
+  font-size: 1.25rem;
+  color: var(--navy);
+}
+
+.about-motto-source {
+  margin: 0;
+  color: var(--muted-text);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .about-box {
+    padding: 20px 18px;
+  }
+}

@@ -47,6 +47,7 @@ function drawPage() {
   // The text and the sources
   document.getElementById("episode-summary").textContent = episode.summary[lang];
   document.getElementById("episode-details").textContent = episode.details[lang];
+  drawArticle();
   document.getElementById("episode-sources").textContent =
     sourcesLabel[lang] + ": " + episode.sources.join(" · ");
 
@@ -64,6 +65,34 @@ function drawPage() {
   // The video, pictures and maps (Step 11)
   drawVideo();
   drawGalleries();
+}
+
+// The full written version of an episode (from its script), if it has one.
+// Each section has a heading and a list of paragraphs in each language.
+function drawArticle() {
+  const lang = currentLanguage;
+  const box = document.getElementById("episode-article");
+  box.innerHTML = "";
+
+  if (!episode.article) {
+    return;   // no article: the short text (episode-details) is enough
+  }
+
+  // With an article, the short text isn't needed on this page
+  document.getElementById("episode-details").textContent = "";
+
+  for (const section of episode.article) {
+    const heading = document.createElement("h3");
+    heading.className = "article-heading";
+    heading.textContent = section.heading[lang];
+    box.appendChild(heading);
+
+    for (const paragraph of section[lang]) {
+      const p = document.createElement("p");
+      p.textContent = paragraph;
+      box.appendChild(p);
+    }
+  }
 }
 
 // Make one Previous/Next link point at an episode, or hide it if there is none

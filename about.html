@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- about.js replaces this -->
+  <title>About the Series</title>
+
+  <!-- Same fonts and design as the other pages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="top-nav">
+      <div class="nav-links">
+        <a href="index.html" id="nav-home" class="nav-link">Home</a>
+        <a href="timeline.html" id="nav-timeline" class="nav-link">Episodes</a>
+        <a href="about.html" id="nav-about" class="nav-link" aria-current="page">About</a>
+      </div>
+      <button id="language-toggle">Soomaali</button>
+    </nav>
+
+    <div class="hero">
+      <h1 id="page-title"></h1>
+      <p id="about-byline"></p>
+    </div>
+  </header>
+
+  <main>
+    <!-- about.js fills this with the introduction, method, disclaimer, thanks and poem (text in data.js) -->
+    <div id="about-content"></div>
+  </main>
+
+  <footer>
+    <p>A learning project built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <!-- Text first, then shared code, then this page's code -->
+  <script src="data.js"></script>
+  <script src="common.js"></script>
+  <script src="about.js"></script>
+</body>
+</html>

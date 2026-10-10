@@ -18,17 +18,101 @@ const events = [
   {
     id: 1,
     part: 1,
-    years: { en: "Before 3000 BCE", so: "3000 NCKH ka hor" },
+    years: { en: "10,000 years ago – 3000 BCE", so: "10,000 sano ka hor – 3000 NCKH" },
     title: { en: "The Origins of the Somali", so: "Imaatinkii Soomaalida" },
     summary: {
       en: "Where did the Somali come from? The Hamitic and Cushitic peoples.",
       so: "Xagee bay Soomaalidu ka timid? Reer Xaam iyo Kuushiinta."
     },
     details: {
-      en: "The Somali belong to the Cushitic-speaking peoples of the Horn of Africa. Dhoorre argues that by about 3000 BCE, people speaking Somali or a Somali dialect were already living on the Somali coast.",
-      so: "Soomaalidu waxay ka mid tahay dadka Kuushiinta ah ee Geeska Afrika. Dhoorre wuxuu qabaa in qiyaastii 3000 NCKH ay xeebaha Soomaaliyeed ku noolaayeen dad ku hadla af Soomaali ama lahjad ka mid ah."
+      en: "The Somali descend from Kush, son of Ham, son of Noah. Over thousands of years the Cushitic peoples migrated from the Nile valley; one branch, the Eastern Cushites, went on to include the Oromo, Sidamo, Saho, Afar and Somali. Driven partly by climate change, the ancestors of the Somali reached the northern coasts of the Horn of Africa around 3000 BCE, where the land of Punt would later arise.",
+      so: "Soomaalidu waxay kasoo farcantay Kuush ina Xaam ina Nabi Nuux. Kumannaan sano, Kowshiintu waxay kasoo hayaameen yaacdada Niilka; qayb ka mid ah, Kushitikada Bari, waxaa kasoo jeeda Oromo, Sidamo, Saho, Cafar iyo Soomaali. Isbeddel cimilo ayaa dabada ka riixayay hayaankaas, waxaana ab-awalladii Soomaalidu xeebaha waqooyi ee Geeska Afrika soo gaareen qiyaastii 3,000 sano Nabi Ciise dhalashadiisii kahor, halkaas oo markii danbe ay ka dhalatay Punt."
     },
-    sources: ["Soomaaliya iyo Taariikhdeedii Hore", "Taariikhda Soomaaliya", "Sooyaalka Soomaaliya"]
+    // The full written version of the episode, shown on the episode page (from the script "Xalqada 1aad")
+    article: [
+      {
+        heading: { en: "The three sons of Noah", so: "Saddexdii wiil ee Nabi Nuux" },
+        en: [
+          "When we speak of a nation's history and want to trace its origins, we must go a long way back. No eyewitness record survives from so long ago, but different sciences help to light up what happened in those distant ages. A journey of 10,000 years awaits us.",
+          "Islam teaches, and the followers of the revealed religions agree, that all humanity descends from Adam, and that the peoples of the world today descend from the three sons of Noah: Shem (Saam), Japheth (Yaafith) and Ham (Xaam). As the Qur'an says in Surat as-Saffat: \u2067«وَجَعَلْنَا ذُرِّيَّتَهُ هُمُ الْبَاقِينَ»\u2069, \"And We made his descendants the ones who remained.\"",
+          "From Shem came peoples including Iram, Arfakhshad and Lawid, from whom today's Arabs and the Children of Israel descend. From Japheth came peoples including the Turks, the Romans, and Gog and Magog. Ham, as the genealogists write, had sons including Kush, Misr and Fut, and some Arab genealogists also trace the Berbers to Ham. Our story follows three of these peoples: Misr, the Berbers and Kush."
+        ],
+        so: [
+          "Marka taariikh ummadeed laga hadlayo, oo la damacsan yahay in la tixraaco asalkeeda, waxaa lagama maarmaan ah in muddo dheer dib loo noqdo. Taariikhdaas sidaas u fog marag iyo maqaal looma hayo, balse waxaa laga bidhaansadaa culuum kala duwan oo tooshka inoogu ifinaysa wixii dhacay waayadaas fog. Safar 10,000 oo sano ah ayaa ina sugaya.",
+          "Sida diinta Islaamku noo caddaysay, ayna wada aamminsan yihiin dadka haysta diimaha samaawiga ah, aadanaha oo dhammi wuxuu ku abtirsadaa Nabi Aadam CS, shucuubta maanta ku nool daafaha dunidana waxay kasoo farcameen saddexdii wiil ee Nabi Nuux: Saam, Yaafith iyo Xaam. Sida Rabbi ku xusay suuratu-Saafaat: \u2067«وَجَعَلْنَا ذُرِّيَّتَهُ هُمُ الْبَاقِينَ»\u2069, oo macneheedu yahay: \"Durriyaddii Nabi Nuux ayaan dhulka u reebnay\".",
+          "Saam waxaa ka farcamay qolooyin ay kamid ahaayeen Iram, Arfakhshad iyo Laawid, oo hadda Carabta iyo reer Banii Israa'iil ay ka joogaan. Yaafith waxaa ka farcamay Turkida, Roomanka iyo Yaajuuj iyo Maajuuj. Xaam, sida ay qoraan culimada nasabka, wuxuu dhalay wiilal ay ka mid ahaayeen Kuush, Misr iyo Fuut, qaar ka mid ah culimada nasabka Carbeedna waxay Barbarka ku abtiriyaan Xaam. Sheekadeennu waxay ku wareegaysaa saddexda qolo: Misr, Berber iyo Kuush."
+        ]
+      },
+      {
+        heading: { en: "Where did the children of Ham first live?", so: "Halkee ayay reer Xaam markii hore degganaayeen?" },
+        en: [
+          "Ten thousand years ago, the home of the children of Ham, the \"Hamites\", is the main point on which scholars disagree. Some, such as Grottanelli and Oliver & Fage, hold that it was in the Caucasus mountains north-west of Persia (today's Iran), or in Mesopotamia between the Tigris and Euphrates. In this view the three branches of Ham migrated west through Sinai and settled along the Nile, in today's Egypt.",
+          "Others, such as Joseph Greenberg and Christopher Ehret, hold that the family began in Africa itself, in north-east Africa including today's Sudan and Ethiopia, and that the only branch to cross into Asia was the ancestors of the Semites, such as the Arabs and Hebrews. Both views agree that the children of Ham spread along the Nile valley and its surroundings."
+        ],
+        so: [
+          "Toban kun oo sano waa laga joogo, ilma Xaam oo loo yaqaan \"Xamiitig\", meesha ay degganaayeen ayaa ah qodobka ugu weyn ee aqoonyahannadu isku khilaafeen. Qaar, sida Grottanelli iyo Oliver & Fage, waxay qabaan in degelkoodii hore uu ahaa buuraleyda Kawkaasiya ee waqooyi-galbeed ka xigta Peershiya (Iiraan), amase Bilaadu-raafideyn oo u dhaxaysa webiyada Dajla iyo Furaat. Aragtidaas ayaa sheegaysa in ilma Xaam ay usoo hayaameen dhanka galbeed, soona mareen Siinaay, kuna degeen yaacdada webiga Niilka iyo dhulka hadda Masar loo yaqaan.",
+          "Cilmi-baarayaasha qaar, sida Joseph Greenberg iyo Christopher Ehret, ayaa qaba in asalka bahdaas uu ahaa Afrika lafteeda, gaar ahaan waqooyi-bari Afrika oo ay ka mid yihiin Suudaan iyo Itoobiya, qolada keliya ee Aasiya u tallaabtayna ay ahayd ab-awalladii Saamiyiinta, sida Carabta iyo Cibraaniyiinta. Labada aragtiba waxay isku waafaqsan yihiin in ilma Xaam ay yaacdada Niilka iyo hareeraheeda ku kala firdheen."
+        ]
+      },
+      {
+        heading: { en: "The great migration of Kush", so: "Hayaankii weynaa ee reer Kuush" },
+        en: [
+          "In time the children of Ham moved again. Misr stayed in Egypt; from them came the Copts, the people who built the civilization of the Pharaohs and the pyramids. The Berbers crossed into North-West Africa, west of Libya, where they still live today as the Berbers or Amazigh.",
+          "Kush, also called the Cushites, set out south along the Nile, crossed the Nubian highlands and settled by the Red Sea in the land named Kush. The Egyptians gave the name \"Kush\" to the land south of them, and there, about 2,500 years before Christ, the Kingdom of Kush was founded, with Kerma, Napata and Meroe as its capitals; at one point it even ruled Egypt.",
+          "But the Cushites kept moving, and groups stayed behind along the way. The Beja remained on the border of Sudan and Eritrea (the Northern Cushites). In the Ethiopian highlands the Agaw stayed (the Central Cushites). At lakes Abaya and Turkana the rest divided: one group went south as far as northern Tanzania (the Southern Cushites), and the other turned east and north-east into the Horn of Africa: the Eastern Cushites, ancestors of the Oromo, Sidamo, Saho, Afar and Somali.",
+          "The Saho and Afar moved north to today's northern Ethiopia, Djibouti and Eritrea. The Oromo and Sidamo stayed near the lakes. The Cushites who became the Somali spread from the Gulf of Tajura to the north-east coast of the Indian Ocean, pushing the people who lived there before them, the Wanyika or Zanj, towards the south."
+        ],
+        so: [
+          "Muddo keddib, reer Xaam mar kale ayay hayaan galeen. Misr wuxuu ku haray dalka Masar, waxaana ka farcamay Qibdiyiinta, oo ah ummaddii dhistay xadaaradda Fircooniyiinta iyo Haramyada. Berber iyo faraciisii waxay usii tallaabeen galbeedka Afrika iyo dhulka Liibiya galbeedka ka xiga, halkaas oo ay illaa maanta ku dhaqan yihiin, loona yaqaan Barbar ama Amaaziigh.",
+          "Kuush, Kowshiin ama Kushitig, waxay afka soo saareen koonfurta webiga Niilka, dabadeedna mareen buuraleyda Nuubiya, waxayna degeen deexda Badda Cas iyo dalkii Kush. Magaca \"Kush\" ayay Masaaridii hore u bixiyeen dhulka koonfurta kaga beeggan, halkaasna qiyaastii 2,500 sano Nabi Ciise dhalashadiisii kahor, waxaa laga aasaasay \"Boqortooyadii Kuush\", oo caasimadaheedu ahaayeen Karma, Nabata iyo Meroe, oo mar xataa ka talisay Masar laftigeeda.",
+          "Geeddigii reer Kuush halkaas kuma ekaan, oo hadba koox ayaa meel uga haraysay. Beja waxay ku hartay xuduudda Suudaan iyo Eretereeya (Kushitikada Waqooyi). Dhul-koraadka Xabashida waxaa ku hartay Agaw (Kushitikada Dhexe). Markii ay gaareen harooyinka Abaayo iyo Turkaana, laba qayb ayay u kala baxeen: koox usii gudubtay koonfurta illaa waqooyiga Tanzania (Kushitikada Koonfureed), iyo koox afka saartay Bari iyo Waqooyi Bari ee Geeska Afrika (Kushitikada Bari), oo ay kasoo jeedaan Oromo, Sidamo, Saho, Cafar iyo Soomaali.",
+          "Saho-Cafar waxay usii guureen waqooyiga Itoobiya, Jabuuti iyo Eretereeya. Oromo iyo Sidamo kama fogaanin degelkoodii hore ee harooyinka. Kushitikadii Soomaalida ee dhanka bari usoo hayaantay waxay isku fidiyeen xeebta Khooriga Tajura illaa Waqooyi Bari Badweynta Hindiya, halkaas oo ay ka barakiciyeen dadkii horey u degganaa, Wanyiika ama Sanji, oo ay u riixeen dhanka koonfureed."
+        ]
+      },
+      {
+        heading: { en: "Why did they move?", so: "Maxaa hayaankaas keenay?" },
+        en: [
+          "This long migration took many centuries, thousands of years before Christ. Climate scientists link it to great changes in north-east Africa between 10,000 and 5,000 years before Christ. In that age the Sahara was grassland and lakes, the rivers and streams of the Horn did not run dry, and pools were full of fish and water creatures. That easy food drew people south. The Eastern Cushites reached the northern and southern coasts of the Horn around 3,000 years before Christ."
+        ],
+        so: [
+          "Geeddigaan dheer oo qarniyo badan qaatay wuxuu ku beegnaa kumannaan sano ka hor dhalashadii Nabi Ciise. Culimada cimilada ayaa u sababeeyay isbeddel cimilo oo xoog badan oo ka dhacay waqooyi-bari Afrika intii u dhaxaysay 10,000 illaa 5,000 oo sano Nabi Ciise dhalashadiisii kahor. Waagaas Saxaraha weyn wuxuu ahaa daaq iyo haro, Geeska Afrikana webiyadiisa iyo togaggiisu biyaha kama go'in, balliyadana waxaa ka buuxay kalluun. Taasi ayaa dadkii soo jiitay. Kushitikada Bari waxay xeebaha Geeska Afrika soo gaareen qiyaastii 3,000 sano Nabi Ciise dhalashadiisii kahor."
+        ]
+      },
+      {
+        heading: { en: "Meanwhile in the world", so: "Waxa adduunka kale ka socday" },
+        en: [
+          "Around 3,100 years before Christ, the first dynasty of the Pharaohs took power in Egypt. At about the same time the Sumerians of Mesopotamia invented cuneiform, the world's first writing.",
+          "History also records that Persian sailors reached the coasts of the Horn, especially the south, and called the Horn of Africa \"Magan and Meluhha\". Some scholars see these names, close to the Somali words \"Magan\" and \"Maylaha\", as evidence that people speaking Somali, or a dialect of it, lived on the Somali coast 3,000 years before Christ."
+        ],
+        so: [
+          "Qiyaastii 3,100 sano Nabi Ciise kahor, awoodda Masar waxaa la wareegay qoyskii ugu horreeyay ee boqortooyadii Faraacinada. Isla muddadaas, reer Sumer oo degganaa Bilaadu-raafideyn ayaa curiyay qoraalkii ugu horreeyay ee farguri ah, far wax lagu akhriyana adduunka ugu horreysay.",
+          "Taariikhdu waxay qoraysaa in waagaas ay badmaaxiin Faarisiyiin ahi sahan ku yimaadeen xeebaha Geeska Afrika, gaar ahaan kuwa koonfureed, una bixiyeen magaca \"Magan & Meluhha\". Labadaan erey oo Afsoomaali ahaan usoo dhow \"Magan\" iyo \"Maylaha\", ayaa aqoonyahannada qaar marag uga dhigaan in 3,000 sano Nabi Ciise dhalashadiisii kahor ay xeebaha Soomaaliyeed ku noolaayeen dad ku hadla Af-soomaali ama lahjad ka mid ah."
+        ]
+      },
+      {
+        heading: { en: "What the children of Ham still share", so: "Waxa ay weli wadaagaan reer Xaam" },
+        en: [
+          "Greek historians of the 2nd and 1st centuries BCE described herders on the coasts of Eritrea and northern Somalia, whom they called \"Troglodytes\": nomads who fought over pasture, carried bow, arrow and spear, wore skins, lived on meat and milk, drank blood mixed with milk, and buried their dead with knees and arms bound together. A Chinese sailor who reached the Horn in the 9th century CE gave the same description. The custom of drinking milk mixed with blood survives among some Cushitic peoples and their neighbours, such as the Oromo and Maasai.",
+          "Professor Cabdalla Cumar Mansuur compared the customs of the Somali and the Berbers of Morocco: herding, elders deciding law and justice, collective blood-money, and the word for young camels, \"arig\". He concluded that the Somali and the Berbers are distant cousins. The Maasai of Kenya and Tanzania tell of two siblings long ago: a girl called \"Soomaali\" and a boy who became the ancestor of the Maasai.",
+          "The strongest evidence is language. Somali belongs to the great Afro-Asiatic family, with Arabic, Hebrew, Amharic, Berber, Hausa and ancient Egyptian, and to the Cushitic languages spoken from north-east Sudan to northern Tanzania. Finally, the name \"Kush\" is said to mean great heat that darkens the skin; Somali has similar-sounding words, such as the name \"Kooshin\", often given to dark children, and \"kushad\" for heat or anger. It is not certain these are truly related, but the likeness is worth noting."
+        ],
+        so: [
+          "Taariikhyahannadii Giriigga ee noolaa qarniyadii labaad iyo kowaad Nabi Ciise dhalashadiisii kahor, ayaa wax ka qoray xoolo-dhaqatada xeebaha Eretereeya iyo waqooyiga Soomaaliya, oo ay ugu yeeri jireen \"Trogodytes\": reer-guuraa daaqsinta isku dagaala, hubkooduna ahaa qaanso, fallaar iyo waran, xirta maqaar, cuntadooduna ahayd hilib iyo caano, cabbana dhiig caano lagu barxay, maydkana jilbaha iyo gacmaha isku xira marka ay aasayaan. Isla tilmaamtaas waxaa bixiyay badmaax Shiinays ah oo xeebaha Geeska Afrika soo gaaray qarnigii sagaalaad kaddib dhalashadii Nabi Ciise. Dhaqanka dhiigga caanaha lagu barxo waxa uu ku danbeeyaa qaybo ka mid ah Kushitikada iyo deriskooda sida Oromada iyo Masaayda.",
+          "Barafasoor Cabdalla Cumar Mansuur waxa uu isbarbar dhigay dhaqammada Soomaalida iyo Barbarka Morooko: xoolo-dhaqashada, odayaasha xeerka iyo garta gooya, mag-bixinta wadareedka ah, iyo yaradka oo Barbarku ugu yeeraan \"arig\", wuxuuna ku gabagabeeyay in Soomaalida iyo Barbarku yihiin ilma-adeer fog. Masaayda Kenya iyo Tanzania waxay leeyihiin sheeko-xariir sheegaysa in waagii hore ay jireen laba caruur ah oo walaalo ah: gabar la oran jiray \"Soomaali\" iyo wiil noqday awowgii Masaayda.",
+          "Arrinka ugu muhiimsan ee loo daliilsado xiriirka qotada dheer ayaa ah afka. Af-Soomaaligu wuxuu ka mid yahay bahda weyn ee afafka \"Afro-Aasiyaatigga\", oo ay ku jiraan Carabiga, Cibriga, Amxaariga, Barbarka, Hawsada iyo afkii Masaaridii hore, iyo afafka Kushitigga ah ee laga hadlo waqooyi-bari Suudaan illaa waqooyiga Tanzania. Ugu danbayn, magaca \"Kuush\" waxaa la sheegaa in macnihiisu yahay kuleylka saa'idka ah ee dadka madoobeeya; Af-Soomaaliga waxaa ku jira ereyo u dhow, sida magaca \"Kooshin\" oo loo baxsho caruurta madawga badan, iyo \"Kushad\" oo loo adeegsado kul iyo caro. Lama hubo in ereyadaasi xiriir dhab ah la leeyihiin magaca qadiimiga ah, haddana waa isu-ekaansho xusid mudan."
+        ]
+      },
+      {
+        heading: { en: "Next: the land of Punt", so: "Fadhiga xiga: dalkii Punt" },
+        en: [
+          "When the migration reached the northern and north-eastern coasts of the Horn of Africa, the people who settled there built a form of government of their own. The ancient Egyptians called that land \"the Land of the Gods\" (Ta-Netjer), and history gave it many pages. It was the land of Punt, the subject of the next episode."
+        ],
+        so: [
+          "Markuu hayaanku soo gaaray xeebaha waqooyi iyo waqooyi bari ee Geeska Afrika, ummaddii halkaas timid waxay yagleeshay hab-maamul ka curtay deegaannadaas. Dalkaas, oo Masaaridii hore u bixiyeen \"Dhulkii Ilaahyada\" (Ta-Netjer), ayaa taariikhda bogag badan looga xusay. Waa dalkii Punt, oo fadhigeenna xiga aan ka hadli doonno."
+        ]
+      }
+    ],
+    sources: ["Xalqada 1aad (series script)", "Soomaaliya iyo Taariikhdeedii Hore", "Taariikhda Soomaaliya", "Sooyaalka Soomaaliya"]
   },
   {
     id: 2,
@@ -439,28 +523,33 @@ const events = [
 
 // The text in the header and footer, in both languages
 const pageText = {
-  title:    { en: "Somali History Timeline", so: "Taxanaha Taariikhda Soomaaliya" },
+  title:    { en: "Somali History Timeline", so: "Taxanaha Taariikhda Ummadda Soomaaliyeed" },
   subtitle: { en: "From ancient times to independence in 1960", so: "Laga soo bilaabo waayihii hore ilaa xorriyaddii 1960" },
   footer:   { en: "A learning project built with HTML, CSS, and JavaScript.", so: "Tijaabo" },
   home:     { en: "Home", so: "Bogga Hore" },
   episodesNav: { en: "Episodes", so: "Xalqadaha" },
 
   // ---- The welcome page (index.html) ----
-  seriesTitle: { en: "The Somali History Series", so: "Taxanaha Taariikhda Soomaaliya" },
+  seriesTitle: { en: "The Series of the History of the Somali Nation", so: "Taxanaha Taariikhda Ummadda Soomaaliyeed" },
   byline:      { en: "A series by Mohamed Abdulkadir Mohamed", so: "Waxaa diyaariyay Maxamed Cabdulqaadir Maxamed" },
   welcomeHeading: { en: "Welcome", so: "Ku soo dhowow" },
-  // PLACEHOLDER: replace these paragraphs with your own welcome text.
-  // Each line between [ ] is one paragraph. Keep the quotes and commas.
+  // Welcome text, taken from the series introduction ("Hordhac"). Each line is one paragraph.
   welcomeText: {
     en: [
-      "[Your welcome text goes here: who you are and why you made this series.]",
-      "[A second paragraph: what visitors will find, and how to use the site.]"
+      "History is the most important school a society can learn from. To understand where we stand today, we must study and look back at the ages that have passed, and the paths our fathers and ancestors took. As the Somali saying goes: \"A tree is not planted only for the shade of the one who plants it.\"",
+      "The greatest obstacle facing our history is not a lack of information. It is that our history is scattered: loose facts, isolated events, names whose place in history we do not know, and no thread to tie them together. That is what led me to prepare \"The Series of the History of the Somali Nation\": a scholarly, detailed account that everyone can understand.",
+      "The series is planned in 28 episodes, drawing on more than 25 references and books. A new episode is released every Sunday at 7:00 in the evening."
     ],
     so: [
-      "[Qoraalkaaga soo dhoweynta halkan geli: cidda aad tahay iyo sababta aad u samaysay taxanahan.]",
-      "[Faqrad labaad: waxa booqdayaashu ka helayaan iyo sida loo isticmaalo bogga.]"
+      "Taariikhdu waa dugsiga ugu muhiimsan ee bulsho cashar ka baran karto. Si aan taaganteenna u fahanno, waa inaan darasnaa, dibna u milicsannaa waayeheennii tegay, iyo tubtii aabbayaasheen iyo ab-awalladeen ay qaadeen. Waana meesha Soomaalidu ka tiraahdo: \"Geedka looma abuuro adigaa harsan doona\".",
+      "Caqabadda ugu weyn ee taariikhdeenna naga haysata ma aha xog yari iyo keyd la'aan, balse waa filiqsanaanta taariikhdeenna: xog qubane ah, dhacdooyin kaliyaale ah, magacyo meel ay taariikhda kasoo galeen aannan war u hayn, iyo nirgixii isku xiri lahaa oo aan la hayn. Taasi waxay igu dhalisay inaan diyaariyo \"Taxanaha Taariikhda Ummadda Soomaaliyeed\", si cilmiyaysan, faah-faahsan, isla markaasna dadku wada fahmi karaan.",
+      "Taxanahan waxaa loo qorsheeyay 28 xalqo, xogtiisana waxaan kasoo ururiyay in ka badan 25 marjic iyo buug. Xalqad cusub ayaa soo baxda Axad walba, saacaddu marka ay tahay 7:00 fiidnimo."
     ]
   },
+  // The series motto (from the introduction)
+  motto:       { en: "\"Learn your past, so that you understand your future.\"", so: "\"Tagtadaada baro, timaaddadaada aad fahantide.\"" },
+  mottoSource: { en: "Professor Cabdalla Cumar Mansuur", so: "Barafasoor Cabdalla Cumar Mansuur" },
+  aboutNav:    { en: "About", so: "Ku saabsan" },
   startButton:    { en: "Start with Episode 1", so: "Ka bilow Xalqada 1aad" },
   timelineButton: { en: "See all episodes", so: "Eeg dhammaan xalqadaha" },
   partsHeading:   { en: "The three parts of the series", so: "Saddexda qaybood ee taxanaha" },
@@ -482,6 +571,93 @@ const pageText = {
   notFound:    { en: "Sorry, this episode was not found.", so: "Waan ka xumahay, xalqadan lama helin." },
   // The button shows the OTHER language: the one you will switch to
   button:   { en: "Soomaali", so: "English" }
+};
+
+
+// =============================================================
+// The About page (about.html), from the series introduction ("Hordhac")
+// =============================================================
+const about = {
+  title: { en: "About the Series", so: "Ku Saabsan Taxanaha" },
+  intro: {
+    en: "In the introduction to the series, I share how the programme is prepared and organised, so that viewers know what to expect from the start.",
+    so: "Maadaama fadhiga koowaad ee taxanaha uu yahay hordhac, waxaan idin la wadaagayaa habraaca iyo qaab-diyaarinta barnaamijka, si ay afeef hore iigu sii noqoto, filashaduna ay isku keento."
+  },
+  sections: [
+    {
+      heading: { en: "Method", so: "Manhaj" },
+      points: {
+        en: [
+          "Somali history is divided into three stages. Part 1, ancient history: the time before Islam reached this land. Part 2, medieval history: from the arrival of Islam until the coming of colonialism. Part 3: from when the colonisers set foot on Somali land at the end of the 19th century until independence.",
+          "Historical events are not built on \"it is said\" or \"I heard\", but on written works and references that can be checked. Each episode comes with the list of books and places its information was taken from, so that anyone can go back to them for more detail.",
+          "The main aim is to connect Somali history together. But to understand it fully, it is also linked to world history and to what was happening around the globe in each period.",
+          "The series uses visual material to explain events: above all maps, but also pictures of people, treaty documents, and written records, so that viewers can clearly see where history happened.",
+          "The series is weekly: one episode each week, of no more than 20 minutes."
+        ],
+        so: [
+          "Taariikhda Soomaalida waxaan u qaybiyay saddex marxalo. Qaybta 1aad, taariikhda hore: wixii ka horreeyay intii uusan Islaamku soo gaarin dhulkan. Qaybta 2aad, taariikhda dhexe: markii Islaamku soo gaaray carriga Soomaalida illaa gumeystaha laga soo gaaray. Qaybta 3aad: markii gumeystuhu cagaha soo dhigay dhulka Soomaalida dhammaadkii qarnigii 19aad illaa dharaartii xorriyadda iyo madax-bannaanida.",
+          "Dhacdooyinka taariikheed laguma saleeyo waxaa la yiri iyo waxaan maqlay, ee waxaa bud-dhig looga dhigaa dhiganayaal iyo maraajic tixraacooda la heli karo. Fadhi walba waxaa la socda liiska buugta iyo meelaha xogta laga soo qaaday, si wixii faah-faahin iyo xaqiijin ah loogu noqdo ilahaas.",
+          "Hadafka koowaad ee taxanaha waa isku xirka taariikhda Soomaaliyeed, haddana si fahankeedu u dhammaystirmo, waxaa lagu xiraa taariikhda adduun weynaha iyo dhacdooyinkii ka socday daafaha caalamka marxalad walba.",
+          "Taxanaha waxaa lagu lifaaqay muuqaallo sharaxaya dhacdooyinka: ugu horreyn khariidadaha, iyo sidoo kale sawirada ashkhaasta, dukumiintiyada heshiisyada iyo qoraallada, si daawaduhu si waadax ah u fahmo goobaha taariikhdu ka dhacday.",
+          "Baahinta taxanuhu waa toddobaadle: usbuuc walba hal fadhi, oo aan ka badnaan doonin 20 daqiiqo."
+        ]
+      }
+    },
+    {
+      heading: { en: "Disclaimer", so: "Afeef" },
+      points: {
+        en: [
+          "This series focuses only on the historical continuity of the Somali nation's past. Topics such as lineage, clan, languages, dialects, culture, schools of law, Sufi orders, individuals and politics are outside its scope. While following the series, judge it only by the facts of history and their evidence.",
+          "Because this is history, people's names will be mentioned. Please do not insult or mock them: you may disapprove of what a person did, but you are not their judge, and history is not a court; it is about learning the facts and taking lessons. As God says: \u2067«تلك أمة قد خلت لها ما كسبت ولكم ما كسبتم ولا تسألون عما كانوا يعملون»\u2069, \"That was a nation which has passed on. It will have what it earned, and you will have what you have earned. And you will not be asked about what they used to do.\"",
+          "My role is only to organise and present the historical information I have gathered. Establishing the facts and researching history is the work of researchers and historians; that is why every episode comes with its sources."
+        ],
+        so: [
+          "Taxanahan wuxuu diiradda saarayaa isku xirka taariikheed ee sooyaalkii ummadda Soomaaliyeed oo keli ah. Mawduucyada la xiriira isirka, qabiilka, afafka, lahjadaha, dhaqanka, madaahibta, dariiqooyinka, shakhsiyaadka iyo siyaasadda waa ka baxsan xayndaabka taxanaha. Inta aad la socotid barnaamijkan, ku xukun oo keli ah dhacdooyinka taariikhda xaqiiqdooda iyo xujadooda.",
+          "Mar haddii taariikh laga hadlayo, waxaa qasab ah in dad magacyadooda la soo hadal qaado. Dadkaas aflagaado iyo sar-sarriig toonna yaan lagula kicin: fal qof sameeyay waad saluugi kartaa, balse shakhsiyaddiisa xukun iyo maxkamad toonna kuma lihid, taariikhduna xukun maahane waa xog-helid iyo cibra qaadasho. Waana hadalkii Eebbe: \u2067«تلك أمة قد خلت لها ما كسبت ولكم ما كسبتم ولا تسألون عما كانوا يعملون»\u2069.",
+          "Doorkayga iyo kaalintaydu waa uun abla-ablaynta iyo soo gudbinta xogaha taariikheed inta aan haleelay. Qarrirka xaqiiqooyinka iyo baaridda cilmiga taariikhda waa shaqada cilmi-baarayaasha iyo culimada taariikhda; waana sababta aan fadhi walba ilaha-xogta ugu lifaaqay."
+        ]
+      }
+    }
+  ],
+  thanksHeading: { en: "Thanks", so: "Mahadcelin" },
+  thanksIntro: {
+    en: "My thanks and prayers go to all the researchers whose knowledge I benefited from, and without whose efforts this series could not have been made:",
+    so: "Mahadcelin iyo duco ayaan u marinayaa dhammaan cilmi-baarayaashii aan ka faa'iideystay aqoontooda, dadaalkooda la'aantiisna uusan taxanahani hirgeli lahayn:"
+  },
+  thanksNames: [
+    "Barafasoor Cabdalle Cumar Mansuur",
+    "Ustad C/qaadir Salaad Dhoorre",
+    "Janan Maxamed Ibraahim Maxamed \"Liiq-Liiqato\"",
+    "Buun Shiikh Aw-Jaamac Cumar Ciise",
+    "Dr. C/salaam Shiikh Xassan",
+    "Qoraa Xamdi Sayid Saalim",
+    "Qoraa C/qaadir Cismaan Maxamuud (Oromo)",
+    "Cilmi-baare I. M. Lewis",
+    "Barafasoor Axmed Ismaaciil Samatar",
+    "Barafasoor Cabdi Ismaaciil Samatar",
+    "Barafasoor Maxamed Xaaji Mukhtaar",
+    "Barafasoor Maxamed Ciise Turunji",
+    "Shiikh Axmed C/laahi Riiraash",
+    "Barafasoor Maxamed Cabdi Maxamed \"Gaandi\"",
+    "Cilmi-baare Ray Beechey",
+    "Barafasoor C/raxmaan C/laahi Baadiyow",
+    "Barafasoor C/salaam Maxamed Ciise-Salwe"
+  ],
+  thanksSpecial: {
+    en: "Special thanks to the \"Dhaxal-reeb\" platform, led by Professor Axmed Maxamed Cabdi (Baafo): without it much information and history would not be easy to find. It is an effort that helps record, preserve and pass on the history of the Somali nation.",
+    so: "Mahad gaar ah iyo bogaadin ayaan u dirayaa madasha \"Dhaxal-reeb\" oo uu hormuud u yahay Barafasoor Axmed Maxamed Cabdi (Baafo), oo la'aanteed xog badan iyo taariikho badanba aan sahal lagu heli lahayn; waana dadaal ka qaybqaadanaya dabaqabashada, keydinta iyo soo gudbinta taariikhda ummadda Soomaaliyeed."
+  },
+  poemHeading: { en: "From a poem by Abwaan Cabdillaahi Timacadde", so: "Tuducyo ka mid ah tixdii Abwaan C/laahi Timacadde" },
+  poem: [
+    "Gabaygu waygu sugnaaye",
+    "Haddii aan sar-sarriigo",
+    "Ama aan surmaseego",
+    "Amaba aan sixi waayo",
+    "Ama aan ka salguuro",
+    "Amaba laygu saluugo",
+    "Soomaalida I maqlaysaay",
+    "I su'aala hadhaw"
+  ]
 };
 
 // The word "Sources" in each language

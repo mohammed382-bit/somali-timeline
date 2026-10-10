@@ -19,6 +19,7 @@ function setLanguage(lang) {
   // The parts that are the same on every page: menu, button, footer
   document.getElementById("nav-home").textContent = pageText.home[lang];
   document.getElementById("nav-timeline").textContent = pageText.episodesNav[lang];
+  document.getElementById("nav-about").textContent = pageText.aboutNav[lang];
   languageButton.textContent = pageText.button[lang];
   document.querySelector("footer p").textContent = pageText.footer[lang];
   document.documentElement.lang = lang;  // tells the browser (and screen readers) the page language
