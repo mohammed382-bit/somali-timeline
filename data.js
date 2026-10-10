@@ -2,7 +2,7 @@
 // data.js: ALL THE TEXT ON THE SITE
 // Every fact comes from the books in the Sources folder; each
 // event's "sources" list says which ones.
-// Both index.html and episode.html read this file, so a
+// Every page (index.html, timeline.html, episode.html) reads this file, so a
 // correction made here appears everywhere.
 // =============================================================
 
@@ -443,6 +443,28 @@ const pageText = {
   subtitle: { en: "From ancient times to independence in 1960", so: "Laga soo bilaabo waayihii hore ilaa xorriyaddii 1960" },
   footer:   { en: "A learning project built with HTML, CSS, and JavaScript.", so: "Tijaabo" },
   home:     { en: "Home", so: "Bogga Hore" },
+  episodesNav: { en: "Episodes", so: "Xalqadaha" },
+
+  // ---- The welcome page (index.html) ----
+  seriesTitle: { en: "The Somali History Series", so: "Taxanaha Taariikhda Soomaaliya" },
+  byline:      { en: "A series by Mohamed Abdulkadir Mohamed", so: "Waxaa diyaariyay Maxamed Cabdulqaadir Maxamed" },
+  welcomeHeading: { en: "Welcome", so: "Ku soo dhowow" },
+  // PLACEHOLDER: replace these paragraphs with your own welcome text.
+  // Each line between [ ] is one paragraph. Keep the quotes and commas.
+  welcomeText: {
+    en: [
+      "[Your welcome text goes here: who you are and why you made this series.]",
+      "[A second paragraph: what visitors will find, and how to use the site.]"
+    ],
+    so: [
+      "[Qoraalkaaga soo dhoweynta halkan geli: cidda aad tahay iyo sababta aad u samaysay taxanahan.]",
+      "[Faqrad labaad: waxa booqdayaashu ka helayaan iyo sida loo isticmaalo bogga.]"
+    ]
+  },
+  startButton:    { en: "Start with Episode 1", so: "Ka bilow Xalqada 1aad" },
+  timelineButton: { en: "See all episodes", so: "Eeg dhammaan xalqadaha" },
+  partsHeading:   { en: "The three parts of the series", so: "Saddexda qaybood ee taxanaha" },
+  episodesRange:  { en: "Episodes", so: "Xalqadaha" },
   // Words used on the episode page (episode.html)
   episode:     { en: "Episode", so: "Xalqada" },
   previous:    { en: "Previous", so: "Xalqadii hore" },

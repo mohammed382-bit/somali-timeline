@@ -55,10 +55,10 @@ function drawPage() {
 
   // Previous / All episodes / Next links at the bottom
   setEpisodeLink("link-previous", previousEpisode, "← " + pageText.previous[lang]);
-  // "All episodes" goes back to this episode's place on the timeline (e.g. index.html#ep-6)
+  // "All episodes" goes back to this episode's place on the timeline (e.g. timeline.html#ep-6)
   const allLink = document.getElementById("link-all");
   allLink.textContent = pageText.allEpisodes[lang];
-  allLink.href = "index.html#ep-" + episode.id;
+  allLink.href = "timeline.html#ep-" + episode.id;
   setEpisodeLink("link-next", nextEpisode, pageText.next[lang] + " →");
 
   // The video, pictures and maps (Step 11)

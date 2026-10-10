@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic settings: text encoding and making the page fit phone screens -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- The text shown on the browser tab -->
-  <title>Somali History Timeline</title>
+  <!-- home.js replaces this with the series title -->
+  <title>The Somali History Series</title>
 
-  <!-- Fonts from Google Fonts: Playfair Display for headings, Source Sans 3 for text -->
+  <!-- Same fonts and design as the other pages -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Our own design -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- The top of the page: menu bar, then the big title -->
-  <header class="site-header">
+  <!-- The welcome banner: menu bar, then the series title over a picture -->
+  <header class="site-header home-header">
     <nav class="top-nav">
-      <a href="index.html" id="nav-home" class="nav-link" aria-current="page">Home</a>
+      <div class="nav-links">
+        <a href="index.html" id="nav-home" class="nav-link" aria-current="page">Home</a>
+        <a href="timeline.html" id="nav-timeline" class="nav-link">Episodes</a>
+      </div>
       <button id="language-toggle">Soomaali</button>
     </nav>
 
-    <div class="hero">
-      <h1 id="page-title">Somali History Timeline</h1>
-      <p id="page-subtitle">From ancient times to independence in 1960</p>
+    <div class="hero home-hero">
+      <h1 id="page-title"></h1>
+      <p id="home-byline" class="home-byline"></p>
+
+      <!-- The two main buttons -->
+      <div class="home-buttons">
+        <a id="start-button" class="home-button home-button-main" href="episode.html?ep=1"></a>
+        <a id="timeline-button" class="home-button" href="timeline.html"></a>
+      </div>
     </div>
+
+    <!-- Credit for the background picture (filled in by home.js) -->
+    <p id="hero-credit" class="hero-credit"></p>
   </header>
 
   <main>
-    <!-- JavaScript fills this box with the events (see timeline.js) -->
-    <div id="timeline"></div>
+    <!-- Welcome text: written in data.js (welcomeText) -->
+    <section class="welcome">
+      <h2 id="welcome-heading" class="section-heading"></h2>
+      <div id="welcome-text"></div>
+    </section>
+
+    <!-- The three parts of the series, each linking to its place on the timeline -->
+    <section>
+      <h2 id="parts-heading" class="section-heading"></h2>
+      <div id="part-cards" class="part-cards"></div>
+    </section>
   </main>
 
   <footer>
     <p>A learning project built with HTML, CSS, and JavaScript.</p>
   </footer>
 
-  <!-- Load our JavaScript last, so the page exists before it runs.
-       The order matters: text first, then shared code, then this page's code. -->
+  <!-- Text and media lists first, then shared code, then this page's code -->
   <script src="data.js"></script>
+  <script src="media.js"></script>
   <script src="common.js"></script>
-  <script src="timeline.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>

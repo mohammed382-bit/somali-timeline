@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic settings: text encoding and making the page fit phone screens -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- The text shown on the browser tab -->
+  <title>Somali History Timeline</title>
+
+  <!-- Fonts from Google Fonts: Playfair Display for headings, Source Sans 3 for text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Our own design -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- The top of the page: menu bar, then the big title -->
+  <header class="site-header">
+    <nav class="top-nav">
+      <div class="nav-links">
+        <a href="index.html" id="nav-home" class="nav-link">Home</a>
+        <a href="timeline.html" id="nav-timeline" class="nav-link" aria-current="page">Episodes</a>
+      </div>
+      <button id="language-toggle">Soomaali</button>
+    </nav>
+
+    <div class="hero">
+      <h1 id="page-title">Somali History Timeline</h1>
+      <p id="page-subtitle">From ancient times to independence in 1960</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- JavaScript fills this box with the events (see timeline.js) -->
+    <div id="timeline"></div>
+  </main>
+
+  <footer>
+    <p>A learning project built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <!-- Load our JavaScript last, so the page exists before it runs.
+       The order matters: text first, then shared code, then this page's code. -->
+  <script src="data.js"></script>
+  <script src="common.js"></script>
+  <script src="timeline.js"></script>
+</body>
+</html>

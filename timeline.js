@@ -1,12 +1,12 @@
 // =============================================================
-// timeline.js: BUILDS THE TIMELINE ON index.html
+// timeline.js: BUILDS THE TIMELINE ON timeline.html
 // (The text lives in data.js; the language button is in common.js.)
 
 // =============================================================
 // STEP 4: SHOW THE EVENTS ON THE PAGE
 // =============================================================
 
-// Find the empty box in index.html where the timeline goes
+// Find the empty box in timeline.html where the timeline goes
 const timeline = document.getElementById("timeline");
 
 // Build the whole timeline from the events list
@@ -149,7 +149,7 @@ function drawPage() {
   showTimeline();
 }
 
-// Coming back from an episode page (index.html#ep-6)? Open that card.
+// Coming back from an episode page (timeline.html#ep-6)? Open that card.
 const fromEpisode = Number(window.location.hash.replace("#ep-", ""));
 if (fromEpisode) {
   openEvents.add(fromEpisode);

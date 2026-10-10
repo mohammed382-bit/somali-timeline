@@ -594,3 +594,180 @@ a.credit,
 .lightbox-credit a {
   color: var(--muted-text);
 }
+
+/* ===========================================
+   10. MENU WITH TWO LINKS (Home · Episodes)
+   =========================================== */
+.nav-links {
+  display: flex;
+  gap: 24px;               /* space between the links */
+}
+
+/* ===========================================
+   11. CAPITAL LETTERS FOR ALL TITLES
+   text-transform shows the text in capitals without
+   changing the text itself in data.js
+   =========================================== */
+h1,
+.part-heading,
+.event-title,
+.media-heading,
+.section-heading,
+.part-card-title {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;   /* capitals read better with a little extra space */
+}
+
+/* ===========================================
+   12. THE WELCOME PAGE (index.html)
+   =========================================== */
+
+/* The picture behind the banner (set in home.js) fills the whole area */
+.home-header {
+  background-color: var(--navy);
+  background-size: cover;
+  background-position: center;
+}
+
+.home-hero {
+  padding: 80px 16px 56px;
+  border-top: none;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+}
+
+.home-byline {
+  font-size: 1.15rem;
+  font-style: italic;
+}
+
+/* The two buttons under the title */
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;            /* on a narrow phone, the buttons go one under the other */
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.home-button {
+  padding: 12px 26px;
+  border: 2px solid var(--peach);
+  border-radius: 28px;
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  background-color: rgba(240, 168, 130, 0.2);
+}
+
+.home-button-main {
+  background-color: var(--peach);
+  color: var(--navy);
+}
+
+.home-button-main:hover {
+  background-color: var(--peach-light);
+}
+
+/* The small credit for the background picture, bottom right of the banner */
+.hero-credit {
+  margin: 0;
+  padding: 0 16px 10px;
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+.hero-credit a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Section headings on the welcome page ("Welcome", "The three parts...") */
+.section-heading {
+  margin: 0 0 16px;
+  color: var(--navy);
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+}
+
+.welcome {
+  margin-bottom: 44px;
+  padding: 28px 32px;
+  background-color: var(--white);
+  border-radius: 10px;
+  border-top: 5px solid var(--peach);
+  box-shadow: 0 2px 8px rgba(20, 48, 79, 0.08);
+  font-size: 1.1rem;
+}
+
+.welcome p:last-child {
+  margin-bottom: 0;
+}
+
+/* The three part cards, side by side (one per row on phones) */
+.part-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.part-card {
+  display: block;
+  overflow: hidden;
+  background-color: var(--white);
+  border-radius: 10px;
+  border-bottom: 5px solid var(--navy);
+  box-shadow: 0 2px 8px rgba(20, 48, 79, 0.08);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.part-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(20, 48, 79, 0.16);
+  border-bottom-color: var(--peach);
+}
+
+.part-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.part-card-title {
+  margin: 14px 16px 4px;
+  color: var(--navy);
+  font-family: var(--heading-font);
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.part-card-range {
+  margin: 0 16px 16px;
+  color: var(--muted-text);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .home-hero {
+    padding: 52px 16px 40px;
+  }
+
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .welcome {
+    padding: 20px 18px;
+  }
+}

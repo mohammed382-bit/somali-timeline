@@ -143,6 +143,8 @@ const media = {
   18: {
     video: "",
     pictures: [
+      {"file": "media/ep18/obock-1885.png", "type": "photo", "caption": {"en": "Obock around 1885", "so": "Obokh qiyaastii 1885"}, "credit": {"en": "Unknown photographer · Public domain · Wikimedia Commons", "so": "Unknown photographer · Hanti guud (public domain) · Wikimedia Commons"}, "link": "https://commons.wikimedia.org/wiki/File:Obock_coal_depot_mid-1880s.png"},
+      {"file": "media/ep18/dire-dawa-station.jpg", "type": "photo", "caption": {"en": "A station of the Djibouti–Ethiopia railway, at Dire Dawa", "so": "Saldhig ka mid ah tareenka Jabuuti–Itoobiya, ee Dire Dawa"}, "credit": {"en": "A. Davey · CC BY 2.0 · Wikimedia Commons", "so": "A. Davey · CC BY 2.0 · Wikimedia Commons"}, "link": "https://commons.wikimedia.org/wiki/File:Djibouti_-_Ethiopia_Railway_Station,_Dire_Dawa,_Ethiopia.jpg"},
       {"file": "media/ep18/red-sea-claims-1885.jpg", "type": "map", "caption": {"en": "European territorial claims on the coasts of the Red Sea, 1885", "so": "Sheegashooyinka dhulka ee reer Yurub ee xeebaha Badda Cas, 1885"}, "credit": {"en": "Sir William Rawson (1812-1899) · Public domain · Wikimedia Commons", "so": "Sir William Rawson (1812-1899) · Hanti guud (public domain) · Wikimedia Commons"}, "link": "https://commons.wikimedia.org/wiki/File:European_territorial_claims_on_the_coasts_of_the_Red_Sea_1885.jpg"}
     ]
   },
@@ -157,7 +159,29 @@ const media = {
   24: {
     video: "",
     pictures: [
+      {"file": "media/ep24/de-vecchi.jpg", "type": "photo", "caption": {"en": "Cesare Maria De Vecchi, Governor of Italian Somaliland", "so": "Cesare Maria De Vecchi, guddoomiyihii Soomaaliyadii Talyaaniga"}, "credit": {"en": "Unknown author · Public domain · Wikimedia Commons", "so": "Unknown author · Hanti guud (public domain) · Wikimedia Commons"}, "link": "https://commons.wikimedia.org/wiki/File:Cesare_Maria_De_Vecchi1.jpg"},
       {"file": "media/ep24/sultan-ali-yusuf-kenadid.jpg", "type": "photo", "caption": {"en": "Sultan Ali Yusuf Kenadid of Hobyo", "so": "Suldaan Cali Yuusuf Keenadiid ee Hobyo"}, "credit": {"en": "Unknown author · Public domain · Wikimedia Commons", "so": "Unknown author · Hanti guud (public domain) · Wikimedia Commons"}, "link": "https://commons.wikimedia.org/wiki/File:Sultan_Ali_Yusuf_Kenadid.jpg"}
+    ]
+  },
+
+  16: {
+    video: "",
+    pictures: [
+      {"file": "media/ep16/capture-of-aden-1839.jpg", "type": "photo", "caption": {"en": "The capture of Aden, 1839: \"The landing\", painted by Captain J. S. Rundle, who took part", "so": "Qabsashadii Cadan 1839: \"Degitaankii\", uu sawiray Kabtan J. S. Rundle oo ka qayb galay"}, "credit": {"en": "Joseph Sparkhall Rundle (postcard) · Public domain · Wikimedia Commons", "so": "Joseph Sparkhall Rundle (postcard) · Hanti guud (public domain) · Wikimedia Commons"}, "link": "https://commons.wikimedia.org/wiki/File:Capture_of_Aden_1839_%22The_landing%22.jpg"}
+    ]
+  },
+
+  23: {
+    video: "",
+    pictures: [
+      {"file": "media/ep23/oltre-giuba-stamp-1925.jpg", "type": "photo", "caption": {"en": "A 1925 stamp of Oltre Giuba (Jubaland under Italy)", "so": "Shaambad 1925 ah oo ah Oltre Giuba (Jubaland markii Talyaanigu xukumay)"}, "credit": {"en": "Government of Italy · Public domain · Wikimedia Commons", "so": "Government of Italy · Hanti guud (public domain) · Wikimedia Commons"}, "link": "https://commons.wikimedia.org/wiki/File:Oltre_Giuba_1925_Sc1.jpg"}
+    ]
+  },
+
+  26: {
+    video: "",
+    pictures: [
+      {"file": "media/ep26/kar-mogadishu-1941.png", "type": "photo", "caption": {"en": "Soldiers of the King's African Rifles parading in Mogadishu, 1941", "so": "Askar ka tirsan King's African Rifles oo dhoolatus ku samaynaya Muqdisho, 1941"}, "credit": {"en": "William Henry Rogers · Public domain · Wikimedia Commons", "so": "William Henry Rogers · Hanti guud (public domain) · Wikimedia Commons"}, "link": "https://commons.wikimedia.org/wiki/File:C_coy_7th_bn_KAR.png"}
     ]
   }
 
