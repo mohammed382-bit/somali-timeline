@@ -1,0 +1,590 @@
+/* ===========================================
+   1. COLORS AND FONTS
+   Navy and peach come from the series outline
+   (TAXANAHA TAARIIKHDA SOOMAALIYA). Flag blue
+   is kept for the timeline line and dots.
+   =========================================== */
+:root {
+  --navy: #14304f;          /* headers, titles, menu */
+  --navy-light: #24507f;
+  --peach: #f0a882;         /* part bars and highlights */
+  --peach-light: #fbe3d6;
+  --flag-blue: #4189dd;     /* the timeline line and dots */
+  --paper: #faf6f1;         /* warm off-white page background */
+  --white: #ffffff;
+  --text: #1f2933;
+  --muted-text: #5a6472;
+
+  --heading-font: "Playfair Display", Georgia, serif;
+  --body-font: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ===========================================
+   2. WHOLE PAGE
+   =========================================== */
+* {
+  box-sizing: border-box;   /* makes widths easier to calculate */
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: 1.05rem;
+  background-color: var(--paper);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ===========================================
+   3. HEADER: MENU BAR AND TITLE
+   =========================================== */
+.site-header {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+/* The menu bar along the top */
+.top-nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;                    /* puts the items in a row */
+  justify-content: space-between;   /* pushes them to opposite ends */
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  border-bottom-color: var(--peach);   /* peach underline on the current page */
+}
+
+#language-toggle {
+  background-color: var(--peach);
+  color: var(--navy);
+  border: none;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-family: var(--body-font);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;          /* shows the "hand" pointer on hover */
+}
+
+#language-toggle:hover {
+  background-color: var(--peach-light);
+}
+
+/* The big title area under the menu */
+.hero {
+  text-align: center;
+  padding: 36px 16px 44px;
+  border-top: 1px solid var(--navy-light);
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-family: var(--heading-font);
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+/* A short peach line under the title */
+.hero h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 14px auto 0;
+  background-color: var(--peach);
+  border-radius: 2px;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===========================================
+   4. THE TIMELINE
+   =========================================== */
+main {
+  max-width: 900px;         /* keeps lines of text from getting too long */
+  margin: 0 auto;           /* centers the content */
+  padding: 40px 16px;
+}
+
+#timeline {
+  position: relative;       /* lets us place the line inside it */
+  padding-left: 40px;       /* leaves room on the left for the line and dots */
+}
+
+/* The vertical line. "::before" creates a decorative shape with no HTML needed. */
+#timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--flag-blue);
+  border-radius: 2px;
+}
+
+/* Part headings: a peach bar, like in the series outline */
+.part-heading {
+  position: relative;
+  margin: 48px 0 24px -40px;   /* -40px stretches the bar back over the line */
+  padding: 10px 16px;
+  background-color: var(--peach);
+  color: var(--navy);
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.part-heading:first-child {
+  margin-top: 0;
+}
+
+/* One event = one dot + one card */
+.event {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+/* The round dot that sits on the line */
+.event-dot {
+  position: absolute;
+  left: -36px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--paper);
+  border: 4px solid var(--flag-blue);
+  border-radius: 50%;       /* 50% turns a square into a circle */
+}
+
+/* The white box holding the event text */
+.event-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  border-left: 5px solid var(--navy);
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(20, 48, 79, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;   /* makes the hover movement smooth */
+}
+
+.event-card:hover {
+  transform: translateX(5px);   /* nudges the card right on hover */
+  box-shadow: 0 4px 14px rgba(20, 48, 79, 0.14);
+}
+
+/* A clear outline when a card is selected with the keyboard */
+.event-card:focus-visible {
+  outline: 3px solid var(--flag-blue);
+  outline-offset: 3px;
+}
+
+.event-year {
+  display: inline-block;
+  background-color: var(--peach-light);
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.event-title {
+  margin: 8px 0 4px;
+  color: var(--navy);
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.event-summary {
+  margin: 0;
+  color: var(--muted-text);
+}
+
+/* The longer text is HIDDEN by default... */
+.event-details {
+  display: none;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--peach-light);
+}
+
+/* ...and SHOWN when the event has the "open" class */
+.event.open .event-details {
+  display: block;
+}
+
+.event.open .event-dot {
+  background-color: var(--flag-blue);   /* filled dot = open event */
+}
+
+.event.open .event-card {
+  border-left-color: var(--peach);      /* peach edge = open event */
+}
+
+/* The small list of books under each event's details */
+.event-sources {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--muted-text);
+}
+
+/* ===========================================
+   5. FOOTER
+   =========================================== */
+footer {
+  background-color: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 24px 16px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* ===========================================
+   6. SMALL SCREENS (phones)
+   These rules only apply when the screen is
+   narrower than 600 pixels.
+   =========================================== */
+@media (max-width: 600px) {
+  .hero {
+    padding: 28px 16px 32px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 28px 16px;
+  }
+
+  #timeline {
+    padding-left: 30px;
+  }
+
+  #timeline::before {
+    left: 8px;
+  }
+
+  .event-dot {
+    left: -30px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .part-heading {
+    margin-left: -30px;
+    font-size: 1.2rem;
+  }
+
+  .event-card {
+    padding: 14px 16px;
+  }
+}
+
+/* ===========================================
+   7. EPISODE PAGE (episode.html)
+   =========================================== */
+
+/* "Part 2 · Episode 6" above the title */
+.episode-label {
+  margin: 0 0 8px;
+  color: var(--peach);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* The years, shown as a peach tag under the title */
+.hero .episode-years {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 14px;
+  background-color: var(--peach);
+  color: var(--navy);
+  font-weight: 600;
+  border-radius: 14px;
+  opacity: 1;
+}
+
+/* The white box holding the episode text */
+.episode-body {
+  background-color: var(--white);
+  border-radius: 10px;
+  border-top: 5px solid var(--peach);
+  padding: 28px 32px;
+  box-shadow: 0 2px 8px rgba(20, 48, 79, 0.08);
+}
+
+.episode-summary {
+  margin-top: 0;
+  color: var(--navy);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Previous / All episodes / Next */
+.episode-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.episode-nav-link {
+  flex: 1;                      /* all three links share the width equally */
+  text-align: center;
+  padding: 10px 12px;
+  background-color: var(--navy);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.episode-nav-link:hover {
+  background-color: var(--navy-light);
+}
+
+/* "All episodes" in the middle is peach, so it stands out */
+#link-all {
+  background-color: var(--peach);
+  color: var(--navy);
+}
+
+#link-all:hover {
+  background-color: var(--peach-light);
+}
+
+@media (max-width: 600px) {
+  .episode-body {
+    padding: 20px 18px;
+  }
+
+  .episode-nav {
+    gap: 6px;
+  }
+
+  .episode-nav-link {
+    padding: 10px 6px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===========================================
+   8. "READ MORE" LINK UNDER AN OPEN CARD (Step 10)
+   =========================================== */
+.read-more {
+  display: none;              /* hidden while the card is closed... */
+  margin: 8px 0 0 20px;
+  padding: 6px 16px;
+  background-color: var(--navy);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.event.open .read-more {
+  display: inline-block;      /* ...and shown when it is open */
+}
+
+.read-more:hover {
+  background-color: var(--peach);
+  color: var(--navy);
+}
+
+/* When the page jumps to an episode (index.html#ep-6), leave a little space above it */
+.event {
+  scroll-margin-top: 20px;
+}
+
+/* ===========================================
+   9. VIDEO, PICTURES AND MAPS (Step 11)
+   =========================================== */
+.media-section {
+  margin-bottom: 28px;
+}
+
+/* The "hidden" attribute must win over any display rule */
+.media-section[hidden] {
+  display: none;
+}
+
+.episode-body {
+  margin-bottom: 28px;
+}
+
+.media-heading {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+}
+
+/* The YouTube player keeps a 16:9 shape at any width */
+.video-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--navy);
+}
+
+.youtube-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+/* "Video coming soon" box */
+.video-soon {
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--navy);
+  color: var(--white);
+  border-radius: 10px;
+  border: 3px dashed var(--peach);
+}
+
+/* The gallery: as many columns as fit, each at least 220px wide */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 0;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;           /* keeps the picture inside the rounded corners */
+  box-shadow: 0 2px 8px rgba(20, 48, 79, 0.08);
+}
+
+/* The picture is a button, but shouldn't look like one */
+.gallery-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;            /* a magnifying-glass pointer */
+}
+
+.gallery-button:focus-visible {
+  outline: 3px solid var(--flag-blue);
+  outline-offset: -3px;
+}
+
+.gallery-button img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;          /* fills the box without stretching the picture */
+}
+
+.gallery-item figcaption {
+  padding: 10px 12px 12px;
+  font-size: 0.95rem;
+}
+
+.credit {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted-text);
+  font-style: italic;
+}
+
+/* The label on AI pictures: placed over the top of the picture */
+.ai-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  background-color: rgba(20, 48, 79, 0.9);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  pointer-events: none;       /* clicks go through to the picture */
+}
+
+/* ---- The large-picture pop-up ---- */
+#lightbox {
+  max-width: min(92vw, 1000px);
+  padding: 44px 16px 12px;    /* extra space at the top for the × button */
+  border: none;
+  border-radius: 12px;
+  background-color: var(--white);
+}
+
+/* The dark area behind the pop-up */
+#lightbox::backdrop {
+  background-color: rgba(10, 20, 35, 0.8);
+}
+
+#lightbox img {
+  display: block;
+  max-width: 100%;
+  max-height: 75vh;           /* never taller than 75% of the screen */
+  margin: 0 auto;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  border: none;
+  background: none;
+  color: var(--navy);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-caption {
+  margin: 10px 0 2px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.lightbox-credit {
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted-text);
+}
+
+/* Maps are never cut off: the whole map fits inside the box */
+#maps-gallery .gallery-button img {
+  object-fit: contain;
+  background-color: var(--white);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- episode.js replaces this with the episode's title -->
+  <title>Episode</title>
+
+  <!-- Same fonts and design as the timeline page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- The same menu bar as the timeline page -->
+  <header class="site-header">
+    <nav class="top-nav">
+      <a href="index.html" id="nav-home" class="nav-link">Home</a>
+      <button id="language-toggle">Soomaali</button>
+    </nav>
+
+    <!-- episode.js fills in these three -->
+    <div class="hero">
+      <p id="episode-label" class="episode-label"></p>
+      <h1 id="page-title"></h1>
+      <p id="episode-years" class="episode-years"></p>
+    </div>
+  </header>
+
+  <main>
+    <!-- VIDEO: episode.js puts the YouTube player (or "coming soon") here -->
+    <section class="media-section" id="video-section">
+      <h2 id="video-heading" class="media-heading"></h2>
+      <div id="video-box"></div>
+    </section>
+
+    <article class="episode-body">
+      <!-- The short summary, shown larger -->
+      <p id="episode-summary" class="episode-summary"></p>
+
+      <!-- The full text -->
+      <p id="episode-details"></p>
+
+      <!-- The books this episode comes from -->
+      <p id="episode-sources" class="event-sources"></p>
+    </article>
+
+    <!-- PICTURES and MAPS: hidden unless this episode has some (see media.js) -->
+    <section class="media-section" id="pictures-section" hidden>
+      <h2 id="pictures-heading" class="media-heading"></h2>
+      <div id="pictures-gallery" class="gallery"></div>
+    </section>
+
+    <section class="media-section" id="maps-section" hidden>
+      <h2 id="maps-heading" class="media-heading"></h2>
+      <div id="maps-gallery" class="gallery"></div>
+    </section>
+
+    <!-- Previous / All episodes / Next -->
+    <nav class="episode-nav">
+      <a id="link-previous" class="episode-nav-link"></a>
+      <a id="link-all" class="episode-nav-link" href="index.html"></a>
+      <a id="link-next" class="episode-nav-link"></a>
+    </nav>
+  </main>
+
+  <!-- The pop-up window for a large picture. <dialog> is a built-in HTML pop-up. -->
+  <dialog id="lightbox">
+    <button id="lightbox-close" class="lightbox-close">×</button>
+    <img id="lightbox-image" alt="">
+    <p id="lightbox-caption" class="lightbox-caption"></p>
+    <p id="lightbox-credit" class="lightbox-credit"></p>
+  </dialog>
+
+  <footer>
+    <p>A learning project built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <!-- Text and media lists first, then shared code, then this page's code -->
+  <script src="data.js"></script>
+  <script src="media.js"></script>
+  <script src="common.js"></script>
+  <script src="episode.js"></script>
+</body>
+</html>
