@@ -675,6 +675,9 @@ const pageText = {
   seriesTitle: { en: "The Series of the History of the Somali Nation", so: "Taxanaha Taariikhda Ummadda Soomaaliyeed" },
   byline:      { en: "A series by Mohamed Abdulkadir Mohamed", so: "Waxaa diyaariyay Maxamed Cabdulqaadir Maxamed" },
   welcomeHeading: { en: "Welcome", so: "Ku soo dhowow" },
+  // The author's portrait on the welcome page
+  authorName: { en: "Mohamed Abdulkadir Mohamed", so: "Maxamed Cabdulqaadir Maxamed" },
+  authorRole: { en: "Author and presenter of the series", so: "Diyaariyaha iyo soo bandhigaha taxanaha" },
   // Welcome text, taken from the series introduction ("Hordhac"). Each line is one paragraph.
   welcomeText: {
     en: [
@@ -689,7 +692,7 @@ const pageText = {
     ]
   },
   // The series motto (from the introduction)
-  motto:       { en: "\"Learn your past, so that you understand your future.\"", so: "\"Tagtadaada baro, timaaddadaada aad fahantide.\"" },
+  motto:       { en: "\"Learn your past, so that you may set your future right.\"", so: "\"Tagtadaada baro, timaaddadaada aad saxdid e.\"" },
   mottoSource: { en: "Professor Cabdalla Cumar Mansuur", so: "Barafasoor Cabdalla Cumar Mansuur" },
   aboutNav:    { en: "About", so: "Ku saabsan" },
   startButton:    { en: "Start with Episode 1", so: "Ka bilow Xalqada 1aad" },
@@ -721,10 +724,6 @@ const pageText = {
 // =============================================================
 const about = {
   title: { en: "About the Series", so: "Ku Saabsan Taxanaha" },
-  intro: {
-    en: "In the introduction to the series, I share how the programme is prepared and organised, so that viewers know what to expect from the start.",
-    so: "Maadaama fadhiga koowaad ee taxanaha uu yahay hordhac, waxaan idin la wadaagayaa habraaca iyo qaab-diyaarinta barnaamijka, si ay afeef hore iigu sii noqoto, filashaduna ay isku keento."
-  },
   sections: [
     {
       heading: { en: "Method", so: "Manhaj" },

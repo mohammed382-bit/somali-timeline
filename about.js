@@ -26,12 +26,7 @@ function drawPage() {
   const content = document.getElementById("about-content");
   content.innerHTML = "";
 
-  // 1. The opening paragraph
-  const introBox = makeElement("section", "about-box");
-  introBox.appendChild(makeElement("p", "about-intro", about.intro[lang]));
-  content.appendChild(introBox);
-
-  // 2. Method and Disclaimer: each is a numbered list of points
+  // 1. Method and Disclaimer: each is a numbered list of points
   for (const section of about.sections) {
     const box = makeElement("section", "about-box");
     box.appendChild(makeElement("h2", "section-heading", section.heading[lang]));
@@ -44,7 +39,7 @@ function drawPage() {
     content.appendChild(box);
   }
 
-  // 3. Thanks: the list of scholars, then the special thanks
+  // 2. Thanks: the list of scholars, then the special thanks
   const thanksBox = makeElement("section", "about-box");
   thanksBox.appendChild(makeElement("h2", "section-heading", about.thanksHeading[lang]));
   thanksBox.appendChild(makeElement("p", "", about.thanksIntro[lang]));
@@ -56,7 +51,7 @@ function drawPage() {
   thanksBox.appendChild(makeElement("p", "", about.thanksSpecial[lang]));
   content.appendChild(thanksBox);
 
-  // 4. The closing poem, then the motto
+  // 3. The closing poem, then the motto
   const poemBox = makeElement("section", "about-box poem-box");
   poemBox.appendChild(makeElement("h2", "section-heading", about.poemHeading[lang]));
   const poem = makeElement("div", "poem");

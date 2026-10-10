@@ -61,6 +61,11 @@ function drawPage() {
   }
 
   // Welcome text: one <p> for each paragraph in data.js
+  // The author's portrait: name, role, and a description for screen readers
+  document.getElementById("author-name").textContent = pageText.authorName[lang];
+  document.getElementById("author-role").textContent = pageText.authorRole[lang];
+  document.getElementById("author-photo").alt = pageText.authorName[lang];
+
   document.getElementById("welcome-heading").textContent = pageText.welcomeHeading[lang];
   const welcomeBox = document.getElementById("welcome-text");
   welcomeBox.innerHTML = "";

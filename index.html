@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2026-10-10c">
+  <link rel="stylesheet" href="style.css?v=2026-10-10f">
 </head>
 <body>
 
@@ -48,8 +48,21 @@
   <main>
     <!-- Welcome text: written in data.js (welcomeText) -->
     <section class="welcome">
-      <h2 id="welcome-heading" class="section-heading"></h2>
-      <div id="welcome-text"></div>
+      <!-- The author's portrait in an arch-shaped frame -->
+      <figure class="author">
+        <div class="author-frame">
+          <img id="author-photo" src="media/author/mohamed-abdulkadir.jpg" alt="">
+        </div>
+        <figcaption>
+          <span id="author-name" class="author-name"></span>
+          <span id="author-role" class="author-role"></span>
+        </figcaption>
+      </figure>
+
+      <div class="welcome-words">
+        <h2 id="welcome-heading" class="section-heading"></h2>
+        <div id="welcome-text"></div>
+      </div>
     </section>
 
     <!-- The three parts of the series, each linking to its place on the timeline -->
@@ -64,9 +77,9 @@
   </footer>
 
   <!-- Text and media lists first, then shared code, then this page's code -->
-  <script src="data.js?v=2026-10-10c"></script>
-  <script src="media.js?v=2026-10-10c"></script>
-  <script src="common.js?v=2026-10-10c"></script>
-  <script src="home.js?v=2026-10-10c"></script>
+  <script src="data.js?v=2026-10-10f"></script>
+  <script src="media.js?v=2026-10-10f"></script>
+  <script src="common.js?v=2026-10-10f"></script>
+  <script src="home.js?v=2026-10-10f"></script>
 </body>
 </html>
