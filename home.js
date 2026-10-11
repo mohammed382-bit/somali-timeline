@@ -48,6 +48,31 @@ function drawPage() {
   document.getElementById("timeline-button").textContent = pageText.timelineButton[lang];
   document.title = pageText.seriesTitle[lang];
 
+  // Launch date line under the buttons, and the optional Subscribe button
+  document.getElementById("launch-note").textContent =
+    pageText.firstEpisode[lang] + " " + formatDate(episodeDate(1), lang) + " · " + siteConfig.releaseTime;
+  const subscribe = document.getElementById("subscribe-button");
+  if (siteConfig.youtubeChannel) {
+    subscribe.href = siteConfig.youtubeChannel;
+    subscribe.textContent = "▶ " + pageText.subscribe[lang];
+    subscribe.hidden = false;
+  }
+
+  // The trailer (only if its link is set in data.js)
+  const trailerId = getYouTubeId(siteConfig.trailer);
+  const trailerSection = document.getElementById("trailer-section");
+  trailerSection.hidden = !trailerId;
+  if (trailerId) {
+    document.getElementById("trailer-heading").textContent = pageText.trailerHeading[lang];
+    const frame = document.getElementById("trailer-frame");
+    if (!frame.getAttribute("src")) {
+      frame.src = "https://www.youtube-nocookie.com/embed/" + trailerId;
+    }
+    frame.title = pageText.trailerHeading[lang];
+  }
+
+  setMetaDescription(pageText.motto[lang] + " — " + pageText.seriesTitle[lang]);
+
   // Credit for the background picture
   const heroCredit = document.getElementById("hero-credit");
   heroCredit.innerHTML = "";

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohammed382-bit.github.io/somali-timeline/sitemap.xml

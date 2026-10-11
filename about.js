@@ -22,6 +22,7 @@ function drawPage() {
   document.getElementById("page-title").textContent = about.title[lang];
   document.getElementById("about-byline").textContent = pageText.byline[lang];
   document.title = about.title[lang];
+  setMetaDescription(about.title[lang] + " · " + pageText.seriesTitle[lang]);
 
   const content = document.getElementById("about-content");
   content.innerHTML = "";

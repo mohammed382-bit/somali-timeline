@@ -314,7 +314,7 @@ const events = [
       en: "Somali tradition records the arrival of Sheikh Ismail Jabarti (Darod) around the 10th or 11th century, and of Sheikh Isaq about two centuries later. Lewis writes that parts of these stories may be legend, but they reflect the real growth and spread of these clans. By the 13th century, Hawiye groups lived near Merca. The geographer Ibn Sa'id recorded this, the earliest known mention of a Somali group.",
       so: "Sheekooyinka Soomaalidu waxay sheegaan imaatinkii Sheekh Ismaaciil Jabarti (Daarood) qiyaastii qarnigii 10aad ama 11aad, iyo Sheekh Isxaaq qiyaastii laba qarni ka dib. Lewis wuxuu qabaa in sheekooyinkaas qaarkood ay khuraafaad yihiin, balse ay muujinayaan fiditaankii dhabta ahaa ee qabaa'ilkaas. Qarnigii 13aad, qaybo Hawiye ah ayaa degganaa meel u dhow Marka. Juqraafiyaha Ibnu Saciid ayaa taas qoray, waana xusitaankii ugu horreeyay ee la ogyahay ee qolo Soomaaliyeed."
     },
-    sources: ["A Modern History of the Somali", "ilovepdf_merged (4) (Ibn Sa'id)"]
+    sources: ["A Modern History of the Somali", "Ibn Sa'id al-Maghribi, Kitab Bast al-Ard"]
   },
   {
     id: 6,
@@ -329,7 +329,7 @@ const events = [
       en: "In the 9th century the Arabs of Mogadishu were made up of 39 families. To protect the city's independence, its people formed a shared government of four clans, known as \"the Four Seats of Xamar\", which ran the city for about 300 years. In the 13th century Fakhr ad-Din built, in 1271, the mosque in Xamar Weyne that still bears his name, and his son Abu Bakr became sultan. In 1331 the traveller Ibn Battuta found a very large city of strong merchants, famous for cloth that was exported to Egypt. Its sultan, Abu Bakr ibn Shaykh Umar, spoke Maqdishi and Arabic, and ruled with a qadi and a council of viziers and amirs. Later the Muzaffar dynasty, linked to the Ajuran, ruled the city until the early 17th century.",
       so: "Qarnigii 9aad, Carabtii degganayd Muqdisho waxay ahaayeen 39 reer. Si ay u difaacaan madax-bannaanida magaalada, dadkeedu waxay sameysteen xukunwadaag ka kooban afar jilib, oo loo yaqaanay \"Afarta Kursi ee Xamar\", kaas oo magaalada maamulayay qiyaastii 300 sano. Qarnigii 13aad, Fakhrudiin wuxuu 1271 dhisay masaajidka Xamar Weyne ee magiciisa sita, wiilkiisa Abuubakarna waxaa loo caleema saaray suldaan. Sanadkii 1331, socdaalaha Ibnu Batuuta wuxuu ku tilmaamay magaalo aad u weyn oo ay degan yihiin ganacsato xoog leh, laguna sameeyo maro caan ah oo loo dhoofiyo Masar. Suldaankeeda, Abuu Bakar ibnu Sheekh Cumar, wuxuu ku hadli jiray af Muqdishaawi iyo Carabi, wuxuuna ku maamuli jiray qaadi iyo gole wasiirro iyo amiirro ah. Markii dambe, boqortooyadii Muzaffar oo xiriir la lahayd Ajuuraan ayaa magaalada xukuntay ilaa horraantii qarnigii 17aad."
     },
-    sources: ["Taariikhda Soomaaliya", "ilovepdf_merged (4) (Ibn Battuta)", "The Shaping of Somali Society", "A Modern History of the Somali", "تاريخ الصومال (Jaamac Cumar Ciise)"]
+    sources: ["Taariikhda Soomaaliya", "Ibn Battuta, Tuhfat al-Nuzzar (Rihla)", "The Shaping of Somali Society", "A Modern History of the Somali", "تاريخ الصومال (Jaamac Cumar Ciise)"]
   },
   {
     id: 7,
@@ -667,7 +667,7 @@ const events = [
 const pageText = {
   title:    { en: "Somali History Timeline", so: "Taxanaha Taariikhda Ummadda Soomaaliyeed" },
   subtitle: { en: "From ancient times to independence in 1960", so: "Laga soo bilaabo waayihii hore ilaa xorriyaddii 1960" },
-  footer:   { en: "A learning project built with HTML, CSS, and JavaScript.", so: "Tijaabo" },
+  footer:   { en: "© 2026 Mohamed Abdulkadir Mohamed · A new episode every Sunday at 7:00 PM", so: "© 2026 Maxamed Cabdulqaadir Maxamed · Xalqad cusub Axad walba, 7:00 fiidnimo" },
   home:     { en: "Home", so: "Bogga Hore" },
   episodesNav: { en: "Episodes", so: "Xalqadaha" },
 
@@ -715,7 +715,55 @@ const pageText = {
   close:       { en: "Close", so: "Xir" },
   notFound:    { en: "Sorry, this episode was not found.", so: "Waan ka xumahay, xalqadan lama helin." },
   // The button shows the OTHER language: the one you will switch to
-  button:   { en: "Soomaali", so: "English" }
+  button:   { en: "Soomaali", so: "English" },
+
+  // ---- Added: navigation, dates, search, tools ----
+  sourcesNav:   { en: "Sources", so: "Ilaha-xogta" },
+  skipLink:     { en: "Skip to content", so: "U gudub nuxurka" },
+  toTop:        { en: "Back to top ↑", so: "Kor u noqo ↑" },
+  subscribe:    { en: "Subscribe on YouTube", so: "Ku biir kanaalka YouTube" },
+  trailerHeading: { en: "Watch the trailer", so: "Daawo xayeysiiska taxanaha" },
+  firstEpisode: { en: "The first episode is released on", so: "Xalqadda 1aad waxay soo baxaysaa" },
+  releasesOn:   { en: "Releases", so: "Soo baxaysa" },
+  released:     { en: "Released", so: "Waa soo baxday" },
+  watchNow:     { en: "Video available", so: "Muuqaal diyaar ah" },
+  statusSoon:   { en: "Coming", so: "Soo socda" },
+  statusAvailable: { en: "Watch now", so: "Daawo" },
+  articleSoon:  { en: "The full written script of this episode will be published here after its release, with maps and pictures. Until then, this is a short summary.", so: "Qoraalka buuxa ee xalqadan, iyo khariidadaha iyo sawirrada, halkan ayaa lagu soo dhigi doonaa kadib marka ay soo baxdo. Haddaba waa warbixin kooban." },
+  minRead:      { en: "min read", so: "daqiiqo oo akhris ah" },
+  inThisEpisode: { en: "In this episode", so: "Waxa ku jira xalqadan" },
+  print:        { en: "Print / Save as PDF", so: "Daabac / Ku keydi PDF" },
+  share:        { en: "Share", so: "La wadaag" },
+  copied:       { en: "Link copied", so: "Xiriirka waa la koobiyeeyay" },
+  searchLabel:  { en: "Search the episodes", so: "Ka raadi xalqadaha" },
+  searchPlaceholder: { en: "Search (e.g. Punt, Mogadishu, 1960)…", so: "Raadi (tusaale: Punt, Muqdisho, 1960)…" },
+  filterAll:    { en: "All parts", so: "Dhammaan qaybaha" },
+  expandAll:    { en: "Open all", so: "Fur dhammaan" },
+  collapseAll:  { en: "Close all", so: "Xir dhammaan" },
+  noResults:    { en: "No episodes match your search.", so: "Xalqad ku haboon raadintaada lama helin." },
+  resultsCount: { en: "episodes shown", so: "xalqadood la tusay" },
+  sourcesTitle: { en: "Sources and References", so: "Ilaha-xogta iyo Maraajicda" },
+  sourcesIntro: { en: "Every book, article and document used in the series, with the episodes that rely on it. Each episode also lists its own sources at the bottom of the page.", so: "Buug kasta, maqaal kasta iyo dukumiinti kasta oo taxanaha laga isticmaalay, iyo xalqadaha ku tiirsan. Xalqad walba waxay kaloo hoosteeda ku xustaa ilaheeda." },
+  sourcesFilter: { en: "Filter sources", so: "Ka sifee ilaha" },
+  usedIn:       { en: "Used in episodes", so: "Waxaa laga isticmaalay xalqadaha" },
+  sourcesCount: { en: "sources", so: "ilo" },
+  notFoundPage: { en: "This page was not found.", so: "Bogga lama helin." },
+  imageSourcePending: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+};
+
+// =============================================================
+// SITE SETTINGS: the things you will change as the series goes live
+// =============================================================
+const siteConfig = {
+  // The first episode comes out on this Sunday; each next episode a week later.
+  launchDate: "2026-11-01",
+  releaseTime: "7:00 PM",
+  // Paste your YouTube channel link between the quotes (leave "" to hide the buttons).
+  youtubeChannel: "",
+  // Paste the YouTube link of the series trailer (leave "" to hide it).
+  trailer: "",
+  // The public address of this site (used for share previews). Change it if the site moves.
+  siteUrl: "https://mohammed382-bit.github.io/somali-timeline/"
 };
 
 
@@ -748,12 +796,12 @@ const about = {
       heading: { en: "Disclaimer", so: "Afeef" },
       points: {
         en: [
-          "This series focuses only on the historical continuity of the Somali nation's past. Topics such as lineage, clan, languages, dialects, culture, schools of law, Sufi orders, individuals and politics are outside its scope. While following the series, judge it only by the facts of history and their evidence.",
+          "This series focuses only on the historical continuity of the Somali nation's past. Topics such as lineage, clan, languages, dialects, culture, schools of law, Sufi orders, individuals and politics are outside its scope, except where the historical record itself requires them to be mentioned. While following the series, judge it only by the facts of history and their evidence.",
           "Because this is history, people's names will be mentioned. Please do not insult or mock them: you may disapprove of what a person did, but you are not their judge, and history is not a court; it is about learning the facts and taking lessons. As God says: \u2067«تلك أمة قد خلت لها ما كسبت ولكم ما كسبتم ولا تسألون عما كانوا يعملون»\u2069, \"That was a nation which has passed on. It will have what it earned, and you will have what you have earned. And you will not be asked about what they used to do.\"",
           "My role is only to organise and present the historical information I have gathered. Establishing the facts and researching history is the work of researchers and historians; that is why every episode comes with its sources."
         ],
         so: [
-          "Taxanahan wuxuu diiradda saarayaa isku xirka taariikheed ee sooyaalkii ummadda Soomaaliyeed oo keli ah. Mawduucyada la xiriira isirka, qabiilka, afafka, lahjadaha, dhaqanka, madaahibta, dariiqooyinka, shakhsiyaadka iyo siyaasadda waa ka baxsan xayndaabka taxanaha. Inta aad la socotid barnaamijkan, ku xukun oo keli ah dhacdooyinka taariikhda xaqiiqdooda iyo xujadooda.",
+          "Taxanahan wuxuu diiradda saarayaa isku xirka taariikheed ee sooyaalkii ummadda Soomaaliyeed oo keli ah. Mawduucyada la xiriira isirka, qabiilka, afafka, lahjadaha, dhaqanka, madaahibta, dariiqooyinka, shakhsiyaadka iyo siyaasadda waa ka baxsan xayndaabka taxanaha, marka laga reebo meesha ay dhacdooyinka taariikhdu lafteedu u baahan yihiin in la xuso. Inta aad la socotid barnaamijkan, ku xukun oo keli ah dhacdooyinka taariikhda xaqiiqdooda iyo xujadooda.",
           "Mar haddii taariikh laga hadlayo, waxaa qasab ah in dad magacyadooda la soo hadal qaado. Dadkaas aflagaado iyo sar-sarriig toonna yaan lagula kicin: fal qof sameeyay waad saluugi kartaa, balse shakhsiyaddiisa xukun iyo maxkamad toonna kuma lihid, taariikhduna xukun maahane waa xog-helid iyo cibra qaadasho. Waana hadalkii Eebbe: \u2067«تلك أمة قد خلت لها ما كسبت ولكم ما كسبتم ولا تسألون عما كانوا يعملون»\u2069.",
           "Doorkayga iyo kaalintaydu waa uun abla-ablaynta iyo soo gudbinta xogaha taariikheed inta aan haleelay. Qarrirka xaqiiqooyinka iyo baaridda cilmiga taariikhda waa shaqada cilmi-baarayaasha iyo culimada taariikhda; waana sababta aan fadhi walba ilaha-xogta ugu lifaaqay."
         ]

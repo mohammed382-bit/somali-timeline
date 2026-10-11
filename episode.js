@@ -46,10 +46,13 @@ function drawPage() {
 
   // The text and the sources
   document.getElementById("episode-summary").textContent = episode.summary[lang];
-  document.getElementById("episode-details").textContent = episode.details[lang];
+  setSmartText(document.getElementById("episode-details"), episode.details[lang]);
   drawArticle();
-  document.getElementById("episode-sources").textContent =
-    sourcesLabel[lang] + ": " + episode.sources.join(" · ");
+  fillSources(document.getElementById("episode-sources"), sourcesLabel[lang], episode.sources);
+
+  drawReleaseInfo();
+  drawTools();
+  drawMeta();
 
   // The browser tab: "6. The Rulers of Mogadishu"
   document.title = episode.id + ". " + episode.title[lang];
@@ -74,26 +77,106 @@ function drawArticle() {
   const box = document.getElementById("episode-article");
   box.innerHTML = "";
 
+  // No article yet: the short text is shown, with a note about the full script
+  const soon = document.getElementById("article-soon");
+  soon.hidden = !!episode.article;
+  soon.textContent = pageText.articleSoon[lang];
+  document.getElementById("episode-readtime").textContent = "";
+  document.getElementById("episode-toc").hidden = true;
+
   if (!episode.article) {
-    return;   // no article: the short text (episode-details) is enough
+    return;
   }
 
   // With an article, the short text isn't needed on this page
   document.getElementById("episode-details").textContent = "";
 
-  for (const section of episode.article) {
+  let wordCount = 0;
+  const tocList = document.getElementById("toc-list");
+  tocList.innerHTML = "";
+
+  episode.article.forEach(function (section, index) {
     const heading = document.createElement("h3");
     heading.className = "article-heading";
+    heading.id = "section-" + (index + 1);
     heading.textContent = section.heading[lang];
     box.appendChild(heading);
 
+    // an entry in the contents list
+    const item = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = "#section-" + (index + 1);
+    link.textContent = section.heading[lang];
+    item.appendChild(link);
+    tocList.appendChild(item);
+
     for (const paragraph of section[lang]) {
       const p = document.createElement("p");
-      p.textContent = paragraph;
+      setSmartText(p, paragraph);
       box.appendChild(p);
+      wordCount += paragraph.split(/\s+/).length;
     }
+  });
+
+  // Reading time (about 200 words a minute) and the contents list
+  const minutes = Math.max(1, Math.round(wordCount / 200));
+  document.getElementById("episode-readtime").textContent = "⏱ " + minutes + " " + pageText.minRead[lang];
+  document.getElementById("toc-heading").textContent = pageText.inThisEpisode[lang];
+  document.getElementById("episode-toc").hidden = episode.article.length < 3;
+}
+
+// Under the title: when the episode comes out (or that it is out)
+function drawReleaseInfo() {
+  const lang = currentLanguage;
+  const status = episodeStatus(episode.id);
+  const line = document.getElementById("episode-release");
+  const when = formatDate(episodeDate(episode.id), lang) + " · " + siteConfig.releaseTime;
+  if (status === "soon") {
+    line.textContent = pageText.releasesOn[lang] + ": " + when;
+  } else if (status === "released") {
+    line.textContent = pageText.released[lang] + ": " + when;
+  } else {
+    line.textContent = "";
   }
 }
+
+// Share and Print buttons
+function drawTools() {
+  const lang = currentLanguage;
+  document.getElementById("share-button").textContent = "↗ " + pageText.share[lang];
+  document.getElementById("print-button").textContent = "🖶 " + pageText.print[lang];
+}
+
+// The page description for search engines, and the share title
+function drawMeta() {
+  setMetaDescription(episode.summary[currentLanguage] + " · " + pageText.seriesTitle[currentLanguage]);
+}
+
+// The address to share: a small page that shows a nice preview card, then opens the episode
+function shareAddress() {
+  return siteConfig.siteUrl + "share/" + episode.id + ".html?lang=" + currentLanguage;
+}
+
+document.getElementById("print-button").addEventListener("click", function () {
+  window.print();
+});
+
+document.getElementById("share-button").addEventListener("click", function () {
+  const note = document.getElementById("tool-note");
+  const data = {
+    title: episode.id + ". " + episode.title[currentLanguage],
+    text: episode.summary[currentLanguage],
+    url: shareAddress()
+  };
+  if (navigator.share) {
+    navigator.share(data).catch(function () { /* the visitor closed the share window */ });
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(data.url).then(function () {
+      note.textContent = pageText.copied[currentLanguage];
+      setTimeout(function () { note.textContent = ""; }, 2500);
+    });
+  }
+});
 
 // Make one Previous/Next link point at an episode, or hide it if there is none
 function setEpisodeLink(linkId, target, label) {
@@ -117,15 +200,6 @@ function setEpisodeLink(linkId, target, label) {
 
 // This episode's media from media.js, or an empty one if it has none
 const episodeMedia = media[episodeNumber] || { video: "", pictures: [] };
-
-// Get the 11-character video id out of any kind of YouTube link, e.g.
-//   https://www.youtube.com/watch?v=abcdefghijk
-//   https://youtu.be/abcdefghijk
-// Returns "" if the link is empty or not a YouTube link.
-function getYouTubeId(link) {
-  const match = (link || "").match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([A-Za-z0-9_-]{11})/);
-  return match ? match[1] : "";
-}
 
 let videoBuilt = false;   // the player is only built once, so switching language doesn't restart it
 
@@ -151,7 +225,6 @@ function drawVideo() {
     frame.className = "video-frame";
     frame.src = "https://www.youtube-nocookie.com/embed/" + videoId;
     frame.allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen";
-    frame.allowFullscreen = true;
     box.appendChild(frame);
 
     // A plain link as well, in case the player can't load
