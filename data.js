@@ -748,6 +748,10 @@ const pageText = {
   usedIn:       { en: "Used in episodes", so: "Waxaa laga isticmaalay xalqadaha" },
   sourcesCount: { en: "sources", so: "ilo" },
   notFoundPage: { en: "This page was not found.", so: "Bogga lama helin." },
+  sourcesAllLanguages: { en: "All languages", so: "Dhammaan luqadaha" },
+  sourcesCoverNote: { en: "Book covers are shown only to identify the books. They belong to their publishers and authors.", so: "Daboolka buugaagta waxaa loo muujiyay oo keliya in buugga lagu garto. Waxay iska leeyihiin daabacayaasha iyo qorayaasha." },
+  sourcesBy: { en: "By", so: "Qoraa" },
+  coverOf: { en: "Cover of", so: "Daboolka buugga" },
   imageSourcePending: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
 };
 
@@ -851,3 +855,49 @@ const about = {
 
 // The word "Sources" in each language
 const sourcesLabel = { en: "Sources", so: "Ilaha-xogta" };
+
+
+// =============================================================
+// THE SOURCE CATALOGUE (used by the Sources page, sources.html)
+// One entry for each source named in the episodes above.
+//   lang:   "so" (Somali) · "ar" (Arabic) · "en" (English)
+//   author: optional
+//   cover:  optional: the cover picture, e.g. "media/covers/modern-history.jpg"
+//   isbn:   optional: if there is no cover file, the cover is fetched from Open Library by ISBN
+// A source with neither a cover nor an ISBN shows a neat title tile instead.
+// To change a book's language group, change its "lang".
+// =============================================================
+const sourceInfo = {
+  // ---- Somali ----
+  "Taariikhda Soomaaliya":                         { lang: "so" },
+  "Soomaaliya iyo Taariikhdeedii Hore":            { lang: "so", author: "Cabdulqaadir Salaad Dhoorre" },
+  "Taariikhda soomaaliyeed iyo tartanka qabiilka": { lang: "so" },
+  "Sooyaalka Soomaaliya":                          { lang: "so" },
+  "Xalqada 1aad (series script)":                  { lang: "so", note: { en: "The author's own episode script", so: "Qoraalka xalqada ee qoraaga" } },
+  "TAXANAHA TAARIIKHDA SOOMAALIYA":                { lang: "so", note: { en: "The author's own series outline", so: "Qorshaha taxanaha ee qoraaga" } },
+
+  // ---- Arabic ----
+  "تاريخ الصومال (Jaamac Cumar Ciise)":            { lang: "ar", author: "Jaamac Cumar Ciise" },
+  "كشف السدول (Reeraash)":                         { lang: "ar", author: "Axmed Cabdullaahi Reeraash" },
+  "Futuh al-Habasha":                              { lang: "ar" },
+  "Ibn Sa'id al-Maghribi, Kitab Bast al-Ard":      { lang: "ar", author: "Ibn Sa'id al-Maghribi" },
+  "Ibn Battuta, Tuhfat al-Nuzzar (Rihla)":         { lang: "ar", author: "Ibn Battuta" },
+
+  // ---- English ----
+  "A Modern History of the Somali":                { lang: "en", author: "I. M. Lewis", isbn: "082141495X" },
+  "Peoples of the Horn of Africa":                 { lang: "en", author: "I. M. Lewis" },
+  "The Shaping of Somali Society":                 { lang: "en", author: "Lee V. Cassanelli" },
+  "The Collapse of the Somali State":              { lang: "en" },
+  "The Scramble in the Horn of Africa":            { lang: "en" },
+  "The Somali Peninsula":                          { lang: "en" },
+  "Divine Fertility":                              { lang: "en", author: "Sada Mire" },
+  "New Perspectives on the Expeditions to the Land of Punt": { lang: "en" },
+  "The Periplus":                                  { lang: "en" }
+};
+
+// The three language groups, in the order they appear
+const sourceLanguages = [
+  { key: "so", name: { en: "Somali", so: "Af-Soomaali" }, native: "Soomaali" },
+  { key: "ar", name: { en: "Arabic", so: "Carabi" },      native: "العربية" },
+  { key: "en", name: { en: "English", so: "Ingiriisi" },  native: "English" }
+];
