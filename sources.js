@@ -84,9 +84,10 @@ function makeCover(name, info) {
   return box;
 }
 
-function makeCard(name, episodeIds) {
+// One book card. "info" can be given directly (Further reading books aren't in sourceInfo).
+function makeCard(name, episodeIds, info) {
   const lang = currentLanguage;
-  const info = sourceInfo[name] || { lang: "en" };
+  info = info || sourceInfo[name] || { lang: "en" };
 
   const item = document.createElement("li");
   item.className = "source-item";
@@ -116,6 +117,12 @@ function makeCard(name, episodeIds) {
     note.className = "source-author";
     note.textContent = info.note[lang];
     text.appendChild(note);
+  }
+
+  // Books that no episode cites yet (Further reading) have no "Used in episodes" line
+  if (episodeIds.length === 0) {
+    item.appendChild(text);
+    return item;
   }
 
   const used = document.createElement("span");
@@ -176,8 +183,37 @@ function showSources() {
     area.appendChild(section);
   }
 
+  // Further reading: books not yet cited in an episode, after the language groups
+  const further = furtherReading.filter(function (book) {
+    const searchable = simplifyText(book.name + " " + (book.author || ""));
+    const languageOk = activeLanguage === "all" || activeLanguage === book.lang;
+    return languageOk && words.every(word => searchable.includes(word));
+  });
+  if (further.length > 0) {
+    shown += further.length;
+    const section = document.createElement("section");
+    section.className = "source-group";
+    const heading = document.createElement("h2");
+    heading.className = "source-group-heading";
+    heading.textContent = pageText.furtherReading[lang] + " (" + further.length + ")";
+    section.appendChild(heading);
+
+    const note = document.createElement("p");
+    note.className = "further-reading-note";
+    note.textContent = pageText.furtherReadingNote[lang];
+    section.appendChild(note);
+
+    const list = document.createElement("ul");
+    list.className = "sources-list";
+    for (const book of further) {
+      list.appendChild(makeCard(book.name, [], book));
+    }
+    section.appendChild(list);
+    area.appendChild(section);
+  }
+
   document.getElementById("sources-count").textContent =
-    shown + " / " + allSources.length + " " + pageText.sourcesCount[lang];
+    shown + " / " + (allSources.length + furtherReading.length) + " " + pageText.sourcesCount[lang];
 }
 
 // Language buttons: All · Somali · Arabic · English

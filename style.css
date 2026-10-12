@@ -1517,3 +1517,10 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+
+/* The short explanation under the "Further reading" heading on the Sources page */
+.further-reading-note {
+  margin: -6px 0 16px;
+  color: var(--muted-text);
+  font-style: italic;
+}

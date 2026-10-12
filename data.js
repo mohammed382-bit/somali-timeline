@@ -752,6 +752,8 @@ const pageText = {
   sourcesCoverNote: { en: "Book covers are shown only to identify the books. They belong to their publishers and authors.", so: "Daboolka buugaagta waxaa loo muujiyay oo keliya in buugga lagu garto. Waxay iska leeyihiin daabacayaasha iyo qorayaasha." },
   sourcesBy: { en: "By", so: "Qoraa" },
   coverOf: { en: "Cover of", so: "Daboolka buugga" },
+  furtherReading:     { en: "Further reading", so: "Akhris dheeraad ah" },
+  furtherReadingNote: { en: "Other books on Somali history, not yet cited in an episode.", so: "Buugaag kale oo ku saabsan taariikhda Soomaalida, oo aan weli lagu tixraacin xalqad." },
   imageSourcePending: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
 };
 
@@ -869,31 +871,41 @@ const sourcesLabel = { en: "Sources", so: "Ilaha-xogta" };
 // =============================================================
 const sourceInfo = {
   // ---- Somali ----
-  "Taariikhda Soomaaliya":                         { lang: "so" },
-  "Soomaaliya iyo Taariikhdeedii Hore":            { lang: "so", author: "Cabdulqaadir Salaad Dhoorre" },
-  "Taariikhda soomaaliyeed iyo tartanka qabiilka": { lang: "so" },
-  "Sooyaalka Soomaaliya":                          { lang: "so" },
+  "Taariikhda Soomaaliya":                         { lang: "so", author: "Maxamed Ibraahim Maxamed \"Liiq-Liiqato\"", cover: "media/covers/taariikhda-soomaaliya.jpg" },
+  "Soomaaliya iyo Taariikhdeedii Hore":            { lang: "so", author: "Cabdulqaadir Salaad Dhoorre", cover: "media/covers/soomaaliya-taariikhdeedii-hore.jpg" },
+  "Taariikhda soomaaliyeed iyo tartanka qabiilka": { lang: "so", author: "Dr. Abdisalam Sheikh Hassan", cover: "media/covers/tartanka-qabiilka.jpg" },
+  "Sooyaalka Soomaaliya":                          { lang: "so", author: "Cabdulqaadir Cusmaan Maxamuud (Oromo)", cover: "media/covers/sooyaalka-soomaaliya.jpg" },
   "Xalqada 1aad (series script)":                  { lang: "so", note: { en: "The author's own episode script", so: "Qoraalka xalqada ee qoraaga" } },
   "TAXANAHA TAARIIKHDA SOOMAALIYA":                { lang: "so", note: { en: "The author's own series outline", so: "Qorshaha taxanaha ee qoraaga" } },
 
   // ---- Arabic ----
-  "تاريخ الصومال (Jaamac Cumar Ciise)":            { lang: "ar", author: "Jaamac Cumar Ciise" },
-  "كشف السدول (Reeraash)":                         { lang: "ar", author: "Axmed Cabdullaahi Reeraash" },
-  "Futuh al-Habasha":                              { lang: "ar" },
+  "تاريخ الصومال (Jaamac Cumar Ciise)":            { lang: "ar", author: "Jaamac Cumar Ciise", cover: "media/covers/tarikh-al-sumal.jpg" },
+  "كشف السدول (Reeraash)":                         { lang: "ar", author: "Axmed Cabdullaahi Reeraash", cover: "media/covers/kashf-al-sudul.jpg" },
+  "Futuh al-Habasha":                              { lang: "ar", cover: "media/covers/futuh-al-habasha.jpg" },
   "Ibn Sa'id al-Maghribi, Kitab Bast al-Ard":      { lang: "ar", author: "Ibn Sa'id al-Maghribi" },
   "Ibn Battuta, Tuhfat al-Nuzzar (Rihla)":         { lang: "ar", author: "Ibn Battuta" },
 
   // ---- English ----
-  "A Modern History of the Somali":                { lang: "en", author: "I. M. Lewis", isbn: "082141495X" },
-  "Peoples of the Horn of Africa":                 { lang: "en", author: "I. M. Lewis" },
-  "The Shaping of Somali Society":                 { lang: "en", author: "Lee V. Cassanelli" },
-  "The Collapse of the Somali State":              { lang: "en" },
-  "The Scramble in the Horn of Africa":            { lang: "en" },
-  "The Somali Peninsula":                          { lang: "en" },
-  "Divine Fertility":                              { lang: "en", author: "Sada Mire" },
+  "A Modern History of the Somali":                { lang: "en", author: "I. M. Lewis", isbn: "082141495X", cover: "media/covers/modern-history-of-the-somali.jpg" },
+  "Peoples of the Horn of Africa":                 { lang: "en", author: "I. M. Lewis", cover: "media/covers/peoples-of-the-horn.jpg" },
+  "The Shaping of Somali Society":                 { lang: "en", author: "Lee V. Cassanelli", cover: "media/covers/shaping-of-somali-society.jpg" },
+  "The Collapse of the Somali State":              { lang: "en", author: "Abdisalam M. Issa-Salwe", cover: "media/covers/collapse-of-the-somali-state.jpg" },
+  "The Scramble in the Horn of Africa":            { lang: "en", author: "Mohamed Osman Omar", cover: "media/covers/scramble-horn-of-africa.jpg" },
+  "The Somali Peninsula":                          { lang: "en", cover: "media/covers/somali-peninsula.jpg" },
+  "Divine Fertility":                              { lang: "en", author: "Sada Mire", cover: "media/covers/divine-fertility.jpg" },
   "New Perspectives on the Expeditions to the Land of Punt": { lang: "en" },
-  "The Periplus":                                  { lang: "en" }
+  "The Periplus":                                  { lang: "en", author: "Wilfred H. Schoff", cover: "media/covers/periplus.jpg" }
 };
+
+// Books shown under "Further reading" on the Sources page: not yet cited in an episode.
+// When an episode starts citing one, add it to that episode's sources and to sourceInfo above, and remove it here.
+const furtherReading = [
+  { name: "Taariikhda Afka iyo Bulshada Soomaaliyeed", lang: "so", author: "Cabdalla Cumar Mansuur", cover: "media/covers/taariikhda-afka-iyo-bulshada.jpg" },
+  { name: "Sooyaalka Isirka & Abtirka Soomaalida", lang: "so", author: "Prof. Maxamed Cabdi Maxamed \"Gaandi\"", cover: "media/covers/sooyaalka-isirka-abtirka.jpg" },
+  { name: "Garbaduubkii Gumeysiga", lang: "so", cover: "media/covers/garbaduubkii-gumeysiga.jpg" },
+  { name: "Dal Dad Waayey iyo Duni Damiir Beeshay", lang: "so", author: "Maxamed Daahir Afrax", cover: "media/covers/dal-dad-waayey.jpg" },
+  { name: "The State and Rural Transformation in Northern Somalia, 1884–1986", lang: "en", author: "Abdi Ismail Samatar", cover: "media/covers/state-and-rural-transformation.jpg" }
+];
 
 // The three language groups, in the order they appear
 const sourceLanguages = [
