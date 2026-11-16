@@ -95,27 +95,93 @@ function drawArticle() {
   const tocList = document.getElementById("toc-list");
   tocList.innerHTML = "";
 
+  // A title above the script, with a small ornament
+  const intro = document.createElement("header");
+  intro.className = "script-intro";
+  const introTitle = document.createElement("h2");
+  introTitle.textContent = pageText.scriptHeading[lang];
+  const introNote = document.createElement("p");
+  introNote.textContent = pageText.scriptNote[lang];
+  intro.appendChild(introTitle);
+  intro.appendChild(introNote);
+  box.appendChild(intro);
+
+  let dropCapDone = false;
+
   episode.article.forEach(function (section, index) {
+    const number = String(index + 1).padStart(2, "0");   // "01", "02" ...
+
+    const sectionBox = document.createElement("section");
+    sectionBox.className = "script-section" + (index === 0 ? " script-opening" : "");
+
+    // The section heading, with its number
+    const head = document.createElement("div");
+    head.className = "script-section-head";
+    const numberTag = document.createElement("span");
+    numberTag.className = "script-num";
+    numberTag.textContent = number;
     const heading = document.createElement("h3");
     heading.className = "article-heading";
     heading.id = "section-" + (index + 1);
     heading.textContent = section.heading[lang];
-    box.appendChild(heading);
+    head.appendChild(numberTag);
+    head.appendChild(heading);
+    sectionBox.appendChild(head);
 
     // an entry in the contents list
     const item = document.createElement("li");
     const link = document.createElement("a");
     link.href = "#section-" + (index + 1);
-    link.textContent = section.heading[lang];
+    const linkNumber = document.createElement("span");
+    linkNumber.className = "toc-num";
+    linkNumber.textContent = number;
+    link.appendChild(linkNumber);
+    link.appendChild(document.createTextNode(section.heading[lang]));
     item.appendChild(link);
     tocList.appendChild(item);
 
-    for (const paragraph of section[lang]) {
-      const p = document.createElement("p");
-      setSmartText(p, paragraph);
-      box.appendChild(p);
-      wordCount += paragraph.split(/\s+/).length;
+    // Decide what each paragraph is (the same in both languages, so the Somali text decides)
+    const kinds = paragraphKinds(section.so);
+    const paragraphs = section[lang];
+    let i = 0;
+    while (i < paragraphs.length) {
+      const kind = kinds[i];
+
+      // A run of lines that belong together: a poem or a list
+      if (kind === "poem" || kind === "list") {
+        const group = document.createElement(kind === "poem" ? "div" : "ul");
+        group.className = kind === "poem" ? "script-poem" : "script-list";
+        while (i < paragraphs.length && kinds[i] === kind) {
+          const line = document.createElement(kind === "poem" ? "p" : "li");
+          setSmartText(line, stripBullet(paragraphs[i]));
+          group.appendChild(line);
+          wordCount += paragraphs[i].split(/\s+/).length;
+          i++;
+        }
+        sectionBox.appendChild(group);
+        continue;
+      }
+
+      const p = document.createElement(kind === "quote" ? "blockquote" : "p");
+      setSmartText(p, paragraphs[i]);
+      if (kind === "arabic") {
+        // the Arabic itself, or (in English) its translation, centred like a greeting
+        p.classList.add(isMostlyArabic(paragraphs[i]) ? "script-arabic" : "script-greeting");
+      } else if (kind === "quote") {
+        p.className = "script-quote";
+      } else if (kind === "question") {
+        p.classList.add("script-question");
+      } else if (!dropCapDone && index > 0 && paragraphs[i].length > 120) {
+        // The first long paragraph of the main text gets a large first letter
+        p.classList.add("script-dropcap");
+        dropCapDone = true;
+      }
+      sectionBox.appendChild(p);
+      wordCount += paragraphs[i].split(/\s+/).length;
+      i++;
     }
+
+    box.appendChild(sectionBox);
   });
 
   // Reading time (about 200 words a minute) and the contents list
@@ -123,6 +189,77 @@ function drawArticle() {
   document.getElementById("episode-readtime").textContent = "⏱ " + minutes + " " + pageText.minRead[lang];
   document.getElementById("toc-heading").textContent = pageText.inThisEpisode[lang];
   document.getElementById("episode-toc").hidden = episode.article.length < 3;
+  setupReadingProgress();
+}
+
+// What kind of paragraph each one is, so it can be shown in its own style:
+//   "poem"     lines of a poem (short lines after "meeris", "maanso", "tuducyo", "gabay")
+//   "list"     a point in a list (starts with • or ·)
+//   "arabic"   a passage in Arabic (Qur'an verses, sayings)
+//   "quote"    a quotation (starts with a quotation mark)
+//   "question" a question in the opening of the episode
+//   "text"     an ordinary paragraph
+function paragraphKinds(somaliParagraphs) {
+  const kinds = somaliParagraphs.map(function (text) {
+    if (/^[•·]/.test(text)) {
+      return "list";
+    }
+    if (isMostlyArabic(text)) {
+      return "arabic";
+    }
+    if (/^[“"«]/.test(text)) {
+      return "quote";
+    }
+    if (/\?\s*$/.test(text) && text.length < 140) {
+      return "question";
+    }
+    return "text";
+  });
+
+  // A poem: after a line that announces one, the following short lines
+  for (let i = 0; i < somaliParagraphs.length; i++) {
+    if (!/meeris|maanso|tuduc|gabay/i.test(somaliParagraphs[i])) {
+      continue;
+    }
+    let j = i + 1;
+    while (j < somaliParagraphs.length && stripBullet(somaliParagraphs[j]).length <= 40 && !/[.?!:]$/.test(somaliParagraphs[j].trim())) {
+      j++;
+    }
+    if (j - (i + 1) >= 4) {
+      for (let k = i + 1; k < j; k++) {
+        kinds[k] = "poem";
+      }
+    }
+  }
+  return kinds;
+}
+
+// "• Saam Nuux" → "Saam Nuux"
+function stripBullet(text) {
+  return text.replace(/^[•·]\s*/, "");
+}
+
+// A thin bar at the top of the page that fills up while the script is read
+function setupReadingProgress() {
+  const article = document.getElementById("episode-article");
+  let bar = document.getElementById("reading-progress");
+  if (!bar) {
+    bar = document.createElement("div");
+    bar.id = "reading-progress";
+    bar.className = "reading-progress";
+    bar.setAttribute("aria-hidden", "true");
+    document.body.appendChild(bar);
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+  }
+  function update() {
+    const box = article.getBoundingClientRect();
+    const total = box.height - window.innerHeight;
+    const done = total > 0 ? Math.min(1, Math.max(0, -box.top / total)) : 0;
+    bar.style.transform = "scaleX(" + done + ")";
+    bar.hidden = !episode.article;
+  }
+  update();
 }
 
 // Under the title: when the episode comes out (or that it is out)

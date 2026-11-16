@@ -2113,6 +2113,8 @@ const pageText = {
   articleSoon:  { en: "The full written script of this episode will be published here after its release, with maps and pictures. Until then, this is a short summary.", so: "Qoraalka buuxa ee xalqadan, iyo khariidadaha iyo sawirrada, halkan ayaa lagu soo dhigi doonaa kadib marka ay soo baxdo. Haddaba waa warbixin kooban." },
   minRead:      { en: "min read", so: "daqiiqo oo akhris ah" },
   inThisEpisode: { en: "In this episode", so: "Waxa ku jira xalqadan" },
+  scriptHeading: { en: "The episode script", so: "Qoraalka xalqadda" },
+  scriptNote:    { en: "The full text of the episode, as it was presented.", so: "Qoraalka buuxa ee xalqadda, sidii loo soo bandhigay." },
   print:        { en: "Print / Save as PDF", so: "Daabac / Ku keydi PDF" },
   share:        { en: "Share", so: "La wadaag" },
   copied:       { en: "Link copied", so: "Xiriirka waa la koobiyeeyay" },
