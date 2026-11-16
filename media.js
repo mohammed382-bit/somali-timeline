@@ -81,7 +81,179 @@ const media = {
 
   4: {
     video: "https://www.youtube.com/watch?v=UJhiu5jlFd8",
-    pictures: []
+    pictures: [
+      {
+        file: "media/ep04/adulis-throne-drawing.jpg",
+        type: "photo",
+        caption: {
+          en: "A drawing of the stone throne of Adulis and the inscribed stele beside it, the \"Monumentum Adulitanum\" that Cosmas copied around 520 CE",
+          so: "Sawir-gacmeed muujinaya kursigii dhagaxa ahaa ee Adulis iyo tiirka qoraalka ku xardhan yahay ee ag taagan, \"Monumentum Adulitanum\", kii Cosmas koobiyeeyay qiyaastii 520 NCKD"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/cosmas-world-map.jpg",
+        type: "map",
+        caption: {
+          en: "The world as Cosmas pictured it in his Christian Topography: the known lands surrounded by the ocean, with the four winds at the sides",
+          so: "Adduunka sida uu Cosmas ugu sawiray buuggiisa Christian Topography: dhulka la yaqaan oo badweyntu ku wareegsan tahay, iyo afarta dabaylood oo dhinacyada ah"
+        },
+        credit: { en: "Christian Topography of Cosmas, 6th-century manuscript copy (public domain)", so: "Christian Topography ee Cosmas, nuqul gacan-ku-qoran (hanti guud)" }
+      },
+      {
+        file: "media/ep04/cosmas-world-mountain.jpg",
+        type: "map",
+        caption: {
+          en: "Another of Cosmas's drawings: the world as a great mountain, with the sun rising and setting behind it",
+          so: "Sawir kale oo Cosmas: adduunka oo ah buur weyn, qorraxduna gadaasheeda ka soo baxayso kana dhacayso"
+        },
+        credit: { en: "Christian Topography of Cosmas, manuscript copy (public domain)", so: "Christian Topography ee Cosmas, nuqul gacan-ku-qoran (hanti guud)" }
+      },
+      {
+        file: "media/ep04/ptolemy-engraving.jpg",
+        type: "photo",
+        caption: {
+          en: "Claudius Ptolemy of Alexandria, the geographer who around 150 CE called the Somali coast Azania and the interior Barbaria (an imagined portrait from a later engraving)",
+          so: "Claudius Ptolemaeus (Batlaymuus) ee Iskandariya, juquraafiyihii qiyaastii 150 NCKD xeebaha Soomaaliya ugu yeeray Azania, gudahana Barbaria (sawir male ah oo xardh ah, waqti danbe la sameeyay)"
+        },
+        credit: { en: "Engraving, 16th century (public domain)", so: "Xardh, qarnigii 16aad (hanti guud)" }
+      },
+      {
+        file: "media/ep04/ras-hafun-from-space.jpg",
+        type: "photo",
+        caption: {
+          en: "The Hafun peninsula (Xaafuun) seen from space: the ancient port of Opone stood here, at the eastern tip of Africa",
+          so: "Jasiirad-u-ekaha Xaafuun oo hawada sare laga sawiray: halkan ayay ku tiil dekeddii hore ee Opone, cirifka bari ee Afrika"
+        },
+        credit: { en: "NASA, photograph from space (public domain)", so: "NASA, sawir hawada sare laga qaaday (hanti guud)" }
+      },
+      {
+        file: "media/ep04/hafun-harbour-plan.jpg",
+        type: "map",
+        caption: {
+          en: "Plan of Hafun harbour showing the Main Site and Trench I, from Neville Chittick's excavation",
+          so: "Khariidadda dekedda Xaafuun oo muujinaysa Goobta Weyn (Main Site) iyo Godka I, ee qodistii Neville Chittick"
+        },
+        credit: { en: "Neville Chittick, British-Somali Expedition 1975 (Azania, 1976)", so: "Neville Chittick, British-Somali Expedition 1975 (Azania, 1976)" }
+      },
+      {
+        file: "media/ep04/hafun-excavation-trenches.jpg",
+        type: "photo",
+        caption: {
+          en: "Excavation trenches dug into the sand at an ancient trading site on the Somali coast",
+          so: "Godad qodis ah oo ciidda laga qoday, goob ganacsi oo qadiim ah oo ku taal xeebta Soomaaliyeed"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/hafun-boats-headland.jpg",
+        type: "photo",
+        caption: {
+          en: "Boats on the shore at Hafun; the arrow marks the site on the headland across the water",
+          so: "Doonyo xeebta Xaafuun yaal; falaartu waxay tilmaamaysaa goobta ku taal madaxa dhulka ee biyaha ka shisheeya"
+        },
+        credit: { en: "From Neville Chittick's report on the 1975 expedition", so: "Warbixinta Neville Chittick ee sahankii 1975" }
+      },
+      {
+        file: "media/ep04/hafun-coast.jpg",
+        type: "photo",
+        caption: {
+          en: "The coast and headland at Hafun",
+          so: "Xeebta iyo madaxa dhulka ee Xaafuun"
+        },
+        credit: { en: "From Neville Chittick's report on the 1975 expedition", so: "Warbixinta Neville Chittick ee sahankii 1975" }
+      },
+      {
+        file: "media/ep04/hafun-town-today.jpg",
+        type: "photo",
+        caption: {
+          en: "Hafun today, with the hills of the peninsula behind the town",
+          so: "Xaafuun maanta, buuraha jasiirad-u-ekahana magaalada gadaasheeda ka muuqdaan"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/hafun-salt-works-pier.jpg",
+        type: "photo",
+        caption: {
+          en: "The ruins of the old salt-works pier at Hafun, reaching into the Indian Ocean",
+          so: "Burburka buundadii dekedda milixda ee Xaafuun, oo Badweynta Hindiya u fidsan"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/sabaean-letters-on-stone.jpg",
+        type: "photo",
+        caption: {
+          en: "Letters in the ancient South Arabian (Sabaean) script cut into a stone in the Somali land, a trace of contact across the sea",
+          so: "Xarfo ku qoran farta Carabta Koonfureed ee hore (Saba'iga) oo dhagax lagu xardhay dhulka Soomaalida, raad muujinaya xiriirkii badda laga gudbay"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/rock-inscription-dhagax-guure.jpg",
+        type: "photo",
+        caption: {
+          en: "Painted signs resembling Himyarite writing at Dhagax-Guure near Hargeisa, recorded by Dr. Sada Mire",
+          so: "Calaamado la sawiray oo u eg farta Ximyar, Dhagax-Guure oo u dhow Hargeysa, ay diiwaangelisay Dr. Sada Mire"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/aden-harbour-dhow.jpg",
+        type: "photo",
+        caption: {
+          en: "Porters unloading a dhow in the harbour of Aden, the port where the Persian fleet landed to help Sayf ibn Dhi Yazan",
+          so: "Xammaaliin dejinaya doon ku jirta dekedda Cadan, dekeddii ay ku xirteen maraakiibtii Faaris ee u gurmanaysay Sayf bin Thii Yazan"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/marib-ancient-dam-sluice.jpg",
+        type: "photo",
+        caption: {
+          en: "The remains of the ancient great dam of Ma'rib, the capital of the kingdom of Saba, whose bursting is told in the Qur'an",
+          so: "Haraadiga biya-xireenkii weynaa ee qadiimka ahaa ee Ma'rib, caasimaddii boqortooyada Saba, kii jabkiisa Qur'aanku ka sheekeeyay"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/marib-dam-modern.jpg",
+        type: "photo",
+        caption: {
+          en: "The modern dam at Ma'rib in Yemen, built near the site of the ancient one",
+          so: "Biya-xireenka casriga ah ee Ma'rib ee dalka Yaman, oo laga dhisay meel u dhow kii hore"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/narseh-investiture-relief.jpg",
+        type: "photo",
+        caption: {
+          en: "Rock relief at Naqsh-e Rostam in Iran showing the Sasanian king Narseh (r. 293–302 CE), said to have had relations with \"Zand Afrik Shah\"",
+          so: "Sawir dhagax lagu qoray oo ku yaal Naqsh-e Rostam ee Iiraan, muujinaya boqorkii Saasaaniyiinta Narseh (293–302 NCKD), kii la sheego in uu xiriir la lahaa \"Zand Afrik Shah\""
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/column-of-constantine.jpg",
+        type: "photo",
+        caption: {
+          en: "The Column of Constantine in Istanbul, raised when Constantine founded his new capital, Constantinople, in 330 CE",
+          so: "Tiirka Qustantiin ee Istanbuul, oo la taagay markii Qustantiin aasaasay caasimaddiisii cusbayd ee Qusdandiiniya, 330 NCKD"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      },
+      {
+        file: "media/ep04/najran-al-ukhdud-wall.jpg",
+        type: "photo",
+        caption: {
+          en: "An ancient stone wall at al-Ukhdud, Najran, the site linked with the People of the Trench (Ashab al-Ukhdud)",
+          so: "Darbi dhagax ah oo qadiim ah oo ku yaal al-Ukhdud, Najraan, goobta lala xiriiriyo أصحاب الأخدود"
+        },
+        credit: { en: "Image source being verified", so: "Ilaha sawirka waa la xaqiijinayaa" }
+      }
+    ]
   },
 
   6: {
