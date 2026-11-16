@@ -5,7 +5,7 @@
 //     node tools/build.js
 //
 // It creates:
-//   share/1.html ... share/28.html   (a preview card for each episode, then opens it)
+//   share/1.html ... share/29.html   (a preview card for each episode, then opens it)
 //   sitemap.xml and robots.txt
 // =============================================================
 const fs = require("fs");
