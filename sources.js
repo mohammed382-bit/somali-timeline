@@ -1,7 +1,7 @@
 // =============================================================
 // sources.js: BUILDS THE SOURCES PAGE (sources.html)
 // It collects every source named in data.js and groups them by language
-// (Somali · Arabic · English), with the book cover when there is one.
+// (Somali · Arabic · English · Italian · French · Greek and Latin), with the cover when there is one.
 // The language, author and cover of each source are set in data.js (sourceInfo).
 // To add a cover: put the picture in media/covers/ and write its path
 //   as  cover: "media/covers/name.jpg"  in that source's sourceInfo line.
@@ -15,6 +15,13 @@ for (const event of events) {
       sourceMap.set(name, []);
     }
     sourceMap.get(name).push(event.id);
+  }
+}
+
+// Every source of the series is in sourceInfo (data.js), even ones no episode cites yet
+for (const name of Object.keys(sourceInfo)) {
+  if (!sourceMap.has(name)) {
+    sourceMap.set(name, []);
   }
 }
 
@@ -84,7 +91,7 @@ function makeCover(name, info) {
   return box;
 }
 
-// One book card. "info" can be given directly (Further reading books aren't in sourceInfo).
+// One book card (its language, author, year and cover come from sourceInfo in data.js)
 function makeCard(name, episodeIds, info) {
   const lang = currentLanguage;
   info = info || sourceInfo[name] || { lang: "en" };
@@ -106,10 +113,17 @@ function makeCard(name, episodeIds, info) {
   }
   text.appendChild(title);
 
-  if (info.author) {
+  if (info.author || info.year) {
     const author = document.createElement("span");
     author.className = "source-author";
-    author.textContent = pageText.sourcesBy[lang] + ": " + info.author;
+    const parts = [];
+    if (info.author) {
+      parts.push(pageText.sourcesBy[lang] + ": " + info.author);
+    }
+    if (info.year) {
+      parts.push(info.year);
+    }
+    author.textContent = parts.join(" · ");
     text.appendChild(author);
   }
   if (info.note) {
@@ -119,7 +133,7 @@ function makeCard(name, episodeIds, info) {
     text.appendChild(note);
   }
 
-  // Books that no episode cites yet (Further reading) have no "Used in episodes" line
+  // Sources that no episode cites yet have no "Used in episodes" line
   if (episodeIds.length === 0) {
     item.appendChild(text);
     return item;
@@ -158,7 +172,7 @@ function showSources() {
     }
     const matches = allSources.filter(function (entry) {
       const info = sourceInfo[entry[0]] || { lang: "en" };
-      const searchable = simplifyText(entry[0] + " " + (info.author || ""));
+      const searchable = simplifyText(entry[0] + " " + (info.author || "") + " " + (info.year || ""));
       return info.lang === group.key && words.every(word => searchable.includes(word));
     });
     if (matches.length === 0) {
@@ -183,37 +197,8 @@ function showSources() {
     area.appendChild(section);
   }
 
-  // Further reading: books not yet cited in an episode, after the language groups
-  const further = furtherReading.filter(function (book) {
-    const searchable = simplifyText(book.name + " " + (book.author || ""));
-    const languageOk = activeLanguage === "all" || activeLanguage === book.lang;
-    return languageOk && words.every(word => searchable.includes(word));
-  });
-  if (further.length > 0) {
-    shown += further.length;
-    const section = document.createElement("section");
-    section.className = "source-group";
-    const heading = document.createElement("h2");
-    heading.className = "source-group-heading";
-    heading.textContent = pageText.furtherReading[lang] + " (" + further.length + ")";
-    section.appendChild(heading);
-
-    const note = document.createElement("p");
-    note.className = "further-reading-note";
-    note.textContent = pageText.furtherReadingNote[lang];
-    section.appendChild(note);
-
-    const list = document.createElement("ul");
-    list.className = "sources-list";
-    for (const book of further) {
-      list.appendChild(makeCard(book.name, [], book));
-    }
-    section.appendChild(list);
-    area.appendChild(section);
-  }
-
   document.getElementById("sources-count").textContent =
-    shown + " / " + (allSources.length + furtherReading.length) + " " + pageText.sourcesCount[lang];
+    shown + " / " + allSources.length + " " + pageText.sourcesCount[lang];
 }
 
 // Language buttons: All · Somali · Arabic · English

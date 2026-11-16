@@ -1494,6 +1494,9 @@ footer a {
 .cover-so { background-color: var(--navy); }
 .cover-ar { background-color: #8a4a2f; }
 .cover-en { background-color: var(--navy-light); }
+.cover-it { background-color: #3f6b4f; }
+.cover-fr { background-color: #5a4a7a; }
+.cover-gr { background-color: #6b5b3a; }
 
 .source-text {
   min-width: 0;
