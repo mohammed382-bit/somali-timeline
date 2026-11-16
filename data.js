@@ -2062,13 +2062,11 @@ const pageText = {
   welcomeText: {
     en: [
       "History is the most important school a society can learn from. To understand where we stand today, we must study and look back at the ages that have passed, and the paths our fathers and ancestors took. As the Somali saying goes: \"A tree is not planted only for the shade of the one who plants it.\"",
-      "The greatest obstacle facing our history is not a lack of information. It is that our history is scattered: loose facts, isolated events, names whose place in history we do not know, and no thread to tie them together. That is what led me to prepare \"The Series of the History of the Somali Nation\": a scholarly, detailed account that everyone can understand.",
-      "The series is planned in 29 episodes, drawing on more than 25 references and books. A new episode is released every Thursday at 7:00 in the evening, East Africa time."
+      "The greatest obstacle facing our history is not a lack of information. It is that our history is scattered: loose facts, isolated events, names whose place in history we do not know, and no thread to tie them together. That is what led me to prepare \"The Series of the History of the Somali Nation\": a scholarly, detailed account that everyone can understand."
     ],
     so: [
       "Taariikhdu waa dugsiga ugu muhiimsan ee bulsho cashar ka baran karto. Si aan taaganteenna u fahanno, waa inaan darasnaa, dibna u milicsannaa waayeheennii tegay, iyo tubtii aabbayaasheen iyo ab-awalladeen ay qaadeen. Waana meesha Soomaalidu ka tiraahdo: \"Geedka looma abuuro adigaa harsan doona\".",
-      "Caqabadda ugu weyn ee taariikhdeenna naga haysata ma aha xog yari iyo keyd la'aan, balse waa filiqsanaanta taariikhdeenna: xog qubane ah, dhacdooyin kaliyaale ah, magacyo meel ay taariikhda kasoo galeen aannan war u hayn, iyo nirgixii isku xiri lahaa oo aan la hayn. Taasi waxay igu dhalisay inaan diyaariyo \"Taxanaha Taariikhda Ummadda Soomaaliyeed\", si cilmiyaysan, faah-faahsan, isla markaasna dadku wada fahmi karaan.",
-      "Taxanahan waxaa loo qorsheeyay 29 xalqo, xogtiisana waxaan kasoo ururiyay in ka badan 25 marjic iyo buug. Xalqad cusub ayaa soo baxda Khamiis walba, saacaddu marka ay tahay 7:00 fiidnimo, saacadda Bariga Afrika."
+      "Caqabadda ugu weyn ee taariikhdeenna naga haysata ma aha xog yari iyo keyd la'aan, balse waa filiqsanaanta taariikhdeenna: xog qubane ah, dhacdooyin kaliyaale ah, magacyo meel ay taariikhda kasoo galeen aannan war u hayn, iyo nirgixii isku xiri lahaa oo aan la hayn. Taasi waxay igu dhalisay inaan diyaariyo \"Taxanaha Taariikhda Ummadda Soomaaliyeed\", si cilmiyaysan, faah-faahsan, isla markaasna dadku wada fahmi karaan."
     ]
   },
   // The series motto (from the introduction)

@@ -48,9 +48,7 @@ function drawPage() {
   document.getElementById("timeline-button").textContent = pageText.timelineButton[lang];
   document.title = pageText.seriesTitle[lang];
 
-  // Launch date line under the buttons, and the optional Subscribe button
-  document.getElementById("launch-note").textContent =
-    pageText.firstEpisode[lang] + " " + formatDate(episodeDate(1), lang) + " · " + siteConfig.releaseTime;
+  // The optional Subscribe button
   const subscribe = document.getElementById("subscribe-button");
   if (siteConfig.youtubeChannel) {
     subscribe.href = siteConfig.youtubeChannel;
