@@ -392,7 +392,7 @@ const events = [
         ]
       }
     ],
-    sources: ["Qoraallada xalqadaha (series scripts)", "Soomaaliya iyo Taariikhdeedii Hore", "Taariikhda Soomaaliya", "Sooyaalka Soomaaliya"]
+    sources: ["Soomaaliya iyo Taariikhdeedii Hore", "Taariikhda Soomaaliya", "Sooyaalka Soomaaliya"]
   },
   {
     id: 2,
@@ -844,7 +844,7 @@ const events = [
         ]
       }
     ],
-    sources: ["Qoraallada xalqadaha (series scripts)", "New Perspectives on the Expeditions to the Land of Punt", "Soomaaliya iyo Taariikhdeedii Hore", "The Periplus", "Taariikhda Soomaaliya"]
+    sources: ["New Perspectives on the Expeditions to the Land of Punt", "Soomaaliya iyo Taariikhdeedii Hore", "The Periplus", "Taariikhda Soomaaliya"]
   },
   {
     id: 3,
@@ -1230,7 +1230,7 @@ const events = [
         ]
       }
     ],
-    sources: ["Qoraallada xalqadaha (series scripts)", "Divine Fertility"]
+    sources: ["Divine Fertility"]
   },
   {
     id: 4,
@@ -1664,7 +1664,7 @@ const events = [
         ]
       }
     ],
-    sources: ["Qoraallada xalqadaha (series scripts)", "Soomaaliya iyo Taariikhdeedii Hore", "Taariikhda Soomaaliya", "A Modern History of the Somali", "Divine Fertility", "The Periplus"]
+    sources: ["Soomaaliya iyo Taariikhdeedii Hore", "Taariikhda Soomaaliya", "A Modern History of the Somali", "Divine Fertility", "The Periplus"]
   },
   {
     id: 5,
@@ -1979,7 +1979,7 @@ const events = [
       en: "Governor Cesare Maria De Vecchi arrived in December 1923. In 1925 Italy broke its treaties with Boqor Osman of the Majeerteen and Sultan Ali Yusuf of Hobyo. Hobyo was overrun in October 1925 and became an Italian administrative region. Omar Samatar, one of Sultan Ali Yusuf's commanders, led a revolt and recaptured El-Buur on 9 November. The Majeerteen court at Bargaal fell in 1927. The British exiled Sultan Mahamud Ali Shire to the Seychelles for seven years.",
       so: "Guddoomiye Cesare Maria De Vecchi wuxuu yimid bishii Diseembar 1923. Sanadkii 1925, Talyaanigu wuxuu jebiyay heshiisyadii uu la galay Boqor Cismaan ee Majeerteen iyo Suldaan Cali Yuusuf ee Hobyo. Hobyo waa la qabsaday bishii Oktoobar 1925, waxayna noqotay gobol maamul Talyaani. Cumar Samatar, oo ka mid ahaa taliyayaasha Suldaan Cali Yuusuf, ayaa hoggaamiyay kacdoon, wuxuuna dib u qabsaday Ceelbuur 9kii Nofeembar. Xaruntii Majeerteen ee Baargaal waxay dhacday 1927. Ingiriisku wuxuu Suldaan Maxamuud Cali Shire u masaafuriyay jasiiradda Seyshelles muddo toddoba sano ah."
     },
-    sources: ["The Collapse of the Somali State", "Taariikhda soomaaliyeed iyo tartanka qabiilka", "A Modern History of the Somali", "TAXANAHA TAARIIKHDA SOOMAALIYA"]
+    sources: ["The Collapse of the Somali State", "Taariikhda soomaaliyeed iyo tartanka qabiilka", "A Modern History of the Somali"]
   },
   {
     id: 26,
@@ -2266,8 +2266,6 @@ const sourcesLabel = { en: "Sources", so: "Ilaha-xogta" };
 // To change a book's language group, change its "lang".
 // =============================================================
 const sourceInfo = {
-  "Qoraallada xalqadaha (series scripts)": {"lang": "so", "note": {"en": "The author's own episode scripts", "so": "Qoraallada xalqadaha ee qoraaga"}},
-  "TAXANAHA TAARIIKHDA SOOMAALIYA": {"lang": "so", "note": {"en": "The author's own series outline", "so": "Qorshaha taxanaha ee qoraaga"}, "cover": "media/covers/taxanaha-outline.jpg"},
 
   // ---- Somali ----
   "Taariikhda Soomaaliya": { "lang": "so", "author": "Maxamed Ibraahim Maxamed \"Liiq-Liiqato\"", "cover": "media/covers/taariikhda-soomaaliya.jpg" },
@@ -2327,7 +2325,6 @@ const sourceInfo = {
   "The Benadiri People of Somalia": {"lang": "en", "author": "Anita Adam", "cover": "media/covers/the-benadiri-people-of-somalia.jpg"},
   "The Banadir Coast: Its Peoples and Cultural History": {"lang": "en", "author": "Kassim & Issa", "year": "2017", "cover": "media/covers/the-banadir-coast-its-peoples-and-cultural-history.jpg"},
   "Social Structure of Southern Somali Tribes": {"lang": "en", "author": "Virginia Luling", "year": "1971", "cover": "media/covers/social-structure-of-southern-somali-tribes.jpg"},
-  "Across the Strait: Yemen's Manuscripts on the Somali World": { "lang": "en", "author": "Cawil Caraale", "cover": "media/covers/across-the-strait.jpg" },
   "Against All Odds: Archaeology in Somalia": {"lang": "en", "author": "Jorge de Torres", "year": "2018", "cover": "media/covers/against-all-odds-archaeology-in-somalia.jpg"},
   "Nomads Trading with Empires": {"lang": "en", "author": "Alfredo González-Ruibal et al.", "cover": "media/covers/nomads-trading-with-empires.jpg"},
   "Asia in the Horn": {"lang": "en", "author": "Alfredo González-Ruibal et al.", "year": "2021", "cover": "media/covers/asia-in-the-horn.jpg"},
