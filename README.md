@@ -22,7 +22,7 @@ Plain HTML, CSS and JavaScript: no build step is needed to run it.
    The "Coming" badge on the timeline turns into "Watch now".
 3. **Each new episode script.** In `data.js`, add an `article: [...]` to that episode (copy the
    structure of episode 1). Reading time and the contents list are made automatically.
-4. **Launch date.** `siteConfig.launchDate` is the first Sunday; every later episode is one week after it.
+4. **Launch date.** `siteConfig.launchDate` is the day Episode 1 came out (a Thursday); every later episode is one week after it.
 5. **Image credits.** Pictures marked "Image source being verified" in `media.js` need their real
    source and licence added.
 6. After changing episode titles or summaries, run `node tools/build.js` (needs Node.js)

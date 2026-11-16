@@ -27,6 +27,21 @@ function drawPage() {
   const content = document.getElementById("about-content");
   content.innerHTML = "";
 
+  // 0. The introduction video ("Hordhac"), only if its link is set in data.js (siteConfig.introVideo)
+  const introId = getYouTubeId(siteConfig.introVideo || "");
+  if (introId) {
+    const videoBox = makeElement("section", "about-box");
+    videoBox.appendChild(makeElement("h2", "section-heading", pageText.introVideoHeading[lang]));
+    const frame = document.createElement("iframe");
+    frame.className = "video-frame";
+    frame.src = "https://www.youtube-nocookie.com/embed/" + introId;
+    frame.title = pageText.introVideoHeading[lang];
+    frame.allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen";
+    frame.loading = "lazy";
+    videoBox.appendChild(frame);
+    content.appendChild(videoBox);
+  }
+
   // 1. Method and Disclaimer: each is a numbered list of points
   for (const section of about.sections) {
     const box = makeElement("section", "about-box");
