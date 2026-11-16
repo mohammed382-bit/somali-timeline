@@ -2126,7 +2126,7 @@ const pageText = {
   noResults:    { en: "No episodes match your search.", so: "Xalqad ku haboon raadintaada lama helin." },
   resultsCount: { en: "episodes shown", so: "xalqadood la tusay" },
   sourcesTitle: { en: "Sources and References", so: "Ilaha-xogta iyo Maraajicda" },
-  sourcesIntro: { en: "Every book, article and document used in the series, with the episodes that rely on it. Each episode also lists its own sources at the bottom of the page.", so: "Buug kasta, maqaal kasta iyo dukumiinti kasta oo taxanaha laga isticmaalay, iyo xalqadaha ku tiirsan. Xalqad walba waxay kaloo hoosteeda ku xustaa ilaheeda." },
+  sourcesIntro: { en: "Every book, article and document used in the series. Each episode also lists its own sources at the bottom of the page.", so: "Buug kasta, maqaal kasta iyo dukumiinti kasta oo taxanaha laga isticmaalay. Xalqad walba waxay kaloo hoosteeda ku xustaa ilaheeda." },
   sourcesFilter: { en: "Filter sources", so: "Ka sifee ilaha" },
   usedIn:       { en: "Used in episodes", so: "Waxaa laga isticmaalay xalqadaha" },
   sourcesCount: { en: "sources", so: "ilo" },

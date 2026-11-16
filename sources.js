@@ -133,27 +133,6 @@ function makeCard(name, episodeIds, info) {
     text.appendChild(note);
   }
 
-  // Sources that no episode cites yet have no "Used in episodes" line
-  if (episodeIds.length === 0) {
-    item.appendChild(text);
-    return item;
-  }
-
-  const used = document.createElement("span");
-  used.className = "source-used";
-  used.appendChild(document.createTextNode(pageText.usedIn[lang] + ": "));
-  episodeIds.forEach(function (id, index) {
-    if (index > 0) {
-      used.appendChild(document.createTextNode(", "));
-    }
-    const link = document.createElement("a");
-    link.href = "episode.html?ep=" + id;
-    link.textContent = id;
-    link.title = events[id - 1].title[lang];
-    used.appendChild(link);
-  });
-  text.appendChild(used);
-
   item.appendChild(text);
   return item;
 }
