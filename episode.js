@@ -274,6 +274,21 @@ function makeFigure(item) {
   const figure = document.createElement("figure");
   figure.className = "gallery-item";
 
+  // A short video clip (.mp4) plays silently on a loop, right in the gallery
+  if (item.file.endsWith(".mp4")) {
+    const video = document.createElement("video");
+    video.src = item.file;
+    video.muted = true;
+    video.loop = true;
+    video.autoplay = true;
+    video.playsInline = true;
+    video.controls = true;
+    video.preload = "metadata";
+    video.className = "gallery-video";
+    video.setAttribute("aria-label", item.caption[lang]);
+    figure.appendChild(video);
+  } else {
+
   // The picture sits inside a button, so it can be opened with a click or the keyboard
   const button = document.createElement("button");
   button.className = "gallery-button";
@@ -286,6 +301,7 @@ function makeFigure(item) {
     openLightbox(item);
   });
   figure.appendChild(button);
+  }
 
   // AI pictures always get a clear label
   if (item.type === "ai") {

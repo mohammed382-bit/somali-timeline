@@ -21,6 +21,85 @@ const media = {
     video: "https://www.youtube.com/watch?v=01kuNUpZWoA",
     pictures: [
       {
+        file: "media/ep01/meroe-pyramids-1821.jpg",
+        type: "photo",
+        caption: {
+          en: "The pyramids of Meroe, one of the capitals of the Kingdom of Kush, as drawn by Frédéric Cailliaud in 1821",
+          so: "Ahraamta Meroe, mid ka mid ah caasimadihii Boqortooyadii Kuush, sidii uu Frédéric Cailliaud u sawiray 1821"
+        },
+        credit: { en: "Frédéric Cailliaud, 1826 · Wikimedia Commons (public domain)", so: "Frédéric Cailliaud, 1826 · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File%3ANubian_pyramids_of_Meroe_in_1821.jpg"
+      },
+      {
+        file: "media/ep01/hadendoa-woman-1935.jpg",
+        type: "photo",
+        caption: {
+          en: "A Hadendoa woman of the Beja people, the \"Northern Cushites\" who stayed in the old land of Kush (photograph, 1935)",
+          so: "Haweeney Hadendoa ah oo ka mid ah qolada Beja, \"Kushitikada Waqooyi\" ee ku haray dhulkii hore ee Kuush (sawir, 1935)"
+        },
+        credit: { en: "Unknown photographer, 1935 · Wikimedia Commons (public domain)", so: "Sawir-qaade aan la aqoon, 1935 · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File%3AHadendoa_woman.jpg"
+      },
+      {
+        file: "media/ep01/green-horn-of-africa-scene.mp4",
+        type: "ai",
+        caption: {
+          en: "How the Horn of Africa may have looked when its rivers and lakes never ran dry: water, reeds, fish and herders' huts",
+          so: "Sida uu u ekaan karay Geeska Afrika markii webiyadiisa iyo harooyinkiisu aysan engegin: biyo, cawsduur, kalluun iyo aqallada xoolo-dhaqatada"
+        },
+        credit: { en: "Video made for the series", so: "Muuqaal loo sameeyay taxanaha" }
+      },
+      {
+        file: "media/ep01/giraffe-rock-engraving-libya.jpg",
+        type: "photo",
+        caption: {
+          en: "A rock engraving of a giraffe in Wadi In Habeter, Libya, from the time when the Sahara was green pasture",
+          so: "Sawir geri ah oo dhagax lagu xardhay, Waadi In Habeter, Liibiya, waqtigii Saxaraha weynaa uu ahaa daaq cagaaran"
+        },
+        credit: { en: "Leo Frobenius · Wikimedia Commons (CC BY-SA 4.0)", so: "Leo Frobenius · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File%3AFelsbild_einer_Giraffe_in_Libyen_%28Wadi_In_Habeter%2C_Messak%29.tif"
+      },
+      {
+        file: "media/ep01/narmer-palette.jpg",
+        type: "photo",
+        caption: {
+          en: "The Narmer Palette, from the time the first dynasty of the Pharaohs took power in Egypt, about 3,100 years before the Prophet Jesus",
+          so: "Looxa Narmer, waqtigii qoyskii ugu horreeyay ee Faraacinada uu la wareegay maamulka Masar, qiyaastii 3,100 sano ka hor Nabi Ciise CS"
+        },
+        credit: { en: "Heagy1 · Wikimedia Commons (CC BY-SA 4.0)", so: "Heagy1 · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File%3ANarmer_Palette_%28verso%29.jpg"
+      },
+      {
+        file: "media/ep01/proto-cuneiform-tablet.jpg",
+        type: "photo",
+        caption: {
+          en: "An early clay tablet from Mesopotamia with pictures pressed into it, the beginning of the writing later known as cuneiform",
+          so: "Loox dhoobo ah oo hore oo ka yimid Mesopotamia, sawirro lagu xardhay, bilowgii qoraalka markii danbe loo aqoonsaday \"Mismaariyadda\""
+        },
+        credit: { en: "Daderot; derivative by Zunkir · Wikimedia Commons (CC BY-SA 4.0)", so: "Daderot; waxaa beddelay Zunkir · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File%3AProto_cuneiform_tablet_OIM_A02516.jpg"
+      },
+      {
+        file: "media/ep01/laas-geel-rock-paintings.jpg",
+        type: "photo",
+        caption: {
+          en: "Rock paintings of cattle at Laas Geel, near Hargeisa, left by ancient herders in the Somali land",
+          so: "Sawirrada lo'da ee gebiga Laas Geel, oo u dhow Hargeysa, ay ka tageen xoolo-dhaqatadii hore ee dhulka Soomaalida"
+        },
+        credit: { en: "Theodor Hoffsten · Wikimedia Commons (CC BY-SA 3.0)", so: "Theodor Hoffsten · Wikimedia Commons (CC BY-SA 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File%3ALaas_Geel_rock_paintings.JPG"
+      },
+      {
+        file: "media/ep01/djibouti-somali-dance-1910.jpg",
+        type: "photo",
+        caption: {
+          en: "A Somali dance in Djibouti around 1910: the dances of the people of Ham are built on rhythm, clapping and chanting (jaan, sacab and jiib)",
+          so: "Ciyaar Soomaaliyeed oo Jabuuti ka dhacday qiyaastii 1910: ciyaaraha reer Xaam waxay ku dhisan yihiin jaan, sacab iyo jiib"
+        },
+        credit: { en: "J.-G. Mody, photographer, 1910 · Wikimedia Commons (public domain)", so: "J.-G. Mody, sawir-qaade, 1910 · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File%3ADjibouti_Somali_dance_1910s.jpg"
+      },
+      {
         file: "media/ep01/Representation-of-the-supercontinent-of-Pangea-with-outlines-of-the-present-continents.webp",
         type: "map",
         caption: {
