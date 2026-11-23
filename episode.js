@@ -164,6 +164,9 @@ function drawArticle() {
 
       const p = document.createElement(kind === "quote" ? "blockquote" : "p");
       setSmartText(p, paragraphs[i]);
+      if (!isMostlyArabic(paragraphs[i])) {
+        markInlineArabic(p, paragraphs[i]);
+      }
       if (kind === "arabic") {
         // the Arabic itself, or (in English) its translation, centred like a greeting
         p.classList.add(isMostlyArabic(paragraphs[i]) ? "script-arabic" : "script-greeting");
@@ -232,6 +235,30 @@ function paragraphKinds(somaliParagraphs) {
     }
   }
   return kinds;
+}
+
+// Arabic words inside a Somali or English sentence (e.g. a book title) get their own
+// span, so they can be shown in the Arabic font and read right-to-left
+function markInlineArabic(element, text) {
+  const pattern = /[؀-ۿ][؀-ۿ\s]*[؀-ۿ]|[؀-ۿ]/g;
+  if (!pattern.test(text)) {
+    return;
+  }
+  pattern.lastIndex = 0;
+  element.textContent = "";
+  let last = 0;
+  let match;
+  while ((match = pattern.exec(text)) !== null) {
+    element.appendChild(document.createTextNode(text.slice(last, match.index)));
+    const span = document.createElement("span");
+    span.className = "inline-arabic";
+    span.lang = "ar";
+    span.dir = "rtl";
+    span.textContent = match[0];
+    element.appendChild(span);
+    last = match.index + match[0].length;
+  }
+  element.appendChild(document.createTextNode(text.slice(last)));
 }
 
 // "• Saam Nuux" → "Saam Nuux"

@@ -959,6 +959,14 @@ h1,
   font-size: 1.2rem;
 }
 
+/* An Arabic title or phrase inside a Somali or English sentence */
+#episode-article .inline-arabic {
+  font-family: var(--arabic-font);
+  font-size: 1.2em;
+  line-height: 1;
+  unicode-bidi: isolate;
+}
+
 /* Arabic words inside a Somali or English sentence */
 #episode-article .arabic-text {
   font-family: var(--arabic-font);

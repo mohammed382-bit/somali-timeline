@@ -1669,17 +1669,534 @@ const events = [
   {
     id: 5,
     part: 2,
-    years: { en: "700s – 1200s CE", so: "Qarnigii 8aad – 13aad NCKD" },
-    title: { en: "When Did Islam Reach Somalia?", so: "Goormuu Islaamku soo gaaray Soomaaliya" },
+    years: { en: "7th – 14th century CE", so: "Qarnigii 7aad – 14aad NCKD" },
+    title: { en: "When Did Islam Reach Somalia?", so: "Goormuu Islaamku Soomaaliya soo gaaray?" },
     summary: {
-      en: "Arab and Persian settlers bring Islam to the coastal towns.",
-      so: "Carab iyo Faaris degay xeebaha ayaa Islaamka keenay magaalooyinka xeebta."
+      en: "The first Hijra to Abyssinia, the Mosque of the Two Qiblas in Zeila, the oldest graves and inscriptions of Mogadishu and Brava, and how Islam came: through traders, refugees and preachers, not armies.",
+      so: "Hijradii hore ee Xabasha, Masjidka Labada Qiblo ee Saylac, qabriyada iyo qoraallada ugu da'da weyn ee Muqdisho iyo Baraawe, iyo sida Islaamku inoo soo gaaray: ganacsato, qaxooti iyo ducaad, ee ma ahayn ciidan."
     },
     details: {
-      en: "In the 8th century, under the Umayyad caliph Abd al-Malik ibn Marwan, many Arabs left their homeland because of political pressure and came to the Benadir coast. Among them were seven brothers of the al-Harithi clan from al-Ahsa in the Gulf, who settled in Mogadishu, Gendershe, Merca and Brava. The Zaydi (\"Emozeidi\") Arabs are recorded in Mogadishu from the 10th century, perhaps even the 9th. Zeila first appears in the writings of Arab geographers at the end of the 9th century. By the first half of the 10th century, many Arab and Persian settlers lived in Mogadishu, and Merca and Brava were of similar age. Traders from Shiraz in Iran came to Mogadishu and built a mosque there, followed by traders from Halwan in Iraq. In the 12th–13th centuries, Persians from Nishapur reached the Benadir coast.",
-      so: "Qarnigii 8aad, xilligii Cabdulmaalik binu Marwaan ee Umawiyiinta, Carab badan ayaa cadaadis siyaasadeed awgiis uga soo barakacday dalkooda una soo hayaantay xeebta Banaadir. Waxaa ka mid ahaa toddoba nin oo walaalo ah oo qabiilka Al Xaarati ah, kana soo qaxay Al Axsa ee Khaliijka Carbeed, kuwaas oo degay Muqdisho, Gendershe, Marka iyo Baraawe. Carabta Saydiyiinta (\"Emozeidi\") waxaa laga diiwaangeliyay Muqdisho qarnigii 10aad, laga yaabee xitaa qarnigii 9aad. Seylac waxay markii ugu horreysay ka muuqatay qoraallada juqraafiyayaasha Carabta dhammaadkii qarnigii 9aad. Qeybtii hore ee qarnigii 10aad, Carab iyo Faaris badan ayaa degganaa Muqdisho, Marka iyo Baraawe-na waa magaalooyin da'dooda u dhow. Ganacsato ka timid Shiiraaz ee Iiraan ayaa yimid Muqdisho oo masjid ka dhisay, waxaana ka dambeeyay ganacsato ka timid Xulwaan ee Ciraaq. Qarnigii 12–13aad, Faaris ka yimid Niisaabuur ayaa soo gaaray xeebta Banaadir."
+      en: "Around 615 CE the first Muslim emigrants crossed the Red Sea to Abyssinia, so Islam reached Africa before Medina; but no early source says they landed on the Somali coast, and the claim that Zeila's \"Mosque of the Two Qiblas\" is that old is not supported by excavation. Islam reached Yemen, Oman, Hadramawt and Bahrain in the Prophet's lifetime, the lands closest to our coasts. The earliest firm traces in the Somali land are later: Muslims in Zeila in the 10th century (al-Mas'udi), an inscription from Brava dated 1105 and a grave in Mogadishu dated 1217 (Cerulli). Two graves dated 719 and 756 reported by Riiraash could not be found in Cerulli's records. The episode concludes that Islam reached the coast no later than the 2nd century of the Hijra, spread slowly from the coastal towns inland, and came through traders, refugees and preachers rather than armies.",
+      so: "Qiyaastii 615 NCKD, muhaajiriintii ugu horreeyay ayaa badda cas uga tallaabay dhulka Xabashida, sidaas darteed Islaamku Afrika ayuu gaaray ka hor intii uusan Madina gaarin; balse ilaha hore midkoodna ma sheegin in ay xeebta Soomaaliyeed ku degeen, sheegashada ah in \"Masjidka Labada Qiblo\" ee Saylac uu sidaas u da' weyn yahayna degel-baaristu ma taageerin. Islaamku wuxuu gaaray Yaman, Cumaan, Xadramawt iyo Baxrayn intii Nabigu noolaa, waana dhulka ugu dhow xeebeheenna. Raadadka ugu hubsan ee dhulka Soomaalida waa kuwo danbe: muslimiin Saylac ku noolaa qarnigii 10aad (Al-Mascuudi), qoraal Baraawe ah oo la taariikhaystay 1105 iyo qabri Muqdisho ah oo la taariikhaystay 1217 (Cerulli). Labada qabri ee 719 iyo 756 ee Riiraash sheegay laguma helin diiwaannada Cerulli. Xalqaddu waxay ku gunaanadaysaa in Islaamku xeebta soo gaaray ugu dambayn bilawgii qarnigii 2aad ee Hijriyada, tartiibna uga faafay magaalo-xeebeedyada ilaa daakhilka, una soo gaaray ganacsato, qaxooti iyo ducaad, ee aanu ciidan ku iman."
     },
-    sources: ["A Modern History of the Somali", "Soomaaliya iyo Taariikhdeedii Hore", "تاريخ الصومال (Jaamac Cumar Ciise)", "Taariikhda Soomaaliya", "Peoples of the Horn of Africa"]
+    // The FULL script of the episode ("Xalqadda 5aad"): Somali word for word, with an English translation.
+    article: [
+      {
+        "heading": {
+          "en": "Mecca, 615: the migration to Abyssinia",
+          "so": "Makka, 615: hijradii Xabasha"
+        },
+        "en": [
+          "It is the month of Rajab, in the fifth year of the mission of the Prophet Muhammad (peace and blessings be upon him), eight years before his Hijra to Medina, around 615 CE, and the place is the city of Mecca.",
+          "Eleven men and four women are slipping secretly out of the city at night, some on foot and some riding.",
+          "They are fleeing the torment and pressure piled on them because of a new religion they had taken up, for which their own people had cast them out.",
+          "They headed west, to the coast of the Red Sea, to a small port called al-Shu'ayba.",
+          "When they reached it, by good fortune two ships happened to be there, about to set out from the harbour, and they boarded them.",
+          "Where they were going, and where they had been sent, was a land on the other shore of the sea, where a state called Abyssinia stood, and the man they were going to was the king of that kingdom.",
+          "They were going on the guidance the Blessed Prophet (peace and blessings be upon him) had given them:",
+          "«إن بأرض الحبشة ملكًا لا يُظلم عنده أحد»",
+          "\"Over there in Abyssinia there is a king who does not allow injustice,\" words from which they understood that they should take refuge there.",
+          "Those 15 people whom the ships carried across the Red Sea were the first time the religion of Islam crossed out of the Arabian Peninsula; and the first land it set foot on was Africa, and East Africa at that.",
+          "So, did those Muslims fleeing the Arabian Peninsula reach the Somali land?",
+          "Did Islam reach our land at that time, or in later ages?",
+          "Whenever it was: in what way did Islam reach our land, and how did it spread?",
+          "And what do the written sources of history and the archaeological evidence say about this?",
+          "The answers to these questions, and many others, you will find in this session."
+        ],
+        "so": [
+          "Waa bishii Rajab, sannadkii shanaad ee soo diriddii Nabi Muxammad, NNKH, siddeed sano ka hor Hijradiisii Madina, qiyaastii 615-kii Miilaadiga, Goobtuna waa magaalada Makka.",
+          "Kow iyo toban nin iyo afar haween ah ayaa si dhuumasho ah uga huleelaya magaalada xilli habeen ah, qaar waa lugeynayaan, qaarna gaadiid ayay saaran yihiin.",
+          "Waxa ay carar ka yihiin cadaab iyo cadaadis loogu la cilloobay diin cusub oo ay qaateen, oo tolkoodii ay kaga takoormeen.",
+          "Waxa ay afka saareen dhanka galbeed iyo xeebta badda cas, deked yar oo la yiraahdo Al-Shucayba.",
+          "Markii ay halkaas gaareenna, nasiib wanaaggooda waxa ay lasoo istaageen laba doomood oo markaas marsada ka furan rabay, horey ayayna u raaceen.",
+          "Meesha ay u socdaan, ee loo soo diray, waa dhul daanta kale ee xeebta ku yaal, oo ay ka dhisneed dawlad lagu magacaabo Xabasha, ninka ay u socdaanna waa boqorka boqortooyadaas.",
+          "Waxa ay ku socdaanna waa tusmo Suubanuhu NNKH uu soo siiyay:",
+          "«إن بأرض الحبشة ملكًا لا يُظلم عنده أحد»",
+          "“dhankaas iyo Xabasha waxaa idin ka jira boqor aan aabiga oggolayn”, hadalkaas oo ay ka dheehdeen in ay halkaas qabtaan.",
+          "15-kaas nafar ee doomuhu ka tallaabiyeen badda cas, ayaa ahayd markii ugu horreysay ee ay diinta Islaamku ka gudubto Jasiiradda Carabta, dhulkii ugu horreeyay ay caga dhigatana, Afrika ayuu noqday, weliba bariga Afrika.",
+          "Haddaba; Muslimiintaas Jasiiradda Carabta kasoo qaxay dhulka Soomaalida masoo gaareen?",
+          "Islaamku ma waagaas buu soo gaaray dhulkeenna mise waayo ka danbeeyay?",
+          "Goortay rabto ha ahaatee; habkee ayuu Islaamku kusoo gaaray dhulkeenna, uguna fiday?",
+          "Maxaase ilaha qoran ee taariikhda iyo xogta degel-baariseed ay arrintaan ka dheheen?",
+          "Weydiimahan iyo qaar kaloo badan, jawaabahooda fadhigan ayaad uga bogan doontaa."
+        ]
+      },
+      {
+        "heading": {
+          "en": "Introduction",
+          "so": "Hordhac"
+        },
+        "en": [
+          "Peace be upon you, and the mercy of God and His blessings.",
+          "Welcome back, and good to be together again.",
+          "In our previous session we brought to a close the first part of the series, about the ancient history of the Somali.",
+          "We stopped at the struggle of the powers, Rome, Persia, Aksum and Himyar, over the Red Sea and the Indian Ocean, up to the Year of the Elephant and the birth of the Blessed Prophet, peace and blessings be upon him.",
+          "We had reached the point where the Sasanian kingdom of Persia took Yemen from the Abyssinians of Aksum, and Badhan was the head of the government of Yemen until Islam reached it.",
+          "In this session we open the second part of the series, the medieval history of the Somali, which is wider in scope than the first part: it covers the coming of Islam to this land, the history it left behind, the governments founded here, and the struggle of the colonial powers who later carved it up among themselves.",
+          "The question we take on in this session is one that is easy to ask, but whose answer branches out widely:",
+          "WHEN DID ISLAM REACH SOMALIA?",
+          "My name is Mohamed Abdulkadir Mohamed.",
+          "This is \"Miyir\", the platform for raising awareness and nurturing understanding.",
+          "Come closer."
+        ],
+        "so": [
+          "سلام الله عليكم ورحمته وبركاته",
+          "Mar kale iyo isku soo laabasho wanaagsan.",
+          "Fadhigeennii hore waxa aan ku soo afmeernay qaybta koowaad ee taxanaha, oo ku saabsaneed taariikhda hore ee Soomaalida.",
+          "Waxa aan soo dul-istaagnay loollankii quwadaha ee Rooma, Faaris, Aksum iyo Ximyar ee Badda Cas iyo Badweynta Hindiya, illaa laga soo gaaray sannadkii Maroodiga iyo dhalashadii Suubanaha, Nabadgelyo iyo Naxariis Dushiisa ha ahaatee.",
+          "Waxa ay inoo joogtay ayadoo boqortooyadii Saasaaniyadda ee Faaris ay Yaman kala wareegtay Xabashidii Aksum, Baadaanna uu maamulka Yaman madax u ahaa illaa Islaamku kasoo gaaray.",
+          "Fadhigaan waxa aan ku daah-furaynaa qaybta labaad ee taxanaha, waa taariikhda dhexe ee Soomaalida, oo ka guda ballaaran qaybtii koowaad, oo waxa ay daboolaysaa imaanshihii Islaamka ee dhulkan, taariikhda uu ku reebay, maamulladii ka aasaasmay, iyo loollankii quwadaha gumeystuhu ay markii danbe ku kala qoqobeen.",
+          "Fadhigan su’aasha aan isku taxallujinayno in aan ka jawaabno, waa mid weydiinteedu sahlan tahay, balse jawaab u heliddeedu ay sal ballaaranayso.",
+          "GOORMA AYUU ISLAAMKU SOOMAALIYA SOO GAARAY?",
+          "Magacaygu waa Maxamed Cabdulqaadir Maxamed.",
+          "Halkani waa madasha \"Miyir\" ee kobcinta wacyiga iyo ababinta garaadka.",
+          "Horey usoo dhawaada."
+        ]
+      },
+      {
+        "heading": {
+          "en": "The beginning of revelation and the world of the 7th century",
+          "so": "Bilaabashadii waxyiga iyo adduunka qarnigii 7aad"
+        },
+        "en": [
+          "Since this second part of the series runs alongside the history of Islam, we will combine the two calendars, the Hijri and the Gregorian, so that we fully understand the historical events we discuss.",
+          "In the year 610 CE, thirteen years before the Hijra, the first revelation was sent down to the Prophet Muhammad (peace and blessings be upon him), while he was in the cave of Hira in the city of Mecca.",
+          "\"Read in the name of your Lord who created\" (إقرأ باسم ربّك الذي خلق)",
+          "The world into which that revelation came was one whose political power was contested by the two powers we mentioned in our previous session: Eastern Rome and Persia.",
+          "In 614 CE, eight years before the Hijra, the Romans were overpowered, and Persia took the city of Jerusalem, a second centre for the Romans.",
+          "The defeat that struck the Romans, and that they would be victorious again, God mentioned in the Qur'an, in the sura named after them, al-Rum, where the Lord says:",
+          "(الم ۞ غُلِبَتِ الرُّومُ ۞ فِي أَدْنَى الْأَرْضِ وَهُم مِّن بَعْدِ غَلَبِهِمْ سَيَغْلِبُونَ * في بضع سنين)",
+          "And so it happened: Heraclius, the emperor of the Romans, broke Persia in a powerful campaign he launched against it in 627 CE, which corresponds to the sixth year of the Hijra.",
+          "To the east.",
+          "In 618 CE, four years before the Hijra, the Tang dynasty took power in China.",
+          "Aksum, which in the 6th century had crossed the Red Sea and removed the Himyarite state that ruled Yemen, declined in power, and the trade of its port, Adulis, dwindled.",
+          "So, what kind of role did the Somali coasts play in that world?",
+          "As we mentioned in our previous session, the northern coasts of Somalia and the southern coasts of the Arabian Peninsula are separated by a very narrow waterway.",
+          "Cosmas, the Greek trader and sailor we met in our previous session at the port of Adulis, noted in his book in the sixth century that Himyar was not far from Barbaria, the name by which the Somali land was known, and that between them lay a sea that could be crossed in \"two days\".",
+          "Dr. Sada Mire too pointed out that this waterway is crossed in \"a day or two\", and that contact between the people on both sides of the sea had gone on for thousands of years.",
+          "Of the Somali port towns, the one closest in distance to the Arabian Peninsula was the port town of Zeila.",
+          "Ahmad ibn Ishaq al-Ya'qubi, the first Arab historian to mention the name Zeila, around the year 278 of the Hijra, which corresponds to 891 CE, said, when listing the coastal markets under or near Yemen on the other side of the sea, that Zeila lies opposite the strait of Bab al-Mandab.",
+          "In the fourth century of the Hijra, which corresponds to the tenth century CE, the geographer and historian Ibrahim ibn Muhammad al-Istakhri, when describing the role of Zeila after the lands of Nubia and Abyssinia, said: \"On the coast there is a place called Zeila, a port for crossing to Yemen and the Hijaz.\"",
+          "Taken together, the reports of the historians and the archaeology we have mentioned, from the 6th century to our own, all agree on the closeness and the ties of travel and trade between the south of the Arabian Peninsula and the northern coasts of Somalia, especially Zeila, which seems to have been the door into the Horn of Africa for anyone crossing from the Arabian Peninsula.",
+          "This point is important for understanding and estimating when and how Islam reached our land."
+        ],
+        "so": [
+          "Maadaama qaybtan labaad ee taxanuhu ay la jaanqaadayso taariikhda Islaamka, waxa aan isku dhafaynaa labada kalendar: Hijriga iyo Miilaadiga, si dhacdooyinka taariikheed ee aan ka hadlayno aan si buuxda ugu fahanno.",
+          "Sannadkii 610-kii Miilaadiga, saddex iyo toban sano ka hor Hijriyada, ayaa waxyigii ugu horreeyay lagu soo dejiyay Nabi Muxammad NNKH, isagoo ku sugan godka Xiraa ee magaalada Makka.",
+          "إقرأ باسم ربّك الذي خلق",
+          "Adduunkii waxyigaasi kusoo degay waxaa awooddiisa siyaasadeed ku loollamayay labadii quwadood ee aan fadhigeennii hore kusoo xusnay: Roomaanka-Bari iyo Faaris",
+          "Sannadkii 614-kii Miilaadiga, siddeed sano kahor Hijriyada, Roomaankii ayaa laga itaal roonaaday, Faarisna waxa ay qabsatay magaalada Qudus oo xarun-labaad u ahayd Roomaanka.",
+          "Jabka Roomaanka ku dhacay iyo in ay dib u guulaysan doonaan, Allah ayaa ku xusay Qur’aanka, oo waa ayadii Suurada loogu magac daray ee RUUM uu Rabbi ku yiri:",
+          "(الم ۞ غُلِبَتِ الرُّومُ ۞ فِي أَدْنَى الْأَرْضِ وَهُم مِّن بَعْدِ غَلَبِهِمْ سَيَغْلِبُونَ * في بضع سنين)",
+          "Waana tii dhacday, oo Hiraqle oo ahaa imbaraadoorkii Roomaanka ayaa guluf xooggan oo uu ku qaaday Faaris, ku jebiyay 627-kii Miilaadiga, oo ku aaddanayd, sannadkii lixaad ee Hijriyada.",
+          "Dhanka Bari.",
+          "Sannadkii 618-kii Miilaadiga, afar sano ka hor Hijriyada, boqortooyadii Tang ayaa la wareegtay xukunka Shiinaha.",
+          "Aksum, oo qarnigii 6aad ka tallawday badda cas, meeshana ka saartay dawladii Ximyar ee Yaman ka talin jirtay, ayaa awooddeedu hoos u dhacday, ganacsigii dekeddeedii Adulis-na gabaabsi noqday.",
+          "Haddaba, Xeebaha Soomaaliyeed, Adduunkaas kaalin caynkee ah bay ku lahaayeen?",
+          "Waa innagii fadhigeennii hore kusoo xusnay in Xeebaha Waqooyi ee Soomaaliya iyo xeebaha Koonfureed ee Jasiiradda Carabta uu kala qaybiyo marin-biyood aad cidhiidhi u ah.",
+          "Cosmas, ganacsadihii iyo badmaaxi Giriigga ee aan fadhigeennii hore kula kulannay dekedda Adulis, ayaa qarnigii lixaad buuggiisa ku xusay in Ximyar aysan ka fogayn Barbariya, waa magacii dhulka Soomaalida loo yaqaannaye, ayna u dhaxayso bad la iskaga gooshi karo “laba casho”.",
+          "Dr. Sada Mire ayaa Iyana ishaartay in dhabba-biyoodkaas “maalin ama laba” looga gudbo, xiriirka dadka labada dhinac ee baddana ay muddo kumannaan sano ah uu socday.",
+          "Magaala-furdooyinka Soomaaliyeed meesha masaafa ahaan ugu dhaw jasiiradda carabta waxa ay ahayd magaala-furdada Saylac.",
+          "Axmed Bin Isxaaq Al-Yacquubi, oo ahaa taariikhyahankii carbeed ee ugu horreeyay oo magaca Saylac afka ku dhufta, qiyaastii sannadkii 278 Hijriyada, oo ku beegneed 891-kii Miilaadiga, mar uu tirinayay suuq-xeebeedyada Yaman hoos yimaada ama u dhaw ee dhanka kale ee badda ayuu ku sheegay Saylac in ay ku taallo kasoo horjeedka marin-biyoodka Baab-Al-Mandab.",
+          "Qarnigii afraad ee Hijriyada, oo ku beegan qarnigii tobnaad ee Miilaadiga, juquraafiyahankii iyo taariikhyahankii Ibraahim Bin Muxammad Al-Istakhri, ayaa mar uu sharaxayay kaalinta Saylac ee dhulkii Nuuba iyo Xabashi keddib, waxa uu yiri: “Waxaa ku taalla xeebta meel la yiraahdo Saylac, oo ah deked looga tallaabo Yaman iyo Xijaaz”.",
+          "Isu-geynta warbixinnada taariikhyahannada iyo degel-baarista ee aan soo xusnay, laga soo bilaabo qarnigii 6aad illaa iyo qarnigan aan joogno, waxa ay isla qirayaan isu dhawaanshaha iyo xiriirka safar iyo ganacsi ee ka dhexeeyay koonfurta Jasiiradda Carabta iyo xeebaha waqooyi ee Soomaaliya, gaar ahaan Saylac, oo u eg in ay ahayd albaabka geeska Afrika laga soo galo marka jasiiradda carabta laga soo tallaabo.",
+          "Qodobkan ayaa muhiim u ah fahanka iyo qiyaasta goorta iyo sida Islaamku kusoo gaaray dhulkeenna."
+        ]
+      },
+      {
+        "heading": {
+          "en": "The names of the Somali land",
+          "so": "Magacyadii dhulka Soomaalida"
+        },
+        "en": [
+          "Before we go further, let me point out something important.",
+          "This Somali land was called by different names through history: we have seen that it was once named \"Punt\", a name given 3,000 years before the birth of the Prophet Jesus (peace be upon him).",
+          "We have also seen that the Greeks and Romans who ruled Egypt one after the other, and reached our land, used various names, among them \"Cinnamomifera\", meaning \"the land of cinnamon\" or something close to it.",
+          "We have also seen that the sailor of the Periplus gave the Somali coasts two names: Barbar for the northern coasts, and Azania for the coasts south of Xaafuun.",
+          "The Arab historians of the Islamic period called the Somali people \"Barbar\" or \"Barbara\", and their land \"Bilad al-Barbar\" and \"Barr al-'Ajam\".",
+          "This name \"Barbar\", used earlier by the Periplus and Cosmas, does not mean the Berbers of North Africa, of Morocco and Algeria; it means the people of the coasts of the Gulf of Aden.",
+          "The names \"Somali\" and \"Somalia\" first appear in writing many centuries later; what they mean, who gave them and why, we will discuss in another session, God willing."
+        ],
+        "so": [
+          "Inta aynaan horey u tallaabin, aan qodob muhiim ah baraarujiyo.",
+          "Dhulkan Soomaaliyeed waayihii taariikhda magacyo kala duwan ayaa loogu yeeri jirey, waa innagii soo aragnay in mar loogu wanqalay dhulkii “Punt” magacaas oo baxay 3000 sano kahor dhalashadii Nabi Ciise CS.",
+          "Waxaan kaloo soo aragnay Giriiggii iyo Roomaankii masar isaga danbeeyay, dhulkeennana soo gaaray in ay magacyo kala duwan adeegsadeen, waxaa kamid ahaa “Cinnamamofera” oo macnihiisu yahay “Dhulkii Qorfaha” ama wax ka ag dhaw.",
+          "Sidoo kale waxaan soo aragnay in badmaaxii Periplus uu xeebaha Soomaalida laba magac u bixiyay: Barbar oo ah xeebaha waqooyi, iyo Azania oo ah xeebaha wixii Xaafuun ka koonfureeya.",
+          "Taariikhyahannadii Carabta ee xilligii Islaamka dadka Soomaalida ah waxa ay ugu yeeri jireen \"Barbar\" ama \"Barbara\", dhulkoodana \"Bilaad Al-Barbar\" iyo \"Barrul-Cajam\".",
+          "Magacan “Barbar” oo horey ay udeegsadeen Periplus iyo Cosmas, loolama jeedo Barbarta Waqooyiga Afrika ee Morooko iyo Aljeeriya, ee waxaa loola jeedaa dadka xeebaha Gacanka Cadmeed.",
+          "Magaca “Soomaali” iyo “Soomaaliya” ayaa qoraal ahaan taariikhda ugu horreysay qarniyo badan keddib, waxa laga wado, cidda bixisay iyo sababtiisana fadhi kale ayaan uga warramaynaa, Haddii Eebbe inoo oggolaado."
+        ]
+      },
+      {
+        "heading": {
+          "en": "Islam and the south of the Arabian Peninsula",
+          "so": "Islaamka iyo koonfurta Jasiiradda Carabta"
+        },
+        "en": [
+          "Moving on from the geographical closeness and the ties between the south of the Arabian Peninsula and our coasts, there follows the fact that Islam quickly reached and spread, in the lifetime of the Prophet (peace and blessings be upon him), through the Arab regions next to or facing the Somali coasts.",
+          "Between the 6th and the 11th year of the Hijra, that is, 628 to 632 CE, Islam reached Yemen, Oman, Hadramawt and Bahrain.",
+          "Badhan, the Persian governor of Yemen, became a Muslim in the 7th year of the Hijra, after the death of the Chosroes of Persia and the arrival of the Blessed Prophet's letter.",
+          "Bahrain too accepted Islam in the same 7th year of the Hijra, after a message the Prophet (peace and blessings be upon him) entrusted to the Companion al-'Ala' al-Hadrami.",
+          "And in Oman, in the 8th year of the Hijra, the two kings who ruled it, the sons of al-Julanda, became Muslims, after the letter the Prophet (peace and blessings be upon him) entrusted to 'Amr ibn al-'As reached them.",
+          "Here we have Islam settled in all the regions of the south of the Arabian Peninsula that are geographically closest to our land; and, as we will see later, Yemen, Oman, Hadramawt and Bahrain would become the countries from which most of the people who later migrated to the Somali coasts came.",
+          "Keep two points in mind for me here: first, our coasts had an age-old connection and geographical closeness with the coasts of the south of the Arabian Peninsula.",
+          "The second: Islam reached those same Arab regions in the lifetime of the Blessed Prophet (peace and blessings be upon him).",
+          "I will add a third; but first let us go back to the ships that set out from the harbour of al-Shu'ayba, and the Companions whom the Prophet (peace and blessings be upon him) advised to seek refuge in the land of Abyssinia."
+        ],
+        "so": [
+          "Markaan kasoo gudubno isu-dhawaanshaha juquraafiyeed iyo xiriirka ka dhexeeyay koonfurta Jasiiradda Carabta iyo xeebeheenna, waxaa taas soo raaca in Islaamku durbaba gaaray kuna faafay, intii Nabigu NNKH noolaa deegaannada carbeed ee kulaala amaba kasoo horjeeda Xeebaha Soomaaliya.",
+          "Intii u dhaxaysay sannadkii 6aad illaa 11aad ee Hijriyada, waa 628 illaa 632 Miilaadigee, waxa uu Islaamku gaaray Yaman, Cumaan, Xadramuut iyo Baxrayn.",
+          "Baadaan, wakiilkii Faaris ee Yaman, ayaa Islaamay sannaddii 7aad ee Hijriyada, keddib geeridii Kisrihii Faaris iyo warqaddii Suubanaha ee soo gaartay.",
+          "Baxrayn ayaa Iyana Islaamka qaadatay isla sannaddii 7aad ee Hijriyada, keddib farriin Nabigu NNKH uu ugu dhiibay saxaabigii Calaa Al-Xadrami.",
+          "Cummaanna waxaa sannaddii 8aad ee Hijriyada Islaamay labadii boqor ee ka talinaysay ee ilma Julanda, keddib markii ay gaartay warqaddii Nabigu NNKH ugu dhiibay Camar Bin Caas.",
+          "Halkaan waxaan ku haynaa Islaamka oo biya-dhigtay dhammaan gobollada Koonfurta Jasiiradda Carabta ee juquraafi ahaan ugu dhaw dhulkeenna, sidoo kalena sidaan dib ka arki doonno Yaman, Cumaan, Xadramawt iyo Baxrayn ayaa noqon doona dalalkii ay ka yimaadeen inta badan dadkii goor danbe xeebaha Soomaaliya u soo hayaamay.",
+          "Halkaas laba qodob iigu sii hay: waa xeebeheenna oo xiriir soo jireen ah iyo dhawaansho juquraafiyeedba la leh xeebaha koonfurta Jasiiradda Carabta.",
+          "waa midda labaade, waa Islaamka oo intii Suubanuhu NNKH noolaa soo gaaray isla deegaannadaas carbeed.",
+          "Mid saddexaad ayaan raacinayaa, balse marka hore aan dib ugu noqonno doomihii ka ambaxabay marsadii Al-Shucayba iyo saxaabadii Ardul-Xabasha Nabigu NNKH kula taliyay in ay miciin bidaan."
+        ]
+      },
+      {
+        "heading": {
+          "en": "The emigrants to the land of Abyssinia",
+          "so": "Muhaajiriintii dhulka Xabashida"
+        },
+        "en": [
+          "The emigrants reached the land of Abyssinia, where they found what they were seeking; as the Mother of the Believers, Umm Salama, said:",
+          "«وقدمنا أرض الحبشة فجاورنا بها خير جار، أمنا على ديننا وعبدنا الله لا نؤذى»",
+          "Words meaning: \"We came to the land of Abyssinia, and there we found the best of neighbours, and we were safe in our religion.\"",
+          "When those Companions found shelter and safety there, another group of the Companions of Mecca followed them, but this time far more numerous: 83 men and 18 women took part in the second migration to Abyssinia, among them many leading Companions, first of all Ja'far ibn Abi Talib, the cousin of the Prophet (peace and blessings be upon him).",
+          "Quraysh, the great tribe of Mecca from which those Companions had fled, did not leave it at that: they sent two men after them to persuade the king of Abyssinia to expel these people.",
+          "That was the long debate held in the council of the Abyssinian king, the Najashi, between 'Amr ibn al-'As and 'Abdullah ibn Abi Rabi'a, speaking for Quraysh, and Ja'far ibn Abi Talib, speaking for the Companions who had emigrated.",
+          "And in the end the king was convinced by the argument Ja'far put forward, and the envoys of Quraysh were sent back, together with the gifts they had brought.",
+          "The Najashi, the king of Abyssinia, whose name was Ashama, embraced Islam, but he hid his Islam, fearing that the Christian priests and the officials of the state would rise against him, and that the Companions under his protection would be harmed.",
+          "The Companions who reached Abyssinia stayed there for about 15 years: the first group arrived in the 5th year of the Prophet's mission, while the last group returned home from Abyssinia in the 7th year of the Hijra.",
+          "In the 9th year of the Hijra, Ashama, the Najashi of Abyssinia, died, and the Prophet (peace and blessings be upon him) told his Companions the news:",
+          "«مات اليوم رجل صالح، فقوموا فصلوا على أخيكم أصحمة»",
+          "And the Prophet prayed the funeral prayer in absence for him, since there was no one there who knew of his Islam or who would pray over him.",
+          "From this it is understood that through the migration to Abyssinia some of the local people became Muslims, keeping their Islam hidden, as Ashama did; and so Islam spread on the African continent before it even reached Medina.",
+          "To the two points you were keeping for me earlier, add this third one: Islam reached Africa, and East Africa at that, before it reached Medina.",
+          "We are still laying the groundwork for answering the question: when did Islam reach Somalia?"
+        ],
+        "so": [
+          "Muhaajiriintii waxa ay gaareen dhulkii Xabashida, halkaas oo ay ka heleen wixii ay bidayeen, oo waatii Ummul-Mu’miniin Ummu-Salama ay lahayd:",
+          "«وقدمنا أرض الحبشة فجاورنا بها خير جار، أمنا على ديننا وعبدنا الله لا نؤذى»",
+          "Hadalkaas oo macnihiisu yahay: “Waxaan soo gaarnay dhulkii Xabashida, waxaana ka helnay deris kii ugu wanaagsanaa, diinteennina waan kula badbaadnay”.",
+          "Markii saxaabadaasi ay halkaas ka heleen gabbaad iyo guri-amni, waxaa ka daba yimid rac kale oo saxaabadii Makka ah, balse markaan cadadkoodu intii hore wax badan ayuu dheer yahay, oo 83 nin iyo 18 haween ah ayaa hijradii labaad ee Xabashida ka qaybqaatay, waxaana ku jirey saxaabo badan oo hormuud ahaa, uuna ugu horreeyo Jafcar Bin Abii Daalib, Nabiga NNKH ina adeerkiis.",
+          "Qureysh, tolweynihii Makka ee ay saxaabadaasi baxsadka ka ahaayeen, sidaas ugama harine, waxa ay ka daba direen laba nin oo boqorka Xabasha kasoo dhaadhiciya in dadkaan uu iska soo masaafuriyo.",
+          "Waatii dooddii dheereed ee Camar Bin Caas iyo Cabdullahi Bin Abii Rabiica oo darafka Qureysh ka socda, iyo Jacfar Bin Abii Daalib oo u hadlayay saxaabadii soo hijrootay ay ku dhexmartay golihii boqorkii xabashadi ee Najaashi.",
+          "Waana tii ugu danbayn boqorkii uu ku qancay dood-dhiibashadii Jacfar, ergadii Qureyshna iyaga iyo hadiyadihii ay wadeenba dib loo celiyay.",
+          "Najaashi, boqorkii Xabashida oo magaciisu ahaa Asxama, ayaa diinta Islaamka qaatay, balse islaamnimadiisa ayuu qariyay, asagoo ka cabsanaya in wadaaddadii kiristaanka iyo saraakiishii dawladdu ay ku kacaan, dhibna loo geysto saxaabadii maganta ahayd.",
+          "Saxaabadii Xabasha gaartay waxa ay halkaas ku nagaatay muddo 15sano ah qiyaastii, oo waatii racii ugu horreeyay uu gaaray sannadkii 5aad ee Bicthada, halka kooxdii ugu danbaysana ay kasoo gurya-noqotay Xabasha sannadkii 7aad ee Hijriyada.",
+          "Sannaddii 9aad ee Hijriyada ayaa waxaa geeriyooday Najaashigii Xabasha ee Asxama, Nabiga NNKH ayaa saxaabadiisa u sheegay khabarkaas:",
+          "«مات اليوم رجل صالح، فقوموا فصلوا على أخيكم أصحمة»",
+          "Nabiguna waxa uu ku tukaday salaatul-qaai’b, maadaama cid Islaamnimadiisa ogeyd iyo cid ku tukanaysa aysan jirin.",
+          "Halkaan ayaa laga dugsadaa in Hijradii Xabasha ay ku islaameen dadka deegaanka qaar, islaamnimadoodana ay qarsanayeen, sidii Asxama, sidaas awgeedna uu Islaamku ku fiday Qaaradda Afrika intii uusan Madina xataa gaarin.",
+          "Labadii qodob ee horey aad iigu haysay, midkaan saddexaad iigu dar: oo Islaamku Afrika, weliba Bariga Afrika ayuu soo gaaray, intii uusan Madina gaarin.",
+          "Weli waxaan u gogol-xaaraynaa ka jawaabidda Su’aasha ah Goormee Islaamku Soomaaliya soo gaaray."
+        ]
+      },
+      {
+        "heading": {
+          "en": "Did the Companions pass through Zeila?",
+          "so": "Saxaabadu ma soo mareen Saylac?"
+        },
+        "en": [
+          "Let us come to the question with which we opened this session: did the sea voyage of the Companions who emigrated pass by, or land on, the Somali coasts?",
+          "Some scholars hold that the emigrants passed through Zeila, and that some of them stayed there, and that in this way Islam reached our land in the lifetime of the Prophet (peace and blessings be upon him).",
+          "Dr. Sada Mire noted that the oral tradition of the people of Zeila says that the emigrants passed through Zeila on their way to Aksum.",
+          "Sharif Muhammad Aydarus wrote in his book أضواء على تاريخ الصومال that Islam reached Somalia \"eight years before the Hijra to Medina\".",
+          "Prof. Mohamed Haji Mukhtar also noted that many Somalis believe that their forefathers became Muslims before the Hijra to Medina.",
+          "It is worth mentioning that Sibt ibn al-Jawzi (السبط ابن الجوزي) said that the Companions crossed at the narrowest point between the coast of Abyssinia and Yemen.",
+          "But when we open the oldest sources referred to in the history of Islam, such as Ibn Sa'd and al-Tabari, they say that the Companions boarded the ships at the harbour of al-Shu'ayba on the coast of Jeddah and crossed to the land of the Najashi of Abyssinia, but they do not mention any place where they anchored or came ashore.",
+          "Dr. Ali Abdirahman Hersi described the view that Islam reached Zeila with the migration to Abyssinia as \"speculation\" with no history to support it; but he found it reasonable that individuals among the Arab Muslims may have reached our land at that time and in times close to it.",
+          "So the view that Islam reached our land at its very dawn has nothing behind it but a calculation that puts things together, and no recorded history; and for that reason we cannot count it as certain, or even as likely.",
+          "But here is the fourth point that I want you to add to the first three, something that cannot be denied and is clear to us here: that migration opened the door to a new kind of crossing, unknown on the earlier voyages of the Red Sea, namely religious travel; for where before the crossings had been limited to trade alone, now travel and migration carrying a religion were added."
+        ],
+        "so": [
+          "Aan u nimaadno su’aashii aan fadhiga ku furfurannay ee ahayd: Safar-badeedkii Saxaabadii soo hijrootay masoo mareen oo maka soo degeen Xeebaha Soomaaliya?",
+          "Aqoonyahannada qaar ayaa qaba in muhaajiriintu ay soo mareen Saylac, qaarkoodna halkaas ku hareen, sidaasna uu Islaamku ku soo gaaray dhulkeenna noloshii Nabiga NNKH.",
+          "Dr. Sada Mire ayaa xustay in hidda-afeedka reer Saylac uu sheegayo in muhaajiriintu ay Aksum u mareen Saylac.",
+          "Shariif Maxamed Caydaruus, buuggiisa أضواء على تاريخ الصومال, waxa uu ku qoray in Islaamku soo gaaray Soomaaliya \"siddeed sano ka hor Hijradii Madina”.",
+          "Prof. Maxamed Xaaji Mukhtaar-na waxa uu xusay in Soomaali badan ay aaminsan yihiin in awowayaashood ay Islaameen ka hor Hijradii Madiina.",
+          "Waxaa xusid mudan in السبط ابن الجوزي uu sheegay in saxaabadu ay ka gudubtay meesha ugu cidhiidhsan u dhexaysa xeebta Xabashida iyo Yaman.",
+          "Markaan dib usoo kala furnay ilaha ugu da’da weyn ee taariikhda Islaamka laga tixraaco sida sida Ibnu Sacd iyo Al-Dabari, waxa ay sheegaan in ay saxaabadu doomaha ka raaceen marsada Al-shucayba ee saaran xeebta Jidda, una tallaabeen dhulkii Najaashigii Xabashida, balse ma aysan soo hadal-qaadin meel ay ku xirteen oo ay doomaha uga degteen.",
+          "Dr. Cali Cabdiraxmaan Xirsi ayaa ku tilmaamay aragtida ah in Islaamku soo gaaray Saylac hijradii Xabasha mid “mala-awaal” ah oo aan taariikh loo cuskado loo hayn, balse waxa uu maangal ka dhigay in ay dhici karto in shakhsiyaad kamid ah muslimiintii Carabta ay soo gaareen dhulkeenna xilligaas iyo xilliya ku dhawba.",
+          "Haddaba aragtida ah in Islaamku waaberigii horeba uu soo gaaray dhulkeenna ayaan isu-geyn xisaabeed mooyee aan taariikh xusan loo hayn, sidaas awgeedna aannan yaqiin iyo malaba u tirin karin.",
+          "Balse, waa qodobka afaraad oo aan rabo in aad iigu geyso saddexdii horee, waxaan la inkiri karin halkaanna inooga cad in Hijriyadaas ay albaabada u furtay saan cusuboo aan safaradii hore ee badda cas lagu aqoon: waa safar-diimeedkee, oo awal haddii isu-gudubku ku koobnaa arrimaha ganacsiga oo qudha, hadda waxaa kusoo biiray safar iyo hijro diin xambaarsan."
+        ]
+      },
+      {
+        "heading": {
+          "en": "The Mosque of the Two Qiblas in Zeila",
+          "so": "Masjidka Labada Qiblo ee Saylac"
+        },
+        "en": [
+          "I said a little earlier that the view that Islam reached us very early has no evidence behind it; but let us go back and examine together the evidence attributed to it.",
+          "If you visit the town of Zeila, you will hear of, and be taken by the hand to see, an ancient mosque called \"Masjid al-Qiblatayn\", \"the mosque with two qiblas\".",
+          "The two qiblas mentioned mean that at first this mosque's qibla faced Jerusalem (Bayt al-Maqdis), and after the qibla was turned to Mecca, a second qibla was made there; and so this mosque is said to be a witness that Islam reached our land at the very beginning.",
+          "For if prayer was made obligatory on the Blessed Prophet (peace and blessings be upon him) in the 10th year of his mission, three years before his Hijra to Medina, and from that time until the middle of the 2nd year of the Hijra the qibla was Jerusalem, and it was then turned to Mecca and the Kaaba, this would tell us that Zeila had Islam and mosques, and was keeping pace with the revelation in Medina and the Islamic community.",
+          "But this claim, and the two qiblas of this mosque, need examination and tracing.",
+          "Dr. Sada Mire, who surveyed the historical sites of the town of Zeila, recorded the local tradition we have just told, but she added: \"although no archaeological evidence has yet been found to confirm the age of the mosque\".",
+          "In 2001 a team of archaeologists led by François-Xavier Fauvelle investigated this mosque; they found one mihrab facing north, over which another structure had been built whose purpose and direction could not be made out.",
+          "They confirmed that the mosque was built in two phases: the building standing now was preceded by an earlier one, on whose ruins it was raised.",
+          "The objects found in the excavation of the mosque consisted of local pottery and fragments of ceramic ware of a kind used in China in later centuries.",
+          "This team of archaeologists suggested that the claim of \"two qiblas\" for the mosque may refer to the two successive phases of the mosque's building.",
+          "So neither the archaeological research nor the written sources of history support the point that this mosque came before the Hijra to Medina, and that Islam was settled in Zeila in those times.",
+          "There is also a geographical fact worth mentioning: from Zeila, both Mecca and Jerusalem lie to the north; it is not like the \"al-Qiblatayn\" mosque in Medina, whose first qibla was Jerusalem, to the north, while its later qibla was the Kaaba, to the south.",
+          "So the two qiblas spoken of are hard to tell apart, since both face the same direction."
+        ],
+        "so": [
+          "Waxaan waxyar kahor afka ku dhuftay in aragtida ah in Islaamku aalasay ina soo gaaray aan caddayn loo hayn, balse aan dib u noqdoo aan caddayn arrintaas loo tiiriyo aan wada lafa-gurno.",
+          "Haddii aad booqato magaalada Saylac, waxaa dhegtaada kusoo dhacaya, inta gacanta lagu qabtana isha laguu soo saarayaa masjid qadiimi ah oo lagu magacaabo “Masjid Al-Qiblatayn” ama “Masjidkii labada qiblo lahaa”.",
+          "Labada qibloo la sheegayo waxaa loola jeedaa in masjidkaasi markiisii hore ay qibladiisu Baytul-Maqdis u jeedday, keddib markii Qiblada loo soo wareejiyay Makka-na, halkaas qiblo labaad looga yagleelay, sidaas awgeedna uu masjidkaan marag u yahay in Islaamku judhii horeba soo gaaray dhulkeenna.",
+          "Oo haddii Salaadda Suubanaha NNKH lagu soo faral-yeelay sannaddii 10aad ee Bicthada, saddex sano kahor hijradiisii Medina, goortaas laga bilaabo illaa bartamihii sannaddii 2aad ee Hijriyadana ay qibladu ahayd Baytul-Maqdis, kedibna loosoo wareejiyay Makka iyo Kacbada, taasi waxa ay ina leedahay Saylac waxaa ka jiray Islaam, masaajidyo leh, isla markaana waxyiga Madina iyo bulshadii Islaamka la jaanqaadayay.",
+          "Balse sheegashadan iyo labada qiblo ee masjidkaan ayaa baaris iyo raadraac inooga baahan.",
+          "Dr. Sada Mire oo sahan ku samaysay goobaha taariikheed ee magaalada Saylac, ayaa soo guurisay sheeka-afeedka bulshada ee aan hadda soo sheegnay, waxa ayse raacsatay: “inkastoo aan weli la helin wax caddayn degel-baariseed ah oo xaqiijinaya da’da masjidka”.",
+          "2001-dii koox degel-baarayaal ah oo uu hoggaaminayay François-Xavier Fauvelle ayaa baaritaan ku sameeyay masjidkaan, waxa ay heleen hal mixraab oo u jeeda dhanka waqooyi, lagana dul dhisay dhismo kale oo aan la garan karin waxa uu ahaa iyo jihada uu u jeeday.",
+          "Waxa ay xaqiijiyeen in dhismaha masjidku uu laba marxalo ahaa, dhismaha hadda taaganna uu mid hore ka horreeyay, burburkiisana laga dul taagay.",
+          "Agabka laga helay degel-baarista masjidka waxa ay ka koobnaayeen dheryo maxalli ah iyo burbur agab dhoobo ka samaysan oo Shiinaha laga adeegsan jirey qarniyo danbe.",
+          "Kooxdan degel-baarayaasha ah waxa ay soo jeediyeen in sheegashada “labada qiblo” ee masjidka laga yaabo in ay tilmaamayso labada weji ee dhismaha masjidka ee kala danbeeyay.",
+          "Haddaba, baaritaannada degel-baariseed iyo dhiganayaasha taariikhduba ma taageerin qodobka ah in Masjidkaas uu Hijradii Madina ka horreeyay, isla markaasna Islaamku biya-dhigtay Saylac waayadaas.",
+          "Waxaa kaloo jirta xaqiiqo juquraafiyeed oo in aan xusno mudan, taasoo ah in marka Saylac la joogo, Makka iyo Baytul-Maqdisba ay Waqooyi ka xigaan, Oo ma aha sida masjidka “Al-Qiblatayn” ee magaalada Madina, oo qibladiisii koowaad ay Baytul-Maqdis aheed iyo dhanka Waqooyi, halka qibladii danbena ay Kacbada iyo koonfur ahayd.",
+          "Haddaba labada qiblo ee la sheegayo kala garashadoodu way adag tahay maadaama ay hal jiho wada qaabilayaan."
+        ]
+      },
+      {
+        "heading": {
+          "en": "The graves of Mogadishu: the archaeological evidence",
+          "so": "Qabriyada Muqdisho: caddaymaha degel-baarista"
+        },
+        "en": [
+          "We have still not answered the question: \"When did Islam reach our land?\"; we are still gathering evidence.",
+          "To answer that question, to the four points I have handed you we will attach the reports of the historical sources and the archaeological information, and from putting them together the most reasonable answer will come to light.",
+          "Let us begin with the archaeological information:",
+          "Sheikh Ahmed Abdullahi Riiraash said in his book كشف السدول عن تاريخ الصومال ومماكلهم السبعة that two graves were found in Mogadishu in which two women are buried, and on the two graves the following information is inscribed:",
+          "The first grave records that Fatima bint 'Abd al-Samad Ya'qub died in the year 101 of the Hijra, that is, 719 CE.",
+          "And the second grave records that al-Hajiya bint Muhammad Muqaddam died in the month of Dhu al-Hijja, in the year 138 of the Hijra, that is, 756 CE.",
+          "If Riiraash's report is correct, it would be the strongest evidence indicating that Muslims lived in Mogadishu at the beginning and the middle of the 2nd century of the Hijra.",
+          "Many Somali historians and researchers have repeated this claim from Riiraash, among them: Ali Abdirahman Hersi, Ahmed Dualeh Jama and Prof. Cabdalla Cumar Mansuur.",
+          "To check whether this information is sound, we must bring up Enrico Cerulli.",
+          "Cerulli was an Italian scholar who specialised in the history and writings of the Horn of Africa, and he worked with the Italian colonial administration in Somalia.",
+          "In the 1920s he researched Mogadishu and the towns of Benadir, and recorded the Arabic inscriptions carved on graves, mosques and minarets.",
+          "In 1926 he published the results of his collection in an article he titled \"Iscrizioni e documenti arabi per la storia della Somalia\", meaning \"Arabic inscriptions and documents on the history of Somalia\".",
+          "Thirty years later he published that article, with other writings added to it, in a book of three volumes, which came out in 1957, 1959 and 1964.",
+          "So, since Cerulli is the person who could be referred to, as the original and first-hand source, for the two graves Riiraash mentioned and the inscriptions on them, when we opened his first article of 1926 and his three-volume book completed in 1964, we found in neither any information or record concerning those two graves.",
+          "When Cerulli dated the Arabic inscriptions he found, he said that the oldest was a grave inscription he found in northern Shangaani, where there is buried: Abu 'Abdallah ibn Raya ibn Muhammad ibn Ahmad al-Naysaburi al-Khurasani, who died in the year 614 of the Hijra, that is, 1217 CE.",
+          "But he added that from the town of Brava he had been sent a copy of an inscription found in the Friday mosque of Brava, which gave the date 498 of the Hijra, that is, 1105 CE, more than a century before the oldest grave inscription in Mogadishu; and Cerulli said that if this Brava date had been copied correctly, it would be the oldest Arabic inscription in the Somali region known so far.",
+          "So, the two graves of Fatima bint 'Abd al-Samad and al-Hajiya bint Muhammad, if their information is correct, would let us conclude that Islam and a Muslim community lived in Mogadishu in the very first century of the Hijra.",
+          "We can strengthen this point with the Swahili coast of Kenya: the archaeologist Mark Horton found at the town of Shanga the remains of a mosque whose date was estimated at the middle of the eighth century CE, that is, the second century of the Hijra.",
+          "If on a coast that much further from the Arabian Peninsula the remains and traces of Islam were found in the same second century of the Hijra, then it is possible, and indeed likely, that Islam reached the Somali coasts at that time or before, for the reasons we have set out."
+        ],
+        "so": [
+          "Weli kama aannan jawaabin weydiintii ahayd: “Goormuu Islaamku soo gaaray geyigeenna”, oo caddaymo ururis ayaan ku jirnaa.",
+          "Markaan rabno in aan su’aashaas ka jawaabno, afartii qodob ee aan kuusoo dhiibtay, waxa aan kuugu lifaaqaynaa warbixinnada ilaha-taariikhda iyo xogaha degel-baarista, isu-geyntoodana waxaa inooga soo dhalaalaysa jawaabta ugu macquulsan.",
+          "Aan ku bilawno xogaha dedel-baariseed:",
+          "Sheekh Axmed Cabdallaah Riiraash ayaa buuggiisa كشف السدول عن تاريخ الصومال ومماكلهم السبعة ku sheegay in Muqdisho laga helay laba qabri oo ay ku aasan yihiin laba haween ah, waxaana ku xardhan labada qabri xogtaan soo socota:",
+          "Qabriga koowaad waxaa ku qoran in Faatima bint Cabdi-Samad Yacquub ay dhimatay sannadkii 101 ee Hijriyada, waa 719-kii Miilaadigee.",
+          "Qabriga labaadna waxaa ku qoran in Al-Xaajiya bint Muxammad Muqaddam ay dhimatay bisha Dul-Xijja, sannadkii 138 Hijriyada, waa 756-kii Miilaadigee.",
+          "Haddii warbixinta Riiraash ay sax tahay waxa ay noqonaysaa caddaynta ugu xoogga badan ee ishaaraysa in Muqdisho ay ku noolaayeen dad muslimiin ah bilawgii iyo bartamihii qarnigii 2aad ee Hijriyada.",
+          "Taariikhyahanno iyo cilma-baarayaal badan oo Soomaali ah ayaa Riiraash kasoo guuriyay sheegashadaas, waxaana kamid ah: Cali Cabdiraxamaan Xirsi, Axmed Ducaale Jaamac iyo Prof Cabdalla Cumar Mansuur.",
+          "Si aan u hubinno in ay xogtaan qumman tahay, waa in aan soo hadal-qaaadnaa Enrico Cerillu.",
+          "Cerulli waxa uu ahaa aqoonyahan Talyaani ah oo ku takhasusay taariikhda iyo qoraallada Geeska Afrika, waxa uuna lasoo shaqeeyay maamulkii Gumeystaha Talyaaniga ee Soomaaliya.",
+          "1920-meeyadii waxa uu Muqdisho iyo magaalooyinka Banaadir ka baaray, kana diiwaangeliyay qoraallada Carabiga ah ee ku xardhan qabuuraha, masaajidda iyo minaaradaha.",
+          "Sannadkii 1926 ayuu Natiijada ururintiisa ku daabacay maqaal uu cinwaan uga dhigay: \"Iscrizioni e documenti arabi per la storia della Somalia\", oo macnihiisu yahay \"Qoraallo iyo dukumentiyo Carabi ah oo ku saabsan taariikhda Soomaaliya\".",
+          "Soddon sano kaddib ayuu maqaalkaas iyo qoraallo kale oo uu raaciyay ku daabacay buug saddex mujallad ah, oo soo baxay sannadihii 1957, 1959 iyo 1964.",
+          "Haddaba, maadaama ay Cerulli tahay cidda asal ahaan iyo is-dul taag ahaanba laga tixraaci karo labadaas qabri ee uu Riiraash xusay iyo qoraallada ku xardhanba, markii aan soo kala furnay maqaalkiisii hordhaca ahaa ee 1926 iyo buuggiisa saddexda mujallad ee 1964 soo idlaaday, intaba kama aannan helin wax xog iyo soo guurin quseysa labadaas qabri.",
+          "Markii Cerulli uu waqtiyaynayay qoraallada carabiga ah ee uu helay, waxa uu sheegay in uu ugu da’weyn yahay qoraalka qabri uu ka helay waqooyiga Shangaani, halkaas oo uu ku aasan yahay: Abuu Cabdalla ibnu Raya ibnu Muxammad ibnu Axmed an-Naysaabuuri al-Khuraasaani, oo geeriyooday sannaddii 614-kii Hijriyada, waa 1217 Miilaadigee.",
+          "Balse waxa uu raaciyay in magaalada Baraawe looga soo dhiibay min-guurinta qoraal laga helay masjid Jaamaca Baraawe, kaasoo xusay taariikhda 498 Hijriyada, waa 1105 Miilaadigee, qarni iyo dheeraad kahor qoraalka qabriga ugu da’da weyn Muqdisho, waxa uuna Cerulli sheegay in haddii taariikhdan Baraawe si sax ah loosoo guuriyay uu noqonayo qoraalka af-carabiga ah ee ugu da’da weyn deegaanka Soomaalida ee illaa hadda la hayo.",
+          "Haddaba, labada qabri ee Faatima bint Cabdi-Samad iyo Al-Xaajiya bint Muxammad, haddii xogtoodu sax tahay, waxaan ka daliilasan karnaa in Muqdisho Islaam iyo bulsho muslim ahba ay ku dhaqnaayeen isla qarnigii koowaad ee Hijriyada.",
+          "Waxaan middaan ku xoojin karnaa, xeebta Sawaaxiliga ee Kenya, degel-baaraha Mark Horton ayaa magaalada Shanga ka helay haraadiga masjid waqtigiisa lagu qiyaasay bartamihii qarnigii siddeedaad ee Miilaadiga, waa qarnigii labaad ee Hijriyada.",
+          "Haddiiba marka xeeb sidaas uga sii durugsan Jasiiradda Carabta laga helay haraadiga iyo raadadka Islaamka isla qarnigii labaad ee Hijriyada, hadde waa suurtagal wayna u badan tahay in xeebaha Soomaaliyeed uu Islaamku soo gaaray goortaas iyo ka horba, asbaabihii aan soo taxnay aawadood."
+        ]
+      },
+      {
+        "heading": {
+          "en": "Written sources: Duan Chengshi, al-Hamdani and al-Mas'udi",
+          "so": "Ilaha qoran: Duan Chengshi, al-Hamdaani iyo al-Mascuudi"
+        },
+        "en": [
+          "Besides those archaeological findings, let us look at the written information the world's historians left about the Somali land, and what they said about the religion of the people there.",
+          "In the ninth century CE, which corresponds to the third century of the Hijra, a Chinese writer called Duan Chengshi reported on the coast of Berbera, and said that the country had never come under foreign rule; but he mentioned nothing about the religion of the local people.",
+          "Some scholars have taken this to mean that the Somali were not Muslims at that time, or were not known as Muslims; but that is not Duan Chengshi's report: it is an interpretation placed on it.",
+          "In the tenth century CE, which corresponds to the 4th century of the Hijra, the Arab geographers and historians began to report on our coasts.",
+          "Al-Hamdani, who lived in the middle of the fourth century of the Hijra, said in his work صفة جزيرة العرب, when speaking of Zeila:",
+          "\"Zeila has a market where livestock, especially goats, are brought from the land of Abyssinia; there they are slaughtered, their skins are exported, and their remains are thrown into the sea.\"",
+          "Ibn Hawqal added that most of the hides imported into Yemen came from Zeila.",
+          "Al-Mas'udi mentioned in his history مروج الذهب that in the coastal towns of Zeila, Dahlak and Badi' there lived a group of Muslims, but that the Abyssinians were stronger than them.",
+          "So, putting this information together, it emerges that in the fourth century of the Hijra, which corresponds to the tenth century CE, Muslims lived in Zeila; but, as can be understood from al-Mas'udi's words, those people were an outnumbered minority, gathered in that coastal town.",
+          "Before we go further, let us point out one matter.",
+          "Al-Mas'udi's words \"وهم في ذمّة الحبشة\" (\"and they are under the protection of the Abyssinians\") were taken by historians including Conti Rossini and Trimingham to mean that the Abyssinian kingdom ruled Zeila at that time; but the archaeological research of Fauvelle and his team in the town of Zeila indicated that this reading is wrong, and that the Arab geographers used \"Abyssinia\" as the name of a region, not to mean the kingdom of Aksum.",
+          "As they see it, in the 9th and tenth centuries Zeila was an independent port, not under the Christian kingdom of Abyssinia, where a few Muslims, mostly traders, lived among people of the town who had not yet become Muslims."
+        ],
+        "so": [
+          "Ka sokow degel-baarisyadaas, aan milicsanno xogaha qoran ee taariikhyahannadii dunidu ka reebeen dhulka Soomaalida iyo waxa ay ka sheegeen diinta deegaanka.",
+          "Qarnigii sagaalaad ee Miilaadiga, oo ku beegan qarnigii saddexaad ee Hijriyada, qoraa Shiinees ah oo la oran jiray Duan Chengshi ayaa ka warramay xeebta Berbera, Waxa uuna sheegay in dalkaasi aanu weligii hoos iman xukun shisheeye, balse diinta dadka deegaanka waxba kama uusan xusin.",
+          "Aqoonyahannada qaar ayaa u macneeyay in aysan Soomaalidu waagaas Muslim ahayn ama aan loo aqoon dad muslim ah, balse taasi ma aha warbixinta Duan Chengshi ee waa fasiraad la saaray.",
+          "Qarnigii tobanaad ee Miilaadiga, oo ku beegan qarnigii 4aad ee Hijriyada, juqraafiyiinta iyo taariikhyahannada Carabta ayaa bilaabay in ay xeebaheenna ka warramaan.",
+          "Al-Hamadaani, oo noolaa bartamihii qarnigii afaraad ee Hijriyada, ayaa dhiganihiisa صفة جزيرة العرب, Saylac mar uu ka hadlayay yiri:",
+          "‏“Saylac waxa ay leedahay Saylad xoolaha, gaar ahaan ariga, looga keeno dhulka Xabashida, halkaasoo lagu qalo, haraggoodana laga dhoofiyo, haraadigoodana badda lagu qubo”.",
+          "‏Ibnul-Xawqal ayaa intaas raaciyay in inta badan hargaha Yaman loosoo waarido ay Saylac ka imaan jireen.",
+          "Al-Mascuudi ayaa taariikhdiisa مروج الذهب ku xusay in magaalo-xeebeedyada: Saylac, Dahlak iyo Baadic ay ku noolyihiin koox muslimiin ah, balse Xabashidu ka itaal roon tahay.",
+          "Haddaba, isu-geynta xogahaas waxaa inooga soo baxaysa in qarnigii afaraad ee Hijriyada, oo ku beegan qarnigii tobnaad ee Miilaadiga, ay Saylac dad muslimiin ah ku noolaayeen, balse sida hadalka Mascuudi laga dhadhansanayo dadkaasi aqalliyo laga tira-badan yahay bay ahaayeen, kuna urursan magaala-xeebeeddaas.",
+          "Intaynaan horey usii socon, aan hal arrin baraarujinno.",
+          "Hadalka Mascuudi ee ah “وهم في ذمّة الحبشة” taariikhyahanno ay kamid yihiin Conti Rossini iyo Trimingham ayaa u qaatay in Boqortooyadii Xabashidu ay Saylac ka talinaysay waqtigaas, balse degel-baaristii Fauvelle iyo kooxdiisa ee magaalada Saylac ayaa waxa ay tilmaameen in akhrintaasi khaldan tahay, juquraafiyiintii carabtuna ay \"Xabasha\" u adeegsanayeen magac gobol, ee aysan ula jeedin boqortooyadii Aksum.",
+          "Sida ay qabaanna, Saylac qarnigii 9aad iyo tobanaad waxa ay ahayd deked madax-bannaan oo aan hoos imaan boqortooyadii masiixiga ahayd ee Xabasha, muslimiin kooban oo ganacsato u badanna ay ku dhex noolaayeen dad aan weli islaamin oo magaalada degganaa."
+        ]
+      },
+      {
+        "heading": {
+          "en": "Excavations in Mogadishu, Barbar and Zeila",
+          "so": "Qodisyada Muqdisho, Barbar iyo Saylac"
+        },
+        "en": [
+          "In the south, in 1986 Dr. Ahmed Dualeh Jama dug at the site of the Shangaani mosque in Mogadishu, and at its base he found objects dated to the eleventh century CE, the fifth century of the Hijra; and he said that the earliest foundations of the mosque may go back a century before that date.",
+          "Neville Chittick, the British archaeologist whose excavation at Xaafuun we presented in the previous session, holds that there is no evidence showing that a town stood on the site of Mogadishu before the end of the twelfth century CE.",
+          "And on the Barbar coast, the team of archaeologists led by Alfredo González-Ruibal found a mosque with a mihrab made of clay, which they dated to the eleventh century CE, which corresponds to the 5th century of the Hijra.",
+          "In the year 548 of the Hijra, that is, 1154 CE, the geographer al-Idrisi, describing Brava and what lies below it, said that it was the last place before the land of the unbelievers who believed in nothing:",
+          "The reports of archaeology and of the historical sources up to the fifth century of the Hijra, which corresponds to the eleventh century CE, picture for us that Islam had reached this land, but that it was scattered here and there, confined to the coastal areas and their settlements."
+        ],
+        "so": [
+          "Dhanka koonfureed, Dr. Axmed Ducaale Jaamac ayaa sannadkii 1986 qodis ku sameeyay goobta masjidka Shangaani ee Muqdisho, waxa uuna salkiisa ka helay agab lagu qiyaasay saman ahaan qarnigii kow iyo tobnaad ee Miilaadiga, ee shanaad ee Hijriyada, waxa uuna sheegay in aasaaska hore ee masjidku uu qarni kasii horreyn karo taariikhdaas.",
+          "Neville Chittick, degel-baarihii Ingiriiska ahaa ee aan fadhigii hore ku soo bandhignay qodistiisii Xaafuun, ayaa qaba in aan la hayn wax caddayn ah oo muujinaysa in goobta Muqdisho ku taal ay ka dhisneed magaalo ka hor dhammaadkii qarnigii laba iyo tobnaad ee miilaadiga.",
+          "Xeebta Barbarena, kooxdii degel-baarayaasha ee uu hor kacayay Alfredo González-Ruibal ayaa heshay masjid mixraabkiisu dhoobo ka samaysan yahay, kuna qiyaaseen qarnigii kow iyo tobnaad ee miilaadiga, oo ku beegan qarnigii 5aad ee Hijriyada.",
+          "Sannadkii 548 ee Hijriyada, waa 1154-kii Miilaadiga, juqraafiyahanka Al-Idriisi oo ka warramaya Baraawe iyo wixii ka hooseeya ayaa ku tilmaamay in ay dhulka gaalada aan waxba aamminsanayn ay ugu danbayso:",
+          "Warbixinta degel-baarista iyo ilaha taariikhda illaa laga soo gaaro qarnigii shanaad ee Hijriyada, oo ku beegan qarnigii kaw iyo tobnaad ee Miilaadiga, waxa ay inoo sawirayaan in Islaamku dhulkan soo gaaray, balse uu teel-teel ku ahaa, kuna koobnaa deegaannada xeebaha iyo rugahooda."
+        ]
+      },
+      {
+        "heading": {
+          "en": "The 11th to 14th centuries: Zeila and Mogadishu",
+          "so": "Qarniyadii 11aad ilaa 14aad: Saylac iyo Muqdisho"
+        },
+        "en": [
+          "But in the thirteenth century CE, the seventh of the Hijra, the general picture of this land changed, and the information left about it differed from what came before.",
+          "Yaqut al-Hamawi, who died in the year 626 of the Hijra, that is, 1229 CE, described the people of Zeila as Muslims.",
+          "Ibn Sa'id al-Maghribi, who died in the year 685 of the Hijra, which corresponds to 1286 CE, also described the people of Merca as Muslims, and when speaking of Mogadishu he said:",
+          "«مدينة الإسلام المشهورة في ذلك الصقع»",
+          "\"The most famous city of Islam in that region.\"",
+          "Half a century later, in the year 731 of the Hijra, 1331 CE, the famous traveller Ibn Battuta set foot in the Somali regions, from Zeila to Mogadishu, and gave a detailed account of them.",
+          "We will go into Ibn Battuta's account in another session; but what concerns us now is that the places he visited, especially Mogadishu, were a land of Islam, where the knowledge of the Sharia, the study circles of the mosques and the religious schools all flourished.",
+          "Putting together this information that historians, geographers and travellers left about the Somali land over a period of six centuries, we can draw from it that although Islam arrived early on our coasts, it stayed there for a long time and did not cross into the interior, and the Islamisation of the coasts themselves took several centuries.",
+          "Prof. Cabdalla Cumar Mansuur put it this way:",
+          "\"Although the religion of Islam reached the Somali coastal towns in those early times, it did not spread quickly to the rest of the country.\""
+        ],
+        "so": [
+          "Balse, Qarnigii saddex iyo tobnaad ee Miilaadiga, ee toddobaad ee Hijriyada, ayaa muuqaalka guud ee dhulkan isbeddelay, xogaha laga reebayna ay ka duwanaayeen kuwii ka horreeyay.",
+          "Yaaquut Al-Xamawi, oo dhintay sannadkii 626 Hijriyada, waa 1229-kii Miilaadiga e, ayaa dadka Saylac ku tilmaamay in ay yihiin dad muslimiin ah.",
+          "Ibnu Saciid Al-Maqribi, oo dhintay sannadkii 685 Hijriyada, oo ku beegan 1286-kii Miilaadiga, ayaa isna ku tilmaamay reer Marka dad muslimiin ah, Muqdisho markuu ka hadlayayna waxa uu yiri:",
+          "«مدينة الإسلام المشهورة في ذلك الصقع»",
+          "“Magaalada Islaamka ee ugu caansan deegaankaas”.",
+          "Nus qarni keddib, sannadkii 731 Hijriyada, 1331-kii Miilaadiga, dhulmareenkii caanka ahaa ee Ibnu-Batuuta, ayaa soo caga-dhigtay deegaannada Soomaalida, laga soo bilaabo Saylac illaa Muqdisho, oo warbixin faahfaahsan uu ka bixiyay.",
+          "Warbixinta Ibnu-Batuuta fadhi kale ayaan ku faahfaahinaynaa, balse hadda waxaa inaga quseeya in deegaannada uu yimid gaar ahaan Muqdisho ay ahayd dhul Islaam, oo weliba Cilmiga sharciga ah, xalaqaadka masaajidda iyo madaarista diiniga ahba ay cammirnaayeen.",
+          "Isu-geynta xogahan ay taariikhyahannada, juquraafiyiinta iyo dhulmareennadu ka reebeen dhulka Soomaalida muddo lix qarni ah, waxa aan kala soo bixi karnaa in Islaamku haba kusoo hormaree xeebeheenna, balse uu halkaas muddo dheer ku raagay, oo uusan daakhilka usoo tallaabin, islaamaynta xeebaha laftirkeeduna ay qarniyo dhawr ah qaadatay.",
+          "Prof. Cabdalla Cumar Mansuur ayaa u dhigay sidatan:",
+          "\"Inkastoo diinta Islaamku ay waayadaa hore soo gaartay magaalo-xeebeedyada Soomaaliyeed, haddana dhaqso uguma fidin dalka intiisa kale.\""
+        ]
+      },
+      {
+        "heading": {
+          "en": "How did Islam reach us?",
+          "so": "Sidee buu Islaamku inagu soo gaaray?"
+        },
+        "en": [
+          "After the question of when Islam reached us comes the question: how did Islam reach us?",
+          "Let us go back to the seventh century and the beginning of the religion of Islam.",
+          "After the death of the Prophet (peace and blessings be upon him), in the 11th year of the Hijra, that is, 632 CE, Islam spread rapidly to the north and the east of the Arabian Peninsula.",
+          "Within decades Syria, Iraq, Egypt, Persia and North Africa were conquered and taken by Islam, and at the end of the 1st century of the Hijra the Muslims crossed to the Iberian peninsula, al-Andalus.",
+          "The armies and conquests of Islam that set foot in all those lands did not even glance at the Horn of Africa, and no army was sent there.",
+          "This is explained by several things: first, the sea lies between the Horn of Africa and the Arabian Peninsula, and the Muslims only took to fighting and raiding by sea later on.",
+          "Second, a hadith has come down saying:",
+          "«دعوا الحبشة ما ودعوكم، واتركوا الترك ما تركوكم»",
+          "Meaning: \"Leave the Abyssinians and the Turks alone, as long as they leave you alone.\"",
+          "This may be what held the Companions back from raiding and conquering the Horn of Africa.",
+          "Third, in terms of the natural rivalry of powers, the Muslims were surrounded by two powers that held the richest lands of the Arabian Peninsula and its surroundings, Persia and Rome; and it made sense to take them on first.",
+          "So, if no army was sent, and no conquest happened in our land, in what way did Islam reach us?",
+          "The widest and most reasonable way Islam reached us was the delegations and trading caravans that came to us from the Arabian Peninsula.",
+          "Dr. Ali Abdirahman Hersi said that wherever the Muslim trader went, he was selling both worldly goods and those of the Hereafter.",
+          "The second group that carried Islam to us was the refugees who scattered from the struggles for power and the wars of the Arabian Peninsula, which began in the very time of the Companions.",
+          "Prof. Mohamed Haji Mukhtar holds that the first groups to settle on the Benadir coast were people fleeing the wars of the Ridda (apostasy), most of them from Oman.",
+          "There is a third group that reached us in a different way from those and brought us the religion: the preachers, people who travelled in order to spread the religion, as we will see with the forefathers of the Somali who crossed from the Arabian Peninsula.",
+          "Beyond those three ways, trade, refugees and preachers, it is also said that armies sent by the Umayyad and Abbasid caliphates came to the region.",
+          "It is said that 'Abd al-Malik ibn Marwan, the fifth Umayyad caliph, sent an army to the coasts of East Africa, and the local people became Muslims without a fight.",
+          "Added to that, the Abbasid caliph Abu Ja'far al-Mansur, in the year 149 of the Hijra, that is, 766 CE, is said to have sent a man called Yahya ibn 'Umar al-'Anzi to bring the religion to the people and to collect the zakat.",
+          "But these claims of armies and delegations sent from Damascus and Baghdad do not stand on firm legs: all of them are reported from a book called كتاب الزنوج, whose author is not well known, and which was written late, in the last century, the 19th, while the early historical sources such as al-Tabari and others like him mention nothing at all of these events."
+        ],
+        "so": [
+          "Weydiinta waqtiyaynta ee xilligii Islaamku ina soo gaaray keddib, waxaa inoo imaanaysa su’aasha ah: Sidee buu Islaamku inagu soo gaaray?",
+          "Aan dib ugu laabanno qarnigii toddobaad iyo bilawgii Diinta Islaamka.",
+          "Geeridii Nabiga NNKH keddib, sannadkii 11aad ee Hijriyada, waa 632-kii Miilaadiga, Islaamku waxa uu si degdeg ah ugu fiday docda woqooyi iyo dhanka bari ee Jasiiradda Carabta.",
+          "Tobanaan sano gudahood waxaa la furtay oo Islaamku qabsaday Shaam, Ciraaq, Masar, Faaris iyo Waqooyiga Afrika, gebagabadii qarnigii 1aad ee Hijriyadana Muslimiintu waxa ay u tallaabeen Jasiirad-u-yaasha Aybeeriya ama Andalus.",
+          "Ciidamaddii iyo Futuuxaadkii Islaamka ee carrigaas oo dhan cagta mariyay, geeska Afrika masoo jalleecin, ciidanna looma soo dirin.",
+          "Waxaa loo sababeeyaa arrinta dhawr arrimood, waa midda koowaade Geeska Afrika iyo Jasriiradda Carabta oo badi dhex taal, muslimiintuna ku duulka iyo ku dagaallanka badda waa danbe ayay qabatimeen.",
+          "Waa midda xigtee, waxaa soo arooray xadiis odhanaya:",
+          "«دعوا الحبشة ما ودعوكم، واتركوا الترك ما تركوكم»",
+          "Oo macnihiisu yahay: “Xabashida iyo Turkida inta ay bannaanka idin ka joogaan, faraha ka qaada”.",
+          "Middaan oo laga yaabo in ay saxaabada ka hakisay ku duulka iyo furashada Geeska Afrika.",
+          "Waa midda saddexaade, marka laga eego dhanka loollanka dabiiciga ah ee quwadaha, Muslimiinta waxaa kulaalayay laba quwadood oo kala haystay dhulkii ugu hodansanaa ee Jasiiradda Carabta iyo hareereheeda, waa Faaris iyo Roomaankee. in ay marka koowaad ayaga madaxa geliyaanna maangal bay ahayd.",
+          "Haddaba, haddaan ciidan lasoo dirin, futuuxaadna dhulkeena ka dhicin, habkee buu Islaamku inagu soo gaaray?",
+          "Habka ugu ballaaran uguna macquulsan ee Islaamku inagu soo gaaray waxa ay ahayd wufuuddii iyo kolanyadii ganacsiga ee Jasiiradda Carabta inooga timid.",
+          "Dr. Cali Cabdiraxmaan Xirsi ayaa sheegay in ganacsadaha muslimka ah meel walba uu tagayay uu ku beecinayay: badeeca adduunyo iyo mid aakhiraba.",
+          "Qolada labaad ee Islaamka inoo sidday waxa ay ahayd qaxootigii kasoo firxaday loollankii awoodda iyo dagaalladii Jasiiradda Carabta ee Isla xilligii Saxaabadaba bilawday.",
+          "Prof. Maxamed Xaaji Mukhtaar waxa uu qabaa in kooxihii ugu horreeyay ee xeebaha Banaadir soo degay ay ahaayeen dad ka soo cararay dagaalladii Riddada, intooda badanna Cumaan ka yimid.",
+          "Waxaa jira qolo saddexaad oo ayana ged kuwaas ka duwan inagu soo gaaray diintana ina soo gaarsiiyay, waa ducaadda iyo dadkii in ay diinta faafiyaan awgeed usoo safray, sida aan ku arki doonno awoowayaashii Soomaalida ee Jasiiradda Carabta kasoo tallaabay.",
+          "Saddexdaas hab keddib, waa ganacsiga, qaxootiga iyo ducaadda e, waxaa kaloo la sheegaa in ay deegaanka ay yimaadeen ciidamo ay soo direen khilaafooyinka Umawiyiinta iyo Cabbaasiyiinta.",
+          "Waxaa la sheegaa in Cabdulmalik bin Marwaan, oo ahaa khaliifkii shanaad ee Umawiyiinta, uu ciidan u soo diray xeebaha Bariga Afrika, dadkii deegaankuna ay islaameen dagaal la’aan.",
+          "Waxaa taas soo raacda in Khaliifkii Cabbaasiga ahaa ee Abuu Jacfar Al-Mansuur uu sannadkii 149 ee Hijriyada, waa 766-kii Miilaadiga, u soo diray nin la yiraahdo Yaxya bin Cumar Al-Canzi, si uu dadka diinta u gaarsiiyo, sakadana u ururiyo.",
+          "Balse sheegashooyinkaan tilmaamaya ciidammo iyo wufuud laga soo diray Dimishiq iyo Baqdaad ayaan luga badan ku taagnayn, oo dhammaantood waxaa laga soo weriyaa kitaab la yiraahdo كتاب الزنوج, qoraagiisana aan si fiican loo garanayn, lana qoray waa danbe iyo qarnigii 19aad ee tagay, halka ilaha-taariikhda ee hore sida Al-Dabari iyo kuwa la midka ah aysan dhacdooyinkaas waxba kasoo hadal-qaadin."
+        ]
+      },
+      {
+        "heading": {
+          "en": "Conclusion: when did Islam reach us?",
+          "so": "Gunaanad: goorma ayuu Islaamku soo gaaray?"
+        },
+        "en": [
+          "So, to sum up: WHEN DID ISLAM REACH THE SOMALI LAND?",
+          "You were keeping four points for me:",
+          "• The geographical closeness of our region to the Arabian Peninsula, where Islam came down.",
+          "• The age-old trade ties between the people of this region and the Arabs on the other shore, before and after Islam",
+          "• The migration to Abyssinia, and that Islam crossed to the African continent before it had even reached Medina.",
+          "• In the lifetime of the Blessed Prophet (peace and blessings be upon him), Islam reached Yemen, Hadramawt, Oman and Bahrain, and they became Muslim: the regions of the Arabian Peninsula closest to our coasts, and the place from which the flow of Arabs and the ties between the two sides came.",
+          "When we put those four facts together, and add to them the information on the two Mogadishu graves that Riiraash reported, if it is correct, we can say with confidence that Islam reached our region early, and that its first drop, if it did not come earlier, came no later than the beginning of the 2nd century of the Hijra.",
+          "But alongside that I would add: however early Islam reached our land, its spread and the Islamisation of the local people took a good while; the historical information we have gone through confirms that from one century to the next the picture of the region kept changing, until we come to the 8th century of the Hijra and the Somali towns where the knowledge of the Sharia was pursued.",
+          "Zeila, Mogadishu, Brava, Merca and the Barbar coast, we can say, were the first places in our land to receive Islam, where its first drops fell.",
+          "The Somali, who today are a hundred per cent Muslim, did not receive Islam through any army or war: it was brought to them by traders, refugees and preachers spreading the religion.",
+          "In the coming sessions we will see Islam, after passing the coasts, spreading little by little, gradually, into the interior of our land."
+        ],
+        "so": [
+          "Haddaba, isku soo xooriyoo, GOORMUU ISLAAMKU SOO GAARAY DHULKA SOOMAALIDA?",
+          "Waxa aad ii haysay afar qodob oo kala ah:",
+          "• Isu-dhawaanshaha juquraafiyeed ee deegaankeenna iyo jasiiradda carabta, oo ah halkii Islaamku kusoo degay.",
+          "• Xiriirka ganacsi ee soo jireenka ah ee ka dhexeeyay dadkii deegaankan iyo carabtii daanta kale kahor iyo keddib Islaamka",
+          "• Hijradii Xabasha iyo in Islaamku uu usoo tallaabay qaaradda Afrika kahor intii uusan xattaa Madina gaarin.",
+          "• Intii uu noolaa Suubanuhu NNKH waxaa islaamku gaaray oo la islaamiyay Yaman, Xadramuut, Cummaan iyo Baxreyn oo ah deegaannada ugu dhaw Jasiiradda Carabta ee xeebeheenna, isla markaasna ah meesha qulqulka carabta iyo xiriirka labada dhinac kasoo uskumay.",
+          "Afartaas xaqiiqo markii aan isu-geynno, oo weliba u weheshanno xogaha labada qabri ee Muqdisho Riiraash kasoo sheegay, waa haddii ay sax yihiine, waxaan si kalsooni leh ku odhan karnaa Islaamku degelkeenna waqti hore ayuu soo gaaray, dhibicdiisii koowaadna haddii aysan ka horreyn kama danbayn bilawgii qarnigii 2aad ee Hijriyada.",
+          "Waxaase taas ii wehelisa, Islaamku waagaas hasoo gaaro dhulkeenna ma xumee, in faafiddiisa iyo Islaamaynta dadka deegaanka ay muddo fiican qaadatay, oo xogaha taariikheed ee aan soo dulmarnay waxa ay inoo xaqiijinayaan in qarniba qarnigii ku xigay uu muuqaalka gobolku isa soo beddelayay, illaa aan u nimid qarnigii 8aad ee Hijriyada iyo magaalooyinka Soomaalida oo cilmiga shareecada laga raacdo.",
+          "Saylac, Muqdisho, Baraawe, Marka iyo Xeebta Barbara ayaan odhan karnaa waa meelihii ugu horreeyay ee dhulkeenna Islaamka qaabilay, dhibicdiisuna ay ku hoortay.",
+          "Soomaalida oo boqolkiiba boqol maanta Muslim ah, Islaamku kuma soo gaarin ciidan iyo dagaal toona, balse waxaa soo gaarsiiyay Ganacsato, Qaxooti iyo ducaad diinta faafinayay.",
+          "Waxaan fadhiyada xiga ku arki doonnaa Islaamka oo intuu xeebaha soo dhaafo, tartiib tartiib iyo siqid ugu faafaya daakhilka dhulkeenna."
+        ]
+      },
+      {
+        "heading": {
+          "en": "The next session",
+          "so": "Fadhiga xiga"
+        },
+        "en": [
+          "Let today's session end there.",
+          "If in our earlier sessions we told the history of our land in a summary, all at once, from now on, since the region became settled and entered history, we will stop at it place by place and town by town.",
+          "We will open it up, and in our sixth session we will examine MOGADISHU and its history, the great age of its past and the founding of its governments.",
+          "Until then, goodbye."
+        ],
+        "so": [
+          "Fadhiga Maantana halkaas ha inoo joogo.",
+          "Haddii aan fadhiyadeennii hore taariikhda dhulkeenna aan isku-qaad iyo jumlo uga soo warramaynay, hadda iyo wixii ka danbeeya, maadaama deegaanku camirmay, taariikhdana galay, waxa aan isu dul-istaagi doonnaa goob goob iyo magaalo magaalo.",
+          "Waxa aan ku furfuran doonnaa, oo fadhigeenna lixaaad aan ku faaqidaynaa MUQDISHO iyo taariikhdeeda, fac-weynida waayeheeda iyo aasaaska talisyadeeda.",
+          "Sidaas iyo Nabadgelyo"
+        ]
+      }
+    ],
+    sources: ["السيرة النبوية (ابن هشام)", "معجم البلدان (ياقوت الحموي)", "Ibn Sa'id al-Maghribi, Kitab Bast al-Ard", "أضواء على تاريخ الصومال (الشريف محمد عيدروس)", "كشف السدول (Reeraash)", "Taariikhda Afka iyo Bulshada Soomaaliyeed", "The Christian Topography of Cosmas", "Divine Fertility", "The Arab Factor in Somali History", "Le port de Zeyla et son arrière-pays au Moyen Âge", "Iscrizioni e documenti arabi per la storia della Somalia", "Somalia: scritti vari editi ed inediti (3 vols.)", "The Eastern African Coast", "The Origins and Development of Mogadishu, AD 1000 to 1850", "Asia in the Horn", "Historical Dictionary of Somalia"]
   },
   {
     id: 6,
