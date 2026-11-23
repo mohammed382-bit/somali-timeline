@@ -335,6 +335,541 @@ const media = {
     ]
   },
 
+  5: {
+    video: "",   // paste the YouTube link for episode 5 here when it is online
+    pictures: [
+      {
+        file: "media/ep05/jabal-nuur-xiraa.jpg",
+        type: "photo",
+        caption: {
+          en: "Jabal al-Nour and the cave of Hira, where the first revelation came in 610 CE",
+          so: "Jabal al-Nuur iyo godka Xiraa, halkii waxyigii ugu horreeyay ku soo degay 610 M."
+        },
+        credit: { en: "Sadath i · Wikimedia Commons (CC BY-SA 4.0)", so: "Sadath i · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Jabal_al-Nour_And_cave_Hira.jpg"
+      },
+      {
+        file: "media/ep05/makka-1880.jpg",
+        type: "photo",
+        caption: {
+          en: "Mecca around 1880, one of the earliest photographs of the city (Muhammad Sadiq Bey)",
+          so: "Makka qiyaastii 1880, mid ka mid ah sawirradii ugu horreeyay ee magaalada (Muxammad Saadiq Bey)"
+        },
+        credit: { en: "Original Photograph by Muhammad Sadiq Bey; uploaded original media file by Khalili Collections · Wikimedia Commons (CC BY-SA 3.0)", so: "Original Photograph by Muhammad Sadiq Bey; uploaded original media file by Khalili Collections · Wikimedia Commons (CC BY-SA 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Edited_Khalili_Collection_Hajj_and_Arts_of_Pilgrimage_arc.pp_0211.02-Photo_of_Mecca_by_Muhammad_Sadiq_Bey_ca.1880-ccbysa3.0.png"
+      },
+      {
+        file: "media/ep05/khariidad-hijrada-xabasha.jpg",
+        type: "map",
+        caption: {
+          en: "Map of the Hijaz and the routes of the migrations to Abyssinia and to Medina",
+          so: "Khariidadda Xijaas iyo waddooyinka hijrada Xabasha iyo Madiina"
+        },
+        credit: { en: "Original: ExploreTheMed Derivative: باسم · Wikimedia Commons (CC BY-SA 3.0)", so: "Original: ExploreTheMed Derivative: باسم · Wikimedia Commons (CC BY-SA 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Hejaz622-ar.png"
+      },
+      {
+        file: "media/ep05/najaashi-iyo-qureysh-rashiid.jpg",
+        type: "photo",
+        caption: {
+          en: "The Najashi refuses the envoys of Quraysh: a 14th-century painting from Rashid al-Din's Jami' al-Tawarikh (the Prophet is not shown)",
+          so: "Najaashigu wuxuu diiday ergadii Qureysh: sawir-gacmeed qarnigii 14aad ah oo ka mid ah Jaamic al-Tawaariikh ee Rashiid al-Diin (Nabiga kuma jiro)"
+        },
+        credit: { en: "Rashid-al-Din Hamadani · Wikimedia Commons (public domain)", so: "Rashid-al-Din Hamadani · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Hijra_Abyssinia_%28Rashid_ad-Din%29.jpg"
+      },
+      {
+        file: "media/ep05/najaashi-iyo-qureysh-edinburgh.jpg",
+        type: "photo",
+        caption: {
+          en: "The same scene in the Edinburgh copy of Jami' al-Tawarikh",
+          so: "Isla muuqaalka, nuqulka Edinburgh ee Jaamic al-Tawaariikh"
+        },
+        credit: { en: "François-Etienne · Wikimedia Commons (CC BY 4.0)", so: "François-Etienne · Wikimedia Commons (CC BY 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Migration_en_Abyssinie.jpg"
+      },
+      {
+        file: "media/ep05/masjidka-negash.jpg",
+        type: "photo",
+        caption: {
+          en: "The Negash mosque in Tigray, where the tomb of the Najashi is said to be",
+          so: "Masjidka Negash ee Tigray, halka loo nisbeeyo qabriga Najaashiga"
+        },
+        credit: { en: "Evan Williams · Wikimedia Commons (CC BY-SA 4.0)", so: "Evan Williams · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:NegashMosque.jpg"
+      },
+      {
+        file: "media/ep05/aksum-tiirarka.jpg",
+        type: "photo",
+        caption: {
+          en: "The great stelae of Aksum, capital of the kingdom of the Najashi",
+          so: "Tiirarka waaweyn ee Aksum, caasimaddii boqortooyada Najaashiga"
+        },
+        credit: { en: "Jnyssen · Wikimedia Commons (CC BY-SA 4.0)", so: "Jnyssen · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Aksum_main_stelae.jpg"
+      },
+      {
+        file: "media/ep05/hiraqle-lacag.jpg",
+        type: "photo",
+        caption: {
+          en: "Gold coin of Heraclius, emperor of Eastern Rome (610–641)",
+          so: "Lacag dahab ah oo uu suubiyay Hiraqle, imbaraadoorkii Roomaanka-Bari (610–641)"
+        },
+        credit: { en: "Unknown author · Wikimedia Commons (CC0)", so: "Sawir-qaade/qoraa aan la aqoon · Wikimedia Commons (CC0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Solidus_of_Heraclius_and_Heraclius_Constantine_MET_sf04-2-821s1.jpg"
+      },
+      {
+        file: "media/ep05/kisra-khosrow2-lacag.jpg",
+        type: "photo",
+        caption: {
+          en: "Coin of the Persian king Khosrow II, minted in 613, the year before Persia took Jerusalem",
+          so: "Lacagta boqorkii Faaris Kisra (Khusraw II), la suubiyay 613, sannad ka hor intii Faaris qabsan Qudus"
+        },
+        credit: { en: "Classical Numismatic Group · Wikimedia Commons (CC BY-SA 3.0)", so: "Classical Numismatic Group · Wikimedia Commons (CC BY-SA 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Coin_of_Khosrow_II_facing%2C_613_mint.jpg"
+      },
+      {
+        file: "media/ep05/dagaalka-rooma-faaris-611-624.jpg",
+        type: "map",
+        caption: {
+          en: "The wars between Rome and Persia, 611–624: the Persian advance",
+          so: "Dagaalladii Rooma iyo Faaris, 611–624: horumarkii Faaris"
+        },
+        credit: { en: "Mohammad Adil (talk · contribs) · Wikimedia Commons (CC BY 3.0)", so: "Mohammad Adil (talk · contribs) · Wikimedia Commons (CC BY 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Byzantine-persian_campaigns_611-624-mohammad_adil_rais-pt.svg"
+      },
+      {
+        file: "media/ep05/dagaalka-rooma-faaris-624-628.jpg",
+        type: "map",
+        caption: {
+          en: "Heraclius's victories over Persia, 624–628",
+          so: "Guulihii Hiraqle ee Faaris, 624–628"
+        },
+        credit: { en: "Mohammad Adil (talk · contribs) · Wikimedia Commons (CC BY 3.0)", so: "Mohammad Adil (talk · contribs) · Wikimedia Commons (CC BY 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Byzantine-persian_campaigns_624-628-mohammad_adil_rais-pt.svg"
+      },
+      {
+        file: "media/ep05/tang-taizong.jpg",
+        type: "photo",
+        caption: {
+          en: "Emperor Taizong of the Tang dynasty, which took power in China in 618",
+          so: "Imbaraadoor Taizong ee boqortooyadii Tang, oo xukunka Shiinaha la wareegtay 618"
+        },
+        credit: { en: "Unknown artist · Wikimedia Commons (public domain)", so: "Sawir-qaade/qoraa aan la aqoon · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Tang_Taizong_%28cropped%29.jpg"
+      },
+      {
+        file: "media/ep05/bab-al-mandab-nasa.jpg",
+        type: "photo",
+        caption: {
+          en: "The strait of Bab al-Mandab between Africa and Arabia, seen from space",
+          so: "Marin-cidhiidhiga Baab al-Mandab ee u dhexeeya Afrika iyo Carabta, oo hawada sare laga sawiray"
+        },
+        credit: { en: "NASA/METI/AIST/Japan Space Systems, and U.S./Japan ASTER Science Team · Wikimedia Commons (public domain)", so: "NASA/METI/AIST/Japan Space Systems, and U.S./Japan ASTER Science Team · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Bab-el-Mandeb_Strait%2C_Africa-Arabia_%28ASTER%29.jpg"
+      },
+      {
+        file: "media/ep05/bab-al-mandab-badda-cas.jpg",
+        type: "photo",
+        caption: {
+          en: "The Red Sea and Bab al-Mandab, seen by satellite",
+          so: "Badda Cas iyo Baab al-Mandab, sawir dayax-gacmeed"
+        },
+        credit: { en: "NASA · Wikimedia Commons (public domain)", so: "NASA · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Bab-el-Mandeb_And_Red_Sea_NASA_photo.webp"
+      },
+      {
+        file: "media/ep05/doonni-zaruuq-badda-cas.jpg",
+        type: "photo",
+        caption: {
+          en: "A Yemeni zarug, a traditional boat of the Red Sea",
+          so: "Doonni Yamani ah (zaruuq), doonyaha dhaqameed ee Badda Cas"
+        },
+        credit: { en: "Грищук ЮН · Wikimedia Commons (CC BY-SA 3.0)", so: "Грищук ЮН · Wikimedia Commons (CC BY-SA 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Yemenise_Zarug.JPG"
+      },
+      {
+        file: "media/ep05/doonni-badda-cas-1832.jpg",
+        type: "photo",
+        caption: {
+          en: "Boats on the Red Sea, an engraving from 1832",
+          so: "Doonyo Badda Cas ku jira, sawir-xardh 1832"
+        },
+        credit: { en: "Edward Goodall · Wikimedia Commons (CC0)", so: "Edward Goodall · Wikimedia Commons (CC0)" },
+        link: "https://commons.wikimedia.org/wiki/File:1832-40-El_Wuish%2C_Red_Sea.png"
+      },
+      {
+        file: "media/ep05/cosmas-khariidad.jpg",
+        type: "map",
+        caption: {
+          en: "The map of the world by Cosmas, who wrote that Himyar and Barbaria are two days apart by sea",
+          so: "Khariidadda dunida ee Cosmas, kii qoray in Ximyar iyo Barbariya ay laba casho bad isu jiraan"
+        },
+        credit: { en: "Cosmas Indicopleustes · Wikimedia Commons (public domain)", so: "Cosmas Indicopleustes · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Kosmas_Indikopleustes%2C_Map.jpg"
+      },
+      {
+        file: "media/ep05/cosmas-qoraal-gacmeed.jpg",
+        type: "photo",
+        caption: {
+          en: "An 11th-century manuscript of Cosmas's Christian Topography (Florence)",
+          so: "Qoraal-gacmeed qarnigii 11aad ah oo ka mid ah Christian Topography ee Cosmas (Firenze)"
+        },
+        credit: { en: "Sailko · Wikimedia Commons (CC BY 3.0)", so: "Sailko · Wikimedia Commons (CC BY 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Costantinopoli%2C_cosma_indicopleuste%2C_topographia_christiana%2C_XI_sec%2C_pluteo_9.28%2C_01.JPG"
+      },
+      {
+        file: "media/ep05/saylac-masjid.jpg",
+        type: "photo",
+        caption: {
+          en: "An old mosque in Zeila",
+          so: "Masjid qadiim ah oo ku yaal Saylac"
+        },
+        credit: { en: "Walter Callens · Wikimedia Commons (CC BY 2.0)", so: "Walter Callens · Wikimedia Commons (CC BY 2.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Zeila_Mosque.jpg"
+      },
+      {
+        file: "media/ep05/saylac-qiblatayn.jpg",
+        type: "photo",
+        caption: {
+          en: "The Mosque of the Two Qiblas (Masjid al-Qiblatayn) in Zeila",
+          so: "Masjidka Labada Qiblo (Masjid al-Qiblatayn) ee Saylac"
+        },
+        credit: { en: "Nabataea.net · Wikimedia Commons (CC BY 3.0)", so: "Nabataea.net · Wikimedia Commons (CC BY 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Qiblatayn_Zeila.jpg"
+      },
+      {
+        file: "media/ep05/saylac-1885.jpg",
+        type: "photo",
+        caption: {
+          en: "The waterfront of Zeila in 1885, drawn by Philipp Paulitschke",
+          so: "Xeebta Saylac 1885, sidii uu u sawiray Philipp Paulitschke"
+        },
+        credit: { en: "Philipp Paulitschke · Wikimedia Commons (CC BY-SA 4.0)", so: "Philipp Paulitschke · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Zeila_Waterfront.png"
+      },
+      {
+        file: "media/ep05/saylac-burbur.jpg",
+        type: "photo",
+        caption: {
+          en: "Ruins in Zeila",
+          so: "Burburka Saylac"
+        },
+        credit: { en: "Abdourazak Badar · Wikimedia Commons (CC BY-SA 1.0)", so: "Abdourazak Badar · Wikimedia Commons (CC BY-SA 1.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Zeila_ruins.jpeg"
+      },
+      {
+        file: "media/ep05/saylac-sawir-2.jpg",
+        type: "photo",
+        caption: {
+          en: "Zeila",
+          so: "Saylac"
+        },
+        credit: { en: "Future Brothers Production · Wikimedia Commons (public domain)", so: "Future Brothers Production · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Saylac%2C_Somaliland.jpg"
+      },
+      {
+        file: "media/ep05/madiina-qiblatayn.jpg",
+        type: "photo",
+        caption: {
+          en: "Masjid al-Qiblatayn in Medina, for comparison: there the old qibla (Jerusalem) was north and the new one (the Kaaba) south",
+          so: "Masjidka Labada Qiblo ee Madiina, isbarbardhig: halkaas qibladii hore (Qudus) waqooyi bay ahayd, tan danbena (Kacbada) koonfur"
+        },
+        credit: { en: "Aiman titi · Wikimedia Commons (CC BY-SA 3.0)", so: "Aiman titi · Wikimedia Commons (CC BY-SA 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Masjid_al-Qiblatain.jpg"
+      },
+      {
+        file: "media/ep05/istakhri-khariidad.jpg",
+        type: "map",
+        caption: {
+          en: "A world map of al-Istakhri (10th century), who called Zeila a port for crossing to Yemen and the Hijaz",
+          so: "Khariidadda dunida ee al-Istakhri (qarnigii 10aad), kii Saylac ku tilmaamay deked looga tallaabo Yaman iyo Xijaas"
+        },
+        credit: { en: "Istakhri · Wikimedia Commons (public domain)", so: "Istakhri · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Al_Istakhri_map.jpg"
+      },
+      {
+        file: "media/ep05/ibn-xawqal-khariidad.jpg",
+        type: "map",
+        caption: {
+          en: "A world map after Ibn Hawqal, who wrote that most of Yemen's hides came from Zeila",
+          so: "Khariidad dunida ah oo ku salaysan Ibnu Xawqal, kii qoray in hargaha Yaman intooda badani Saylac ka iman jireen"
+        },
+        credit: { en: "After Ibn Hawqal · Wikimedia Commons (public domain)", so: "After Ibn Hawqal · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:World_map_based_upon_the_Ibn_Hawqal_model.png"
+      },
+      {
+        file: "media/ep05/idriisi-tabula-rogeriana.jpg",
+        type: "map",
+        caption: {
+          en: "The world map of al-Idrisi (1154 CE), in Konrad Miller's copy",
+          so: "Khariidadda dunida ee al-Idriisi (1154 M.), nuqulka Konrad Miller"
+        },
+        credit: { en: "Konrad Miller (copy and transliteration) · Wikimedia Commons (public domain)", so: "Konrad Miller (copy and transliteration) · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:TabulaRogeriana.jpg"
+      },
+      {
+        file: "media/ep05/idriisi-qoraal-gacmeed.jpg",
+        type: "photo",
+        caption: {
+          en: "A manuscript of al-Idrisi's Nuzhat al-Mushtaq (Bibliothèque nationale de France)",
+          so: "Qoraal-gacmeed ka mid ah Nuzhat al-Mushtaaq ee al-Idriisi (Maktabadda Qaranka Faransiiska)"
+        },
+        credit: { en: "unknown copyist · Wikimedia Commons (public domain)", so: "unknown copyist · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:89v_90r_%D9%86%D8%B2%D9%87%D8%A9_%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%A7%D9%82_Arabe_2221_BNF.jpg"
+      },
+      {
+        file: "media/ep05/youyang-zazu.jpg",
+        type: "photo",
+        caption: {
+          en: "Youyang Zazu, the book in which Duan Chengshi described the coast of Berbera in the 9th century",
+          so: "Youyang Zazu, buuggii Duan Chengshi ku tilmaamay xeebta Berbera qarnigii 9aad"
+        },
+        credit: { en: "段成式 · Wikimedia Commons (public domain)", so: "段成式 · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:NCL-08569_%E9%85%89%E9%99%BD%E9%9B%9C%E4%BF%8E.pdf"
+      },
+      {
+        file: "media/ep05/cerulli.jpg",
+        type: "photo",
+        caption: {
+          en: "Enrico Cerulli, who recorded the Arabic inscriptions of Mogadishu and Benadir in the 1920s",
+          so: "Enrico Cerulli, kii diiwaangeliyay qoraallada Carabiga ah ee Muqdisho iyo Banaadir 1920-meeyadii"
+        },
+        credit: { en: "Unknown author · Wikimedia Commons (public domain)", so: "Sawir-qaade/qoraa aan la aqoon · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Enrico_Cerulli.png"
+      },
+      {
+        file: "media/ep05/xamar-qabri-qoraal-branly.jpg",
+        type: "photo",
+        caption: {
+          en: "A gravestone with an Arabic inscription from Mogadishu, brought to France by Révoil in 1882 (Musée du quai Branly)",
+          so: "Dhagax qabri oo Carabi ku qoran oo Muqdisho laga keenay, Révoil ayaa 1882 Faransiiska geeyay (Musée du quai Branly)"
+        },
+        credit: { en: "Marie-Lan Nguyen · Wikimedia Commons (public domain)", so: "Marie-Lan Nguyen · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Stele_with_Arabic_inscription_Branly_71.1886.89.2.jpg"
+      },
+      {
+        file: "media/ep05/xamar-fakhrudiin.jpg",
+        type: "photo",
+        caption: {
+          en: "The Fakhr al-Din mosque in Xamar Weyne, Mogadishu",
+          so: "Masjidka Fakhruddiin, Xamar Weyne, Muqdisho"
+        },
+        credit: { en: "Unknown author · Wikimedia Commons (public domain)", so: "Sawir-qaade/qoraa aan la aqoon · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Fakr_Ud_Din_Mosque.jpg"
+      },
+      {
+        file: "media/ep05/xamar-jaamac-minaarad.jpg",
+        type: "photo",
+        caption: {
+          en: "The minaret of the Friday mosque (Jaamac) of Xamar Weyne, dated 636 AH (1238 CE)",
+          so: "Minaaradda Masjid Jaamaca Xamar Weyne, oo la taariikhaystay 636 H. (1238 M.)"
+        },
+        credit: { en: "From M. La Lomia, Antiche Moschee di Mogadiscio (1982) · Wikimedia Commons (CC BY-SA 4.0)", so: "From M. La Lomia, Antiche Moschee di Mogadiscio (1982) · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Jama%27a_Xamar_Weyne.jpg"
+      },
+      {
+        file: "media/ep05/muqdisho-1856.jpg",
+        type: "photo",
+        caption: {
+          en: "Mogadishu in 1856",
+          so: "Muqdisho 1856"
+        },
+        credit: { en: "Abshir55 · Wikimedia Commons (CC BY-SA 4.0)", so: "Abshir55 · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Mogadishu_in_1856.png"
+      },
+      {
+        file: "media/ep05/muqdisho-suuq-1882.jpg",
+        type: "photo",
+        caption: {
+          en: "The market of Mogadishu in 1882 (Révoil)",
+          so: "Suuqa Muqdisho 1882 (Révoil)"
+        },
+        credit: { en: "Unknown author · Wikimedia Commons (public domain)", so: "Sawir-qaade/qoraa aan la aqoon · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Mogadishu_marketplace_1882.jpg"
+      },
+      {
+        file: "media/ep05/muqdisho-1800s.jpg",
+        type: "photo",
+        caption: {
+          en: "Mogadishu in the 19th century",
+          so: "Muqdisho qarnigii 19aad"
+        },
+        credit: { en: "Unknown author · Wikimedia Commons (public domain)", so: "Sawir-qaade/qoraa aan la aqoon · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Somalia_o1800s.JPG"
+      },
+      {
+        file: "media/ep05/xamar-weelka-shiinaha.jpg",
+        type: "photo",
+        caption: {
+          en: "A Chinese celadon vase brought from Mogadishu, a sign of its trade (Musée du quai Branly)",
+          so: "Weel celadon Shiinees ah oo Muqdisho laga keenay, calaamad ganacsigeeda (Musée du quai Branly)"
+        },
+        credit: { en: "Marie-Lan Nguyen · Wikimedia Commons (public domain)", so: "Marie-Lan Nguyen · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Chinese_celadon_vase_Branly_71.1886.89.1.jpg"
+      },
+      {
+        file: "media/ep05/naysaabuur-weel.jpg",
+        type: "photo",
+        caption: {
+          en: "A 10th-century bowl from Nishapur: the oldest grave in Mogadishu (614 AH) belongs to a man of Nishapur in Khurasan",
+          so: "Weel qarnigii 10aad ah oo Naysaabuur laga sameeyay: qabriga ugu da'da weyn Muqdisho (614 H.) wuxuu leeyahay nin reer Naysaabuur ah oo Khuraasaan ah"
+        },
+        credit: { en: "Vassil · Wikimedia Commons (CC0)", so: "Vassil · Wikimedia Commons (CC0)" },
+        link: "https://commons.wikimedia.org/wiki/File:British_Museum_The_Islamic_world_Bowl_Nishapur_21022019_7538.jpg"
+      },
+      {
+        file: "media/ep05/naysaabuur-weel-2.jpg",
+        type: "photo",
+        caption: {
+          en: "A 10th-century bowl with an Arabic inscription, from the same region (Metropolitan Museum)",
+          so: "Weel qarnigii 10aad ah oo Carabi ku qoran, isla gobolkaas (Metropolitan Museum)"
+        },
+        credit: { en: "Unknown author · Wikimedia Commons (CC0)", so: "Sawir-qaade/qoraa aan la aqoon · Wikimedia Commons (CC0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Bowl_with_Arabic_Inscription_MET_DP312519.jpg"
+      },
+      {
+        file: "media/ep05/khuraasaan-khariidad.jpg",
+        type: "map",
+        caption: {
+          en: "Khurasan in the 10th century, home of Nishapur",
+          so: "Khuraasaan qarnigii 10aad, dhulka ay Naysaabuur ku taal"
+        },
+        credit: { en: "Istakhri · Wikimedia Commons (public domain)", so: "Istakhri · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Map_of_Khorasan_in_tenth-century.png"
+      },
+      {
+        file: "media/ep05/baraawe-qorshe.jpg",
+        type: "map",
+        caption: {
+          en: "An old plan of Brava, whose Friday mosque gave an inscription dated 498 AH (1105 CE)",
+          so: "Qorshe hore oo Baraawe ah; masjid Jaamaceeda waxaa laga helay qoraal la taariikhaystay 498 H. (1105 M.)"
+        },
+        credit: { en: "Calmar, Yves (17..-17..). Cartographe Harmer, T. (17..-18.. ; graveur). Graveur · Wikimedia Commons (public domain)", so: "Calmar, Yves (17..-17..). Cartographe Harmer, T. (17..-18.. ; graveur). Graveur · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Plan_of_Brava_on_the_coast_of_Africa_-_from_a_french_ms._by_Yvez_Calmar_%3B_writing_by_Harmar_-_btv1b85957030.jpg"
+      },
+      {
+        file: "media/ep05/baraawe-maanta.jpg",
+        type: "photo",
+        caption: {
+          en: "Brava today: the Chilaani lighthouse",
+          so: "Baraawe maanta: munaaradda nalka ee Chilaani"
+        },
+        credit: { en: "FaarisAdam · Wikimedia Commons (CC BY-SA 4.0)", so: "FaarisAdam · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Chilaani_Lighthouse_in_Baraawe.jpg"
+      },
+      {
+        file: "media/ep05/berbera-magaalo.jpg",
+        type: "photo",
+        caption: {
+          en: "The town of Berbera (1921)",
+          so: "Magaalada Berbera (1921)"
+        },
+        credit: { en: "Major Henry A. Rayne · Wikimedia Commons (public domain)", so: "Major Henry A. Rayne · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Berbera_town.png"
+      },
+      {
+        file: "media/ep05/kizimkazi-qoraal.jpg",
+        type: "photo",
+        caption: {
+          en: "Kufic inscription of 500 AH in the Kizimkazi mosque, Zanzibar, close in date to the Brava inscription (498 AH)",
+          so: "Qoraalka Kufiga ah ee 500 H. ee masjidka Kizimkazi, Sinjibaar, oo taariikh ahaan u dhow qoraalka Baraawe (498 H.)"
+        },
+        credit: { en: "Mnazini · Wikimedia Commons (CC BY 4.0)", so: "Mnazini · Wikimedia Commons (CC BY 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Calligraphy_at_historic_Kizimkazi_Mosque%2C_Kusini_DC%2C_South_Zanzibar%2C_Tanzania.jpg"
+      },
+      {
+        file: "media/ep05/kizimkazi-mixraab.jpg",
+        type: "photo",
+        caption: {
+          en: "The mihrab of the old Kizimkazi mosque, Zanzibar",
+          so: "Mixraabka masjidka qadiimka ah ee Kizimkazi, Sinjibaar"
+        },
+        credit: { en: "Mnazini · Wikimedia Commons (CC BY 4.0)", so: "Mnazini · Wikimedia Commons (CC BY 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Mihrab_of_historic_Kizimkazi_Mosque%2C_Kusini_DC%2C_South_Zanzibar%2C_Tanzania.jpg"
+      },
+      {
+        file: "media/ep05/zabiid-yaman.jpg",
+        type: "photo",
+        caption: {
+          en: "Zabid in Yemen, on the coast facing Zeila",
+          so: "Zabiid ee Yaman, xeebta ka soo horjeedda Saylac"
+        },
+        credit: { en: "Ahron de Leeuw from Amsterdam, Netherlands · Wikimedia Commons (CC BY 2.0)", so: "Ahron de Leeuw from Amsterdam, Netherlands · Wikimedia Commons (CC BY 2.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Zabid%2C_Yemen.jpg"
+      },
+      {
+        file: "media/ep05/suxaar-cumaan.jpg",
+        type: "photo",
+        caption: {
+          en: "Sohar fort in Oman (1940): many of the first settlers of the Benadir coast came from Oman",
+          so: "Qalcadda Suxaar ee Cumaan (1940): qaar badan oo ka mid ah dadkii ugu horreeyay ee xeebta Banaadir degay waxay ka yimaadeen Cumaan"
+        },
+        credit: { en: "East India Company, the Board of Control, the India Office, or other British Government Department · Wikimedia Commons (CC0)", so: "East India Company, the Board of Control, the India Office, or other British Government Department · Wikimedia Commons (CC0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Sohar_Fort_in_1940.jpg"
+      },
+      {
+        file: "media/ep05/cabdulmalik-diinaar.jpg",
+        type: "photo",
+        caption: {
+          en: "The first gold dinar of the Umayyad caliph 'Abd al-Malik ibn Marwan (695 CE)",
+          so: "Diinaarkii dahabka ahaa ee ugu horreeyay ee khaliifkii Umawiyiinta Cabdulmalik bin Marwaan (695 M.)"
+        },
+        credit: { en: "PHGCOM · Wikimedia Commons (public domain)", so: "PHGCOM · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:First_Umayyad_gold_dinar%2C_Caliph_Abd_al-Malik%2C_695_CE.jpg"
+      },
+      {
+        file: "media/ep05/qubbat-as-sakhra.jpg",
+        type: "photo",
+        caption: {
+          en: "The Dome of the Rock in Jerusalem, built by 'Abd al-Malik (691 CE)",
+          so: "Qubbat as-Sakhra ee Qudus, uu dhisay Cabdulmalik (691 M.)"
+        },
+        credit: { en: "Godot13 · Wikimedia Commons (CC BY-SA 4.0)", so: "Godot13 · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Jerusalem-2013%282%29-Temple_Mount-Dome_of_the_Rock_%28SE_exposure%29.jpg"
+      },
+      {
+        file: "media/ep05/mansuur-diinaar.jpg",
+        type: "photo",
+        caption: {
+          en: "Gold dinar of the Abbasid caliph Abu Ja'far al-Mansur (140 AH)",
+          so: "Diinaarkii khaliifkii Cabbaasiga Abuu Jacfar al-Mansuur (140 H.)"
+        },
+        credit: { en: "DrFO.Jr.Tn · Wikimedia Commons (CC BY 3.0)", so: "DrFO.Jr.Tn · Wikimedia Commons (CC BY 3.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Abbasid_Dinar_-_Al_Mansur_-_140_AH_%28758_AD%29.JPG"
+      },
+      {
+        file: "media/ep05/baqdaad-magaalada-wareegsan.jpg",
+        type: "map",
+        caption: {
+          en: "The Round City of Baghdad in the time of al-Mansur (Le Strange)",
+          so: "Magaaladii wareegsanayd ee Baqdaad waagii al-Mansuur (Le Strange)"
+        },
+        credit: { en: "Guy Le Strange (24 July 1854 – 24 December 1933) · Wikimedia Commons (public domain)", so: "Guy Le Strange (24 July 1854 – 24 December 1933) · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Round_City_in_the_Time_of_Mansur_%28Le_Strange%29.png"
+      },
+      {
+        file: "media/ep05/khilaafada-740.jpg",
+        type: "map",
+        caption: {
+          en: "The Umayyad caliphate around 740 CE: its conquests did not reach the Horn of Africa",
+          so: "Khilaafada Umawiyiinta qiyaastii 740 M.: futuuxaadkeedu ma gaarin Geeska Afrika"
+        },
+        credit: { en: "Constantine Plakidas · Wikimedia Commons (CC BY-SA 4.0)", so: "Constantine Plakidas · Wikimedia Commons (CC BY-SA 4.0)" },
+        link: "https://commons.wikimedia.org/wiki/File:Caliphate_740-en.svg"
+      },
+      {
+        file: "media/ep05/ibnu-badhuuda.jpg",
+        type: "photo",
+        caption: {
+          en: "Ibn Battuta, who visited Zeila and Mogadishu in 1331 (a 19th-century drawing by Léon Benett)",
+          so: "Ibnu Batuuta, kii booqday Saylac iyo Muqdisho 1331 (sawir qarnigii 19aad ah oo uu sameeyay Léon Benett)"
+        },
+        credit: { en: "Léon Benett · Wikimedia Commons (public domain)", so: "Léon Benett · Wikimedia Commons (hanti guud)" },
+        link: "https://commons.wikimedia.org/wiki/File:Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg"
+      }
+    ]
+  },
   6: {
     video: "",
     pictures: [
