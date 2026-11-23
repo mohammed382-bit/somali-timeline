@@ -336,7 +336,7 @@ const media = {
   },
 
   5: {
-    video: "",   // paste the YouTube link for episode 5 here when it is online
+    video: "https://www.youtube.com/watch?v=-URyfgak2CM",
     pictures: [
       {
         file: "media/ep05/jabal-nuur-xiraa.jpg",
