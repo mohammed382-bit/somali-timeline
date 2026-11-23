@@ -2898,6 +2898,8 @@ const sourceInfo = {
   "Nell'Harrar": {"lang": "it", "author": "Luigi Robecchi-Bricchetti", "year": "1896", "cover": "media/covers/nell-harrar.jpg"},
   "Il provinciale d'Africa: Benadir, Dulio (1885–1903)": {"lang": "it", "author": "Scardigli", "year": "1995", "cover": "media/covers/il-provinciale-d-africa-benadir-dulio-18851903.jpg"},
   "Gli eventi di Mogadiscio del gennaio 1948": { "lang": "it", "author": "Antonio Varsori", "year": "1981", "cover": "media/covers/eventi-di-mogadiscio-1948.jpg" },
+  "Somalia italiana (2 vols.)": {"lang": "it", "author": "Guido Corni", "year": "1937", "cover": "media/covers/corni-somalia-italiana.jpg"},
+  "Benadir": {"lang": "it", "author": "Ministero degli Affari Esteri, Direzione Centrale degli Affari Coloniali", "year": "1911", "cover": "media/covers/benadir-1911.jpg"},
 
   // ---- French ----
   "Documents sur l'histoire, la géographie et le commerce de l'Afrique orientale": {"lang": "fr", "author": "Charles Guillain", "year": "1856", "cover": "media/covers/documents-sur-l-histoire-la-geographie-et-le-comme.jpg"},
